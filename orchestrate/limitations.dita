@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc3785c" xml:lang="en-us">
+  <title class="- topic/title ">Limitations</title>
+  <conbody>
+    <p>When using the new Composer endpoint (Composer Integration 2.0) in an Orchestrate process:</p>
+    <ul>
+      <li>You cannot send emails with Conga email templates.</li>
+      <li>You cannot use QVar parameters.</li>
+      <li>The QueryStringField parameter is not supported.</li>
+    </ul>
+    <p>If the new Composer endpoint 2.0 does not generate Composer documents, use Composer endpoint 1.0 instead.</p>
+    <p>In the 1.0 or 2.0 integrations with Composer in an Orchestrate process, the DV0 parameter is not supported . </p>
+  </conbody>
+</concept>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t64239d" xml:lang="en-us">
+  <title class="- topic/title ">Caching</title>
+  <conbody>
+    <p>Server side caching is used and can be configured per request using the cacheStrategy query parameter.</p>
+  </conbody>
+</concept>

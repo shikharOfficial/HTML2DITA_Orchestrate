@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc97bda" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Event Initiators vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Aug 20, 2021</p>
+    <p>After you have configured and saved the <xref href="orchestratecreatingadefinitioninitiatorvsummer21.dita#t27ef18" scope="local" format="dita">Definition Initiator</xref> with a Monitored Object of Event, a process will initiate for each event created that matches the criteria of a Definition Initiator. Watch <xref href="https://share.vidyard.com/watch/rf1ZJZSP8D2CAuKSdnncht" scope="external" format="html">the video</xref> to see it in action.</p>
+    <p>Note</p>
+    <p>When creating the event, be sure to populate the Name field with the related Contact.</p>
+    <p/>
+  </conbody>
+</concept>

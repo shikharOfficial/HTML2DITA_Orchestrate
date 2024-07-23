@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t9d47fd" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Automatically Initiate a Process</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Once you have defined your process in a Definition, you can use that process with your Salesforce records. The sections below describe automatically initiating your defined processes.</p>
+    <p>Automatically initiate processes:</p>
+    <ul>
+      <li>
+        <xref href="orchestrateaboutdefinitioninitiators.dita#t927393" scope="local" format="dita">Using Definition Initiators</xref>
+      </li>
+      <li>
+        <xref href="orchestraterecurringbusinessprocessesoverviewvwinter20.dita#ta9237b" scope="local" format="dita">Using Recurring Business Processes</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

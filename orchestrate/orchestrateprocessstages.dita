@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tabf5c2" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Process Stages</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>A Stage is a group of Steps. All Steps in a Stage must be completed (or have conditions that will prevent their creation while also being set to ‘Ignore in Stage Completion’) before steps that follow it (called Child Steps) can execute. Unless all Stage Steps are ‘canceled’, Child Steps execute after the Stage completes successfully. Staging enables users to have Steps with multiple Parent Steps (e.g., all Steps in a Stage must be complete before the Child is created). Stages can be used to facilitate parallel approvals when used in conjunction with <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Approvals</xref>.</p>
+    <p>To create a Stage, a Definition is needed. Refer to <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Creating a Process Definition</xref>.</p>
+  </conbody>
+</concept>

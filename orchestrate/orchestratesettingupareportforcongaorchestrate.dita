@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t6bea5d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Setting Up a Report for Conga Orchestrate</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Conga Orchestrate provides key insights into processes on an individual level and on an org-wide basis. Use Conga Orchestrate to facilitate analysis and insights from native Salesforce Reports and Dashboards.</p>
+    <p>The Conga Orchestrate installed package ships a single dashboard and a handful of useful reports upon installation. Users can customize Conga Orchestrate's Dashboard and Reports as desired.</p>
+    <p>Conga Orchestrate Dashboard</p>
+    <p>Navigate to the Dashboards tab and click Conga Orchestrate Dashboard. The Conga Orchestrate Dashboard functions as an insightful hub that details metrics related to past, current, and future processes. The Conga Orchestrate Dashboard includes the following reports by default:</p>
+    <ul>
+      <li>Open Business Processes</li>
+      <li>Business Completion Times</li>
+      <li>Average Task Completion Time (Days)</li>
+      <li>Current Workload by Assignee</li>
+      <li>Future Workload by Assignee</li>
+      <li>Current and Future Workload by Assignee</li>
+      <li>Process Completion Times Vs Target</li>
+      <li>Task Completion Vs Target</li>
+      <li>Future Workload By Week</li>
+    </ul>
+    <p>Click Edit to customize the dashboard and include additional reports from the Conga Orchestrate Reports folder.</p>
+    <p>Individual Conga Orchestrate Reports are located in the Conga Orchestrate Reports folder. These reports display key metrics and insight on the present, past, and future processes.</p>
+    <p>Presents report detail and report on current processes so that users have key insight on the day to day activity.</p>
+    <ul>
+      <li>Open Business Processes</li>
+      <li>All Business Processes not yet completed, organized by each Definition</li>
+      <li>Current Workload by Assignee</li>
+      <li>The amount of open (not yet completed) steps assigned to users</li>
+      <li>Business Process Activities</li>
+      <li>A count of unique Business Processes initiated over a week</li>
+      <li>Queued Steps</li>
+      <li>All process steps that are currently in a queued status</li>
+      <li>PCE - Steps with Checklist Items</li>
+      <li>All process steps with checklist items in active processes</li>
+      <li>PCE - Definitions with PCE - Steps</li>
+      <li>All process steps and active processes</li>
+      <li>PCE - Default Teams</li>
+      <li>A list of all Team Members currently in Default Teams</li>
+      <li>Overdue Business Process Activities</li>
+      <li>Processes with due dates prior to the current date that is still in "Open" status</li>
+      <li>Opportunities by Definition and Stage</li>
+      <li>All Opportunity records with related open and completed processes</li>
+      <li>Open Activities by Assignee</li>
+      <li>All open process activities assigned to each user</li>
+      <li>Field Update Steps</li>
+      <li>All steps with a step type of Field Update</li>
+      <li>Failed Queued Steps</li>
+      <li>All steps with a status of "Error"</li>
+      <li>Email Alert Steps</li>
+      <li>All steps that send an Email Alert</li>
+      <li>Contracts by Definition and Status</li>
+      <li>Contract records with related open and completed processes</li>
+      <li>Business Process by Status &amp; Definitions</li>
+      <li>Business Process records with related open and completed processes</li>
+      <li>All PCE - Definitions</li>
+      <li>A list of all process definitions in an org</li>
+      <li>Activities By Assignee</li>
+      <li>All open steps assigned to each user</li>
+      <li>Accounts with PCE - Team Members</li>
+      <li>Accounts with assigned Team MembersPast Reports</li>
+    </ul>
+    <p>Past reports allow users to analyze past processes to determine what processes worked and where improvements should be made.</p>
+    <ul>
+      <li>Average Task Completion Time (Days)</li>
+      <li>The average amount of time it takes users to complete a Business Process</li>
+      <li>Business Process Completion Time (Days)</li>
+      <li>The average amount of time each Process Definition takes to complete</li>
+      <li>Process Completion Times Vs Target</li>
+      <li>A comparison of each Process Definition's projected completion time and the actual completion time</li>
+      <li>Task Completion Vs Target</li>
+      <li>A comparison of the average amount of time taken for a user to complete a task and the average target task completion time</li>
+      <li>Process Archive Report</li>
+      <li>All past completed processes</li>
+      <li>Average Completion Time By Assignee</li>
+      <li>Calculates the average completion time for each user based on their completed tasks in the current and previous month</li>
+      <li>Activity Task Completion Vs Target</li>
+      <li>A comparison of each task's projected completion time and the actual completion time</li>
+      <li>Web Service Callout Errors Queue</li>
+      <li>All Web Service Callout Errors that have occurred</li>
+    </ul>
+    <p>
+      <b>Future Reports</b>
+    </p>
+    <p>Future reports provide insight on future workload and allows users to determine and mitigatepotential roadblocks in the near future.</p>
+    <ul>
+      <li>Future Workload by Assignee</li>
+      <li>The amount of steps assigned to users that are not yet created</li>
+      <li>Current and Future Workload by Assignee</li>
+      <li>The total amount of both open steps and steps not yet created that are assigned to each user</li>
+    </ul>
+  </conbody>
+</concept>

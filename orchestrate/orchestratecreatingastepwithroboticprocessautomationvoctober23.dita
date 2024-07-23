@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc6c753" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step with Robotic Process Automation vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 29, 2023</p>
+    <p>Before you begin, you must <xref href="orchestrateconfiguringuipathintegrationvoctober23.dita#tb882fa" scope="local" format="dita">configure UiPath integration for Conga Orchestrate</xref>.</p>
+    <p>Note</p>
+    <p>You must be on Conga Orchestrate version 14 or greater to use this step type.</p>
+    <p>Create an Automation Step to leverage UiPath integration in a Process Definition.</p>
+    <p>In Salesforce orgs that upgrade to Conga Orchestrate version 14 or greater, you must run through the Object Setup in Conga Orchestrate Setup and configure the Task object, even if it is already configured.</p>
+  </conbody>
+</concept>

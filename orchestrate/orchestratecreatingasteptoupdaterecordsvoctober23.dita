@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t42e68d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step to Update Records vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 29, 2023</p>
+    <p>The initial release of this functionality is in beta as we continue to build on its capabilities in future releases.</p>
+    <p>Update record(s) on associated records right from Conga Orchestrate.</p>
+    <p>Update Records steps cannot have child steps. If you need to create a step to follow up on the record update, create the child step at the same level as the Update Records step.</p>
+    <p>During process execution, you may need to refresh the page in order to see the updated field value.</p>
+  </conbody>
+</concept>

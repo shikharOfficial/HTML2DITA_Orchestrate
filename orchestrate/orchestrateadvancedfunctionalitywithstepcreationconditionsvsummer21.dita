@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t3caa18" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Advanced Functionality with Step Creation Conditions vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified on May 14, 2021</p>
+    <p>Step Creation Conditions in a Definition's step allow you to conditionally determine whether or not a step is created. A step is only created if the designated Step Creation Conditions are fulfilled.</p>
+    <p>Conga Orchestrate now features cross object functionality within Step Creation Conditions. This allows you to reference objects that are related to the Definition's master object and their corresponding fields. In the Creation Condition user interface, you can reference both child and parent objects and leverage master-detail relationships, as well as look-up relationships.</p>
+  </conbody>
+</concept>

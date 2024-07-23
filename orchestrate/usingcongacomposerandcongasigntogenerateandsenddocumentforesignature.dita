@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="taf14dc" xml:lang="en-us">
+  <title class="- topic/title ">Using Conga Composer and Conga Sign to Generate and Send Document for E-Signature</title>
+  <conbody>
+    <p>A Generate Document step that references a Conga Sign-integrated Composer solution or button generates and sends a document for e-signature with Conga Sign. Follow the same steps in the Using Conga Composer to Generate Documents section above to use a Conga-Sign integrated Composer solution or button.</p>
+    <p>The Composer solution or button must also contain required Conga Sign integration parameters to create and send a Conga Sign transaction with Conga Orchestrate. A Conga Sign-integrated Composer solution or button referenced in a Create Document step functions in full background mode. Add the required parameters below to your Composer solution or button.</p>
+    <ul>
+      <li>TemplateID</li>
+      <li>APIMode=3. If you are using V2 Composer Endpoint, set DS7=1142</li>
+      <li>CSRecipient</li>
+      <li>CSVisible = 1</li>
+    </ul>
+  </conbody>
+</concept>

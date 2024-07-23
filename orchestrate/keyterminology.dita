@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tef54aa" xml:lang="en-us">
+  <title class="- topic/title ">Key Terminology</title>
+  <conbody>
+    <p>These terms are used in Conga Orchestrate. </p>
+    <p>
+    </p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody>
+          <row>
+            <entry>Term</entry>
+            <entry>Definition</entry>
+          </row>
+          <row>
+            <entry>Definition</entry>
+            <entry>The definition is a container that holds process steps and forms a template for a process. </entry>
+          </row>
+          <row>
+            <entry>Definition conditions</entry>
+            <entry>Definition conditions determine which definition is initiated when the condition set matches the process record. </entry>
+          </row>
+          <row>
+            <entry>Definition initiators</entry>
+            <entry>Automate processes by monitoring objects for insert and update operations.</entry>
+          </row>
+          <row>
+            <entry>Deletable</entry>
+            <entry>
+              <p>Determines whether steps created can be deleted.</p>
+            </entry>
+          </row>
+          <row>
+            <entry>Delay creation</entry>
+            <entry>Steps are created after a set period once step creation conditions have been fulfilled; for example, create a step today at 18:00. </entry>
+          </row>
+          <row>
+            <entry>Parent stage</entry>
+            <entry>If a step has a parent stage, all parent stage steps must be completed before the step is created. </entry>
+          </row>
+          <row>
+            <entry>Parent step</entry>
+            <entry>If a step has a parent step, the parent step must be completed before this step is created.</entry>
+          </row>
+          <row>
+            <entry>Process object</entry>
+            <entry>A process object is an object used to run processes. Standard and custom objects can be used as process objects. </entry>
+          </row>
+          <row>
+            <entry>Recurring business</entry>
+            <entry>Execute any business process you define on a recurring basis. </entry>
+          </row>
+          <row>
+            <entry>Stage</entry>
+            <entry>A stage is a group of steps. All steps in a stage must be completed (or have conditions that prevent their creation while also being set to "Ignore in Stage Completion") before steps that follow it (called "child steps") can execute.</entry>
+          </row>
+          <row>
+            <entry>Status option </entry>
+            <entry>Determines the status of open steps. </entry>
+          </row>
+          <row>
+            <entry>Step creation condition</entry>
+            <entry>Step creation conditions enable you to conditionally determine whether or not a step is created. This step is created only after the designated step creation conditions are fulfilled.</entry>
+          </row>
+          <row>
+            <entry>Step validation rules</entry>
+            <entry>Use step validation rules to prevent a step’s completion when the configured validation rule(s) are true.</entry>
+          </row>
+          <row>
+            <entry>Steps</entry>
+            <entry>Definitions contain multiple steps. At each step, a record is created, an email is sent, field(s) are updated, the document is generated, API callouts sent, and more.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>For more information about terms used with Conga products, see <xref href="https://documentation.conga.com/display/CPG/Conga+Product+Glossary" scope="external" format="html">Conga Product Glossary</xref>.</p>
+  </conbody>
+</concept>

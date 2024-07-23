@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t903b70" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .About Conga Orchestrate vSeptember-22</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified by  William Abernathy on Oct 13, 2022</p>
+    <p>Conga Orchestrate™ allows you to define and execute real-world processes end-to-end in a Salesforce environment. You can define processes on a Campaign, Case, Contract, Lead, Opportunity, Business Process (a custom object added by Conga Orchestrate) as well as any custom object. When you create or edit records in Salesforce, Conga Orchestrate monitors these actions and executes processes when your Definitions match the record.</p>
+    <p>Conga Orchestrate allows an administrator to perform the following administrative tasks:</p>
+    <ul>
+      <li>Install Conga Orchestrate</li>
+      <li>Set Security Permissions</li>
+      <li>Configure and Setup Orchestrate</li>
+      <li>
+        Create and Edit Page Layouts
+        <ul>
+          <li>Edit Account Page Layouts For Roles</li>
+          <li>Edit Account Page Layouts for Business Processes</li>
+          <li>Edit Contact Page Layouts for Business Processes</li>
+          <li>Add Process Details and Process Visual Buttons to Page Layouts</li>
+        </ul>
+      </li>
+      <li>
+        <p>Configure Custom Objects</p>
+      </li>
+      <li>
+        <p>Configure Non-Working Days</p>
+      </li>
+      <li>
+        <p>Configure Out of Office Link in Classic</p>
+      </li>
+      <li>
+        <p>Create Reports and Gantt Chart </p>
+      </li>
+      <li>Integrate with Twilio</li>
+      <li>Integrate with SendGrid</li>
+    </ul>
+    <p>Conga Orchestrate allows a user to perform the following tasks:</p>
+    <ul>
+      <li>Create Process Definitions</li>
+      <li>
+        Create Steps
+        <ul>
+          <li>Creating a Step that Creates a Record</li>
+          <li>Creating a Step that Generates a Document</li>
+          <li>Create a Step that Posts to Chatter</li>
+          <li>Creating a Step that Sends an Email</li>
+          <li>Creating a Step to Update Records</li>
+          <li>Creating a Step with an Event Placeholder</li>
+          <li>Creating a Step with an API Callout</li>
+          <li>Creating a Step with Robotic Process Automation</li>
+          <li>Creating a Step that Adds Managed Clause Bundles</li>
+          <li>Creating a Step that Adds a Managed Clause</li>
+        </ul>
+      </li>
+      <li>Managing the Status of a Step </li>
+      <li>
+        Initiate a Process
+        <ul>
+          <li>Automatically Initiate a Process</li>
+          <li>Manually Initiate a Process</li>
+        </ul>
+      </li>
+      <li>
+        Export Definitions
+        <ul>
+          <li>Export Multiple Definitions</li>
+        </ul>
+      </li>
+      <li>Import Definitions</li>
+      <li>View your Conga Orchestrate Usage</li>
+    </ul>
+  </conbody>
+</concept>

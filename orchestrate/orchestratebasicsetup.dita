@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="tfb6f85" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Basic Setup</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>In order to fully integrate Conga Orchestrate with your Salesforce organization, some initial setup is required. The instructions that follow take you through installing Conga Orchestrate, changing security profiles, editing layouts, adding a Picklist value, as well as overriding the Task and Event pages with the custom pages included with Conga Orchestrate. Once these steps are complete, you will be ready to automate your business processes.</context>
+    <steps>
+      <step>
+        <cmd>
+          <xref href="orchestrateinstallingcongaorchestratevoctober23.dita#t3b3c7f" scope="local" format="dita">Install Conga Orchestrate</xref>
+        </cmd>
+      </step>
+      <step>
+        <cmd>
+          <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Guided Setup and Configuration</xref>
+        </cmd>
+      </step>
+      <step>
+        <cmd>
+          <xref href="orchestratesecurityprofileconfigurationvoctober23.dita#tb129f0" scope="local" format="dita">Security Configuration</xref>
+        </cmd>
+      </step>
+      <step>
+        <cmd>
+          <xref href="orchestrateessentialconfigurationvoctober23.dita#tdfc24c" scope="local" format="dita">Essential Configuration</xref>
+        </cmd>
+      </step>
+    </steps>
+    <postreq>
+    </postreq>
+  </taskbody>
+</task>

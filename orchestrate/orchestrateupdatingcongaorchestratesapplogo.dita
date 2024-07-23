@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t4f3b7d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Updating Conga Orchestrate's App Logo</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>This documentation only pertains to upgrading to Conga Orchestrate from ProcessComposer 12.13 and all earlier versions.</p>
+    <p>When upgrading to the latest version of the Conga Orchestrate, you must change the Conga Orchestrate App's logo to reflect current branding. Current Salesforce functionality does not allow the installed package to automatically update the logo. Follow the steps below to change the Conga Orchestrate application's logo in Lightning and in Classic after upgrading.</p>
+    <p>Before updating the Conga Orchestrate logo, ensure that you</p>
+    <p>
+      <xref href="orchestraterenamingthecongaorchestratesalesforceappvoctober23.dita#t78a58d" scope="local" format="dita">renamed the Conga Orchestrate App</xref>
+    </p>
+    <p>.</p>
+  </conbody>
+</concept>

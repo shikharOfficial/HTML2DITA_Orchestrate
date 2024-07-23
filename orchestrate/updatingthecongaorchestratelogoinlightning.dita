@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tb4c107" xml:lang="en-us">
+  <title class="- topic/title ">Updating the Conga Orchestrate Logo in Lightning</title>
+  <body>
+    <ol>
+      <li>Search for "Conga Orchestrate Logo" in the master search bar and click the record that is found.</li>
+      <li>In the top menu, click Download to download the logo to your computer.</li>
+      <li>Navigate to the Setup menu.</li>
+      <li>Under the Platform Tools section of the Setup menu, click Apps to expand the list of options and then click App Manager.</li>
+      <li>Locate both records of Conga Orchestrate. One record is for the Lightning App and the other is for the Classic App. Repeat the steps below for both Apps.</li>
+      <li>Click the dropdown arrow for the Conga Orchestrate record and select Edit.</li>
+      <li>Under the Image, click the small blue Clear button.</li>
+      <li>Click Upload and select the recently download Conga Orchestrate Logo.</li>
+      <li>Click the Save button.</li>
+    </ol>
+  </body>
+</topic>

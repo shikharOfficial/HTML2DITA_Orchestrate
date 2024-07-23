@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t44acd0" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring Virtual Steps vOctober-23</title>
+  <shortdesc>Created by  William Abernathy, last modified on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>Use the Virtual Steps tab to display current and future steps for all active processes. Virtual Steps are designed for analytics (reports, dashboard, Einstein Analytics) and to provide visibility into current and future workload across your teams and overtime based on process Definitions that are currently executing. Conga Orchestrate enables you to configure Virtual Steps for all Process Objects in your organization. All process objects calculate through a daily batch job. Optionally, as actual Conga Orchestrate-generated steps are updated, the associated processes and their virtual step records are recalculated, keeping virtual steps up to date for any processes that are changed.</context>
+    <steps>
+      <step>
+        <cmd>
+          If you are using a
+          <xref href="orchestrateusingacustomobjectasaprocessobject.dita#t32d074" scope="local" format="dita">Custom Process Object</xref>
+          , create a custom Lookup relationship field for each object on the Virtual Step object.
+        </cmd>
+        <substeps>
+          <substep>
+            <cmd>Navigate to the Virtual Step object in Setup and add a new Lookup field. Ensure the API name of the object matches the Lookup field on the Virtual Step. For example, the Lookup field for My_Custom_Object__c object API name would have a Lookup field API name of My_Custom_Object__c on the Virtual Step object. This ensures the field is correctly linked.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Navigate to the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> tab.</cmd>
+      </step>
+      <step>
+        <cmd>Navigate to the Virtual Steps section and select the objects you are using with virtual steps.</cmd>
+      </step>
+      <step>
+        <cmd>To have virtual steps update as Step object (Task, Process Task, etc.) records are updated, check the box for Virtual Steps: Recalculate</cmd>
+      </step>
+      <step>
+        <cmd>Click the Save button to enable the virtual steps.</cmd>
+      </step>
+    </steps>
+    <postreq>
+    </postreq>
+  </taskbody>
+</task>

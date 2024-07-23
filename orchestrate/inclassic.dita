@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="te8def2" xml:lang="en-us">
+  <title class="- topic/title ">In Classic</title>
+  <body>
+    <ol>
+      <li>In Setup, enter Activities in the Quick Find.</li>
+      <li>Select Task Buttons, Links, and Actions.</li>
+      <li>Click <b>Edit</b> next to the View label.</li>
+      <li>Select the <b>Visualforce Page</b> radio button and select <b>Task (FSTR_Tasks)</b> from the drop-down list box.</li>
+      <li>Click <b>Save.</b></li>
+      <li><b> </b>Repeat for the Event View page.</li>
+    </ol>
+  </body>
+</topic>

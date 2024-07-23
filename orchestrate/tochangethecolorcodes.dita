@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t334d5c" xml:lang="en-us">
+  <title class="- topic/title ">To change the color codes</title>
+  <body>
+    <ol>
+      <li>From the Conga Orchestrate Setup tab > Settings > select Process Visual Customization.<image href="../images/163939604.png"/></li>
+      <li>Color pickers are displayed for all the seven keys. If you want to use the default colors, you can just leave it. At any time after changing colors, you can revert back to the default colors by clicking the Restore Default button.</li>
+      <li>Click Save.</li>
+    </ol>
+  </body>
+</topic>

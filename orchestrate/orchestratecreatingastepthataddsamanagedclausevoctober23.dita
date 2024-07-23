@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ta8de67" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step that Adds a Managed Clause vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Feb 20, 2024</p>
+    <p>Use Conga Orchestrate to dynamically select and add clauses for contracts for the Salesforce solution. The Clause step in a <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">process definition</xref> allows users to add a clause and each related sub-clause record as managed clauses to a Salesforce object record.</p>
+    <p>Set step creation conditions to determine when a clause is added and then add related sub-clauses as managed clauses to a process object record.</p>
+    <p>Note</p>
+    <p>Conga Orchestrate 14.62 or greater must be installed to use the Clause step type. Conga Contracts for Salesforce version 2.30 or greater must also be installed.</p>
+    <p>Follow the steps below to add a managed clause step to a process definition.</p>
+    <ol>
+      <li>Go to an existing definition or create a new one.</li>
+      <li>Click the dropdown arrow next to the New Step button and select <b>Clause</b>.</li>
+      <li>Enter the name of the step in the <b>Step </b>field.</li>
+      <li>Enter the name of the desired clause in the <b>Clause </b>field and select it.</li>
+      <li>
+        <p>Use the <b>Sort Order</b> field to define the order in which the clauses appear in your generated document.</p>
+        <p>Note</p>
+        <p>To set the sort order of a step type with a managed clause, use the Create Record step type and then enter the sort order value, using the managed clause's page layout. The sort order interacts with clause bundle so that managed clauses can be placed before or after the clause bundles.</p>
+      </li>
+      <li>If the selected clause has more than one related clause configuration record, select the desired clause configuration record from the <b>Clause Configuration</b> field.</li>
+      <li>
+        (Optional) Click
+        <b>+ Add Creation Condition</b>
+        to add creation conditions to the clause bundle step.
+        <ul>
+          <li>Creation conditions determine if a step is created and executed. Use step creation conditions if a definition has multiple clause steps.</li>
+          <li>For more information on adding step creation conditions, see <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref>.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Note</p>
+    <ul>
+      <li>If a definition contains several clause and clause bundle steps and those bundles contain some of the same clauses (overlapping clauses), the overlapping clauses are only added once, regardless of how many bundles contain those clauses. Additionally, if your step has creation conditions with both the Reevaluate and Deletable options checked, Orchestrate may not remove all clauses if another clause bundle contains those overlapping clauses and continues to match its own step conditions.</li>
+      <li>
+        <p>Owing to Salesforce limitations, no more than 100 clause steps can be added to a definition. If more than 100 clauses are required, split the definition in two and apply these definitions sequentially.</p>
+      </li>
+    </ul>
+  </conbody>
+</concept>

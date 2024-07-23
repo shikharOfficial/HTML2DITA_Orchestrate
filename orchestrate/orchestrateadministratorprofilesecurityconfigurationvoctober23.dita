@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t3a98f2" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Administrator Profile Security Configuration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <ol>
+      <li>
+        <p>In Setup, enter Profiles in the Quick Find.</p>
+      </li>
+      <li>
+        <p>Select the System Administrators profile.</p>
+        <p>You can enable and disable the Enhanced Profile Editor from Setup > Customize > User Interface > Check/Un-Check Enable Enhanced Profile User Interface. If you are unsure how to match up these settings with the Enhanced Editor, temporarily disable it while configuring Conga Orchestrate.</p>
+      </li>
+      <li>
+        <p>Click Edit. Make sure that your settings match the ones below.</p>
+        <ul>
+          <li>
+            <p>Check the <b>Conga Orchestrate Visible</b> checkbox</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Custom Reports</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Default Team</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Definition Initiators</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Definitions </b>drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Process Team Members</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default Off</b> from the <b>Conga Orchestrate Setup</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Virtual Steps</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Conga Orchestrate Help</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Process Groups</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default On</b> from the <b>Process Tasks</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Select <b>Default Off</b> from the <b>Recurring Business Processes</b> drop-down list box.</p>
+          </li>
+          <li>
+            <p>Check the <b>Read</b>, <b>Create</b>, <b>Edit </b>and <b>Delete</b>, <b>View All</b>, and <b>Modify All</b> checkboxes for:</p>
+            <ul>
+              <li>
+                <p>Business Processes</p>
+              </li>
+              <li>
+                <p>Default Team Members</p>
+              </li>
+              <li>
+                <p>Step Reassignments</p>
+              </li>
+              <li>
+                <p>Team Members</p>
+              </li>
+              <li>
+                <p>Virtual Steps</p>
+              </li>
+              <li>
+                <p>Process Archive</p>
+              </li>
+              <li>
+                <p>Process Groups</p>
+              </li>
+              <li>
+                <p>Process Tasks</p>
+              </li>
+              <li>
+                <p>Delayed Steps</p>
+              </li>
+              <li>
+                <p>Recurring Business Processes</p>
+              </li>
+              <li>
+                <p>Test PCEs</p>
+              </li>
+              <li>
+                <p>Test PCE Steps</p>
+              </li>
+              <li>
+                <p>Callout Error Queues</p>
+              </li>
+              <li>
+                <p>Custom Reports</p>
+              </li>
+              <li>
+                <p>Definitions</p>
+              </li>
+              <li>
+                <p>Definition Criteria</p>
+              </li>
+              <li>
+                <p>Definition Initiators</p>
+              </li>
+              <li>
+                <p>Definition Initiators Criteria</p>
+              </li>
+              <li>
+                <p>Process Team Members</p>
+              </li>
+              <li>
+                <p>Stages</p>
+              </li>
+              <li>
+                <p>Steps</p>
+              </li>
+              <li>
+                <p>Step Assignments</p>
+              </li>
+              <li>
+                <p>Step Creation Conditions</p>
+              </li>
+              <li>
+                <p>Step Field Updates</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Click <b>Save</b>.</p>
+      </li>
+      <li>
+        <p>Go to the <b>Selected Record Type</b> section.</p>
+      </li>
+      <li>
+        <p>Select <b>Edit </b>next to Business Processes and remove the Sample Process Record Type from the Selected Record Types list. </p>
+      </li>
+      <li>Click <b>Save</b>.</li>
+      <li>
+        <p>Go to the Enabled Visualforce Page Access section and click <b>Edit</b>. </p>
+      </li>
+      <li>
+        <p>Enable Visualforce Page Access to all pages that begin with "FSTR".</p>
+      </li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </conbody>
+</concept>

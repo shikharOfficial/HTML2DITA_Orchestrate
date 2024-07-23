@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tab6f3d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Record Match Initiators - Button Click vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Aug 20, 2021</p>
+    <p>After you have configured and saved the <xref href="orchestratecreatingadefinitioninitiatorvsummer21.dita#t27ef18" scope="local" format="dita">Definition Initiator</xref>, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator and related Definition. Watch <xref href="https://share.vidyard.com/watch/BDYCLtqss8SXT7EhddVFVE" scope="external" format="html">the video</xref> to see it in action.</p>
+  </conbody>
+</concept>

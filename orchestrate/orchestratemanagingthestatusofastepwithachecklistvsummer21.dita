@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t6ad2ca" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Managing the Status of a Step with a Checklist vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified on May 14, 2021</p>
+    <p>Checklists are only available for the Create Record step type. When a checklist is used, the completion status of the step is defined by the checklist. Once all the checklist items are complete, the step is considered complete.</p>
+    <p>Once created and configured in a Step, the checklist items appear in a list on the Step Detail screen.</p>
+    <p>During process execution, the checklist appears on the Task Detail screen. You do not have to edit the task to access the checklist items. The status of the task automatically changes to <i>Completed</i> when all of the checklist items are completed.</p>
+    <p>To create a Checklist:</p>
+    <ol>
+      <li>Create or edit a step with a step type of <xref href="orchestrateusingacustomobjectasaprocessobjectandstepvoctober23.dita#tc29aeb" scope="local" format="dita">Create Record</xref>.</li>
+      <li>Select Checklist in the Status Managed By field.</li>
+      <li>
+        In the Step Checklist Items section, select the + Add Checklist Item link to add a checklist item.
+        <ul>
+          <li>Label the checklist item by typing in the Item field.</li>
+          <li>Use the Order field to number the checklist items.</li>
+        </ul>
+      </li>
+      <li>Use the trash can icon to delete any checklist items you wish to remove from the list.</li>
+      <li>Click the Save button.</li>
+    </ol>
+    <p>If you have configured a <xref href="orchestrateusingacustomobjectasastepvoctober23.dita#t05a78d" scope="local" format="dita">custom object as a step</xref>, a new custom lookup relationship field will need to be added to your custom object that looks up to the Checklist object. The API name of the field needs to be checklist__c. Also, in order to view the checklist items on a custom object's page layout in Classic, a Visualforce page will need to be created and added to the page layout.</p>
+  </conbody>
+</concept>

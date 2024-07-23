@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tce3402" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Page Layouts vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 21, 2023</p>
+    <p>This section details page layouts including:</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestrateeditingaccountpagelayoutsforrolesvjune23.dita#t254276" scope="local" format="dita">Editing Account Page Layouts for Roles</xref>
+      </li>
+      <li>
+        <xref href="orchestrateeditingaccountpagelayoutsforbusinessprocesses.dita#td04f93" scope="local" format="dita">Editing Account Page Layouts for Business Processes</xref>
+      </li>
+      <li>
+        <xref href="orchestrateeditingcontactpagelayoutsforbusinessprocesses.dita#t3ac8eb" scope="local" format="dita">Editing Contact Page Layouts for Business Processes</xref>
+      </li>
+      <li>
+        <xref href="orchestrateaddingprocessdetailsandprocessvisualbuttonstopagelayouts.dita#t35ee80" scope="local" format="dita">Adding Process Details and Process Visual Buttons to Page Layouts</xref>
+      </li>
+      <li>
+        <xref href="orchestrateaddingasubtypetotheeventpagelayoutvjune23.dita#tf5004e" scope="local" format="dita">Adding a Sub-Type to the Event Page Layout</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingamasterpagelayoutvoctober23.dita#t9c9e2f" scope="local" format="dita">Creating a Master Page Layout</xref>
+      </li>
+      <li>
+        <xref href="orchestrateoverridingthetaskandeventviewpagewiththecongaorchestratevisualforcepagevoctober23.dita#t56001e" scope="local" format="dita">Overriding the Task and Event View Page with the Conga Orchestrate Visualforce Page</xref>
+      </li>
+    </ul>
+    <p/>
+  </conbody>
+</concept>

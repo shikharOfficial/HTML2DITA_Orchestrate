@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t7b3f3b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Introduction to Conga Orchestrate vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Aug 20, 2021</p>
+    <p>With Conga Orchestrate™, you can define and execute real-world processes end-to-end in a Salesforce environment.</p>
+    <p>The container holding process Steps is called a Definition. A Definition is a template for a process, and the Definition includes one or more Steps. At each step, a record is created, email sent, field updated, the document generated, or API callout sent. With an Event Placeholder, Conga Orchestrate waits for an event to be scheduled on the Salesforce calendar that will be used to drive other Steps.</p>
+    <p>First, you name a new process Definition and set conditions under which a created or updated Salesforce record will run the defined process. Then, you add Steps to the Definition, specifying for each Step what happens, who is responsible, when it is due, and more. Steps can progress one at a time, in parallel or as a group (Stages), and conditionally based on criteria you set. Once you have added Steps to the Definition, you have a process template. Defined processes are associated with your Contacts and Accounts. <xref href="orchestrateintroductiontocongaorchestratescreensinsalesforce.dita#t2249ce" scope="local" format="dita">See how it looks.</xref></p>
+    <p>Processes can be defined on a Campaign, Case, Contract, Lead, Opportunity, Business Process (a custom object added by Conga Orchestrate) as well as any custom object. When you create or edit records in Salesforce, Conga Orchestrate monitors these actions and executes processes when your Definitions match the record.</p>
+    <p>Here is how to get started:</p>
+    <ol>
+      <li>Follow the <xref href="orchestrateinstallingcongaorchestratevoctober23.dita#t3b3c7f" scope="local" format="dita">installation</xref> and <xref href="orchestratebasicsetup.dita#tfb6f85" scope="local" format="dita">setup</xref> instructions.</li>
+      <li>Watch our <xref href="https://share.vidyard.com/watch/W1t86G9RKUtBLNoLkCwFXG" scope="external" format="html">Conga Orchestrate Videos</xref>.</li>
+      <li>Learn how to <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">create</xref> and <xref href="orchestraterunningprocesses.dita#t131807" scope="local" format="dita">use</xref> your own process definitions.</li>
+    </ol>
+    <p>Ready to get started? First, some initial setup is required, which you will find in <xref href="orchestratebasicsetup.dita#tfb6f85" scope="local" format="dita">Basic Setup</xref>. Once the setup is complete, we recommend you watch our <xref href="https://share.vidyard.com/watch/W1t86G9RKUtBLNoLkCwFXG" scope="external" format="html">Videos</xref>, which illustrate setting up processes that utilize various pieces of the Conga Orchestrate functionality.</p>
+  </conbody>
+</concept>

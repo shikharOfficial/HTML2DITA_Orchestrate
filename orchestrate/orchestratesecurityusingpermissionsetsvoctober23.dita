@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t7b6557" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Security Using Permission Sets vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Use permission sets to assign security settings for Conga Orchestrate users.</p>
+    <p>Conga Orchestrate comes with two permission sets you can use: <i>New Conga Orchestrate Standard User</i> and <i>New Conga Orchestrate Administrative User</i>.</p>
+    <p>The New Conga Orchestrate Standard User permission set is for end users (people kicking off or participating in processes) and the New Conga Orchestrate Administrative User permission set is for users creating processes as well as participating in them. During upgrades, Conga Orchestrate assigns these permission sets to users based on their Salesforce profile. When you add new users between releases, you manually assign the appropriate permission set to each user.</p>
+    <p>To assign Conga Orchestrate security using permission sets:</p>
+    <ol>
+      <li>In Setup, use the Quick Find and enter permission sets.</li>
+      <li>Select <b>Permission Sets</b>. </li>
+      <li>Select the <b>New Conga Orchestrate Standard User</b> permission set.</li>
+      <li>Click the <b>Manage Assignments button.</b></li>
+      <li>Click the <b>Add Assignments </b>button.</li>
+      <li>Select the checkbox next to all users you will add to this permission set and click the <b>Assign</b> button.</li>
+      <li>Click <b>Done</b>.</li>
+      <li>Repeat these steps for the New Conga Orchestrate Administrative User permission set.</li>
+    </ol>
+  </conbody>
+</concept>

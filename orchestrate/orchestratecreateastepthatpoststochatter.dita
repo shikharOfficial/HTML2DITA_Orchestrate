@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t44f2b5" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Create a Step that Posts to Chatter</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>You can leverage a Step within a Definition to automatically post content to Chatter. This Step Type allows you to post both static and dynamic text via Chatter on a specific record.</p>
+    <p>The Post to Chatter Step provides functionality to reference Salesforce merge fields to dynamically merge data specific to the record in use, such as Billing Address and Contact Name. This Step Type also allows you to mention specific users within the Chatter post.</p>
+    <p>
+      <b>Prior to creating a Post to Chat Step, ensure that the Chatter Feed feature is enabled for the referenced object in the Step. Enable Chatter Feed Tracking:</b>
+    </p>
+    <ol>
+      <li>Navigate to Salesforce Setup.</li>
+      <li>In Setup, enter Feed Tracking in the Quick Find search box, then select Feed Tracking.</li>
+      <li>Select Enable Feed Tracking.</li>
+      <li>Click Save.</li>
+    </ol>
+    <p>
+      <b>To create a Post to Chatter Step:</b>
+    </p>
+    <ol>
+      <li>Navigate to the specific Definition record where the Step will be placed.</li>
+      <li>In the Steps section, click New Step If you already have steps in a Definition, you can either use the New Child link next to the Step name in the Definition screen or you can use the New Child Step button while viewing the existing Step, located near the bottom of the screen. Click the button and change the Step Type to Send Email in the Step Edit screen.</li>
+      <li>
+        Complete the fields:
+        <ul>
+          <li>Step Name - Enter the name for this step.</li>
+          <li>Step Type - Select Post to Chatter.</li>
+          <li>Parent Step - The Parent Step is the step that once completed, will initiate this new step. Leave it blank if this step needs to initiate immediately when the process starts.</li>
+          <li>Parent Stage - If a step has a Parent Stage, all of the Steps in the Parent Stage must complete before this Step creates.</li>
+          <li>Definition - This is automatically populated based on the Definition that the Step is created for.</li>
+          <li>Stage - Select the Stage with which this Step should be associated with, if applicable.</li>
+          <li>Chatter Notification Message - This field determines the information that is posted to Chatter</li>
+          <li>
+            Merge Fields - Merge fields allow you to dynamically reference information from Salesforce fields that is specific to a record. Choose the Object and Field, then click Insert Field to Chatter Notification Message to insert merge fields into the Chatter post.
+            <ul>
+              <li>Use Salesforce merge fields that reference user IDs, such as {!contract.OwnerId}, in the Chatter Notification Message, to send a notification to a user dynamically. You can also hard-code a specific user ID in the Chatter Notification Message, such as {0051H000008G23sKAC}, to reference and notify the same user every time. This also works to notify Chatter Groups. For example, {0F91H00000052hOSAQ}.</li>
+              <li>Use Salesforce merge fields that reference Object IDs, such as {!contract.id}, to reference and create a hyperlink to a record. Hard-coding a record ID, similar to the example above, will hyperlink to the same record each time.</li>
+            </ul>
+          </li>
+          <li>Delay Creation - This will delay creating the Step until the day specified by the Delay Creation Base Date and Delay Creation Date Adjustment fields. See <xref href="orchestratedelayedsteps.dita#t2a10fb" scope="local" format="dita">Delayed Steps</xref> for more information.</li>
+          <li>Step Creation Conditions - Configure any <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref> required.</li>
+          <li>Click Save.</li>
+        </ul>
+      </li>
+    </ol>
+  </conbody>
+</concept>

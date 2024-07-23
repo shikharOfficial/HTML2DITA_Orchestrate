@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="te43ac0" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Initiating Definitions vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified on Jun 04, 2021</p>
+    <p>You can initiate a definition and kick-start your business process even if your business process does not meet the entry criteria. </p>
+    <p>To Initiate a Definition:</p>
+    <ol>
+      <li>Navigate to your definition.</li>
+      <li>Click the <b>Initiate Definition</b> button. The business Process search bar appears with the most recently updated business process displayed on top. </li>
+      <li>Select a business process from the list displayed. You can also type the ID of the business process to search it</li>
+    </ol>
+    <p>The business process is successfully initiated and the pop-up message displays a success message along with a link to navigate to the created record. </p>
+  </conbody>
+</concept>

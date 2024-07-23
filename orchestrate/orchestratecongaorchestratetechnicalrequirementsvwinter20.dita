@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ta609b4" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Conga Orchestrate Technical Requirements vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Aug 16, 2022</p>
+    <p>To install and use Conga Orchestrate, you must have one of the following from each category:</p>
+    <p>Salesforce Edition:</p>
+    <ul>
+      <li>Performance / Unlimited</li>
+      <li>Enterprise</li>
+      <li>Force.com</li>
+      <li>Developer</li>
+    </ul>
+    <p>Internet Browsers (latest stable version of):</p>
+    <ul>
+      <li>Firefox</li>
+      <li>Chrome</li>
+      <li>Safari (Mac only)</li>
+      <li>Edge</li>
+    </ul>
+    <p>Feature Licenses</p>
+    <ul>
+      <li>Marketing User</li>
+    </ul>
+  </conbody>
+</concept>

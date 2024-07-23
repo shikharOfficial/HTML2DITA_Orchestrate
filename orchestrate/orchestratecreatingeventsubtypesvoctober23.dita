@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t214fb0" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating Event Sub-Types vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>Important</p>
+    <p>Check the Enable Event Placeholder Step checkbox in the Setup Information section of Conga Orchestrate Setup. This setting creates the sub_type__c field.</p>
+    <p>When a process step is an event placeholder, Conga Orchestrate waits for an event with a matching sub-type to be created before child step(s) can execute.</p>
+    <p>To configure event sub-types:</p>
+    <ol>
+      <li>In Setup, enter Activity Custom Fields in the Quick Find.</li>
+      <li>Select <b>Activity Custom Fields</b>. </li>
+      <li>Select the <b>Sub Type</b> field label.</li>
+      <li>Click <b>Edit </b>next to a sub type value.</li>
+      <li>Enter the sub-type label and API name and click <b>Save</b>.</li>
+      <li>Repeat for all needed sub-types.</li>
+      <li>Click the <b>Deactivate </b>link next to any value not in use. t-event-sub-typesedit-event-sub-types</li>
+    </ol>
+  </conbody>
+</concept>

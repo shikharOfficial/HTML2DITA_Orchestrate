@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf412b7" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating Process Definitions from Lucidchart Diagrams vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 21, 2023</p>
+    <p>Create new Process Definitions from LucidChart diagrams. For more information and details on the integration, see <xref href="https://documentation.conga.com/display/ORCHESTRATE/Lucidchart+Integration+with+Conga+Orchestrate" scope="external" format="html">Lucidchart Integration with Conga Orchestrate</xref>.</p>
+    <p>You must have Conga Orchestrate version 14 or greater to use this feature.</p>
+    <p>To create a new Process Definition from a Lucidchart diagram:</p>
+    <ol>
+      <li>In Lucidchart, click File → Export → CSV of Shape Data. This exports a CSV file to your machine.</li>
+      <li>From any Definition list view (other than Recently Viewed, which does not display custom buttons) click Create From Lucidchart.</li>
+      <li>Choose File and select the exported file from Lucidchart</li>
+      <li>Type in a name for your new Definition.</li>
+      <li>Choose the Process Object on which processes using this Definition will run.</li>
+      <li>Choose the Step Object and Record Type.Note: All created steps will use this object and record type combination.</li>
+      <li>Click Create New Definition. If the import and creation is successful, Orchestrate redirects to the newly created Definition. Any errors will display on the page.</li>
+      <li>Edit the Definition and any Steps. Change step types, assignees, due dates, task comments, and add conditions and validations as desired.</li>
+    </ol>
+  </conbody>
+</concept>

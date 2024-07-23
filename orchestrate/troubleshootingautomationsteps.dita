@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t871af8" xml:lang="en-us">
+  <title class="- topic/title ">Troubleshooting Automation Steps</title>
+  <conbody>
+    <p>To log Automation Steps for debugging:</p>
+    <ol>
+      <li>Navigate to Setup in Salesforce and use the Quick Find search box to located Custom Settings.</li>
+      <li>Click Manage hyperlink.</li>
+      <li>
+        <p>Click Edit and check the Enable RPA Logging checkbox field. </p>
+        <p>When finished diagnosing an issue, make sure to uncheck the checkbox. Leaving the box checked will create unnecessary logging records in the org for any Automation Steps that are fired.</p>
+      </li>
+      <li>Recreate the issue where the Automation Step is not firing.</li>
+      <li>Navigate to the Reports tab.</li>
+      <li>Locate the Web Service Callout Errors Queue report.</li>
+      <li>Locate the record created when you fired the Automation Step.</li>
+      <li>Click into the record and locate the Web Service Callout URL.</li>
+      <li>
+        <p>Review the contents of the Web Service Callout Body field for information about the request. </p>
+        <p>When retrieving this information, follow the previous steps to uncheck the Enable RPA Logging on the Conga Orchestrate Settings custom setting.</p>
+      </li>
+    </ol>
+  </conbody>
+</concept>

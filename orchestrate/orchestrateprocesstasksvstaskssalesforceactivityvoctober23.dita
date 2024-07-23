@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t4019d9" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Process Tasks vs. Tasks (Salesforce Activity) vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 29, 2023</p>
+    <p>This table lists the differences between native Salesforce Tasks and Process Tasks (custom task objects created by Conga Orchestrate).</p>
+    <table>
+      <tgroup cols="3">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <tbody>
+          <row>
+            <entry/>
+            <entry>Process Task or Custom Object Step</entry>
+            <entry>Standard Task (Activity)</entry>
+          </row>
+          <row>
+            <entry>Track metrics for completion</entry>
+            <entry>Yes</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Available for complex Business processes</entry>
+            <entry>Yes</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Trigger the launch of the next task in a business process</entry>
+            <entry>Yes</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Custom field limit</entry>
+            <entry>500</entry>
+            <entry>100</entry>
+          </row>
+          <row>
+            <entry>Formula fields</entry>
+            <entry>Yes</entry>
+            <entry>Limited</entry>
+          </row>
+          <row>
+            <entry>Additional long text area fields</entry>
+            <entry>Yes</entry>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>Additional Rich Text Fields</entry>
+            <entry>Yes</entry>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>Roll up summary fields</entry>
+            <entry>Yes</entry>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>Available in Queues</entry>
+            <entry>Yes</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Show as Open Activities</entry>
+            <entry>No</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Show in Activity History</entry>
+            <entry>No</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Archived after 1 year</entry>
+            <entry>No</entry>
+            <entry>Yes</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

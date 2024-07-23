@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tb88b77" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Manually Initiate a Process</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Once you have defined your process with a Definition and marked it Active, you can use it with records in Salesforce. Because you can utilize other objects as Process Objects, initiating a process will depend on the Definition configuration. Conga Orchestrate comes with a custom Process Object called Business Process. The sections below describe manually initiating your Definition which includes Business Process in the configured Object Name field.</p>
+    <p>Once you have defined your process with a Definition and marked it Active, you can use it with records in Salesforce. Because you can utilize other objects as Process Objects, initiating a process will depend on the Definition configuration. Conga Orchestrate comes with a custom Process Object called Business Process. The sections below describe manually initiating your Definition which includes Business Process in the configured Object Name field.</p>
+    <p>To run a single Business Process:</p>
+    <ol>
+      <li>Navigate to the Contact record to which you want to start a process.</li>
+      <li>Navigate to the Business Process related list.</li>
+      <li>Select the New button. </li>
+      <li>Select the Record Type to which your process applies and select the Continue button.</li>
+      <li>Enter the required fields. The subject uniquely identifies this process among others like it that may be running. Due Date indicates when the Business Process should be completed. Other fields automatically populate upon save if not configured.</li>
+      <li>Select Save.After saving, the Business Process Detail page displays. If the Business Process you started was configured to create a Task immediately, it will be visible under Activities or Next Steps.</li>
+    </ol>
+    <p>Once all the steps in a process are either completed or canceled, the Business Process Status field will automatically update. If the steps are completed, the Business Process status will be updated to Completed. If the steps are canceled, the Business Process Status will be updated to Canceled. The Completed By and Completed Date fields will also be automatically populated.</p>
+    <p>To run a single process defined for another process object (Campaign, Case, Contract, Lead, Opportunity, or your own custom object):</p>
+    <ol>
+      <li>Navigate to the Contact record to which you want to start a process.</li>
+      <li>Navigate to the related list of the process object.</li>
+      <li>Select the New button. </li>
+      <li>Select the Record Type to which your process applies and select the Continue button. </li>
+      <li>Enter the required fields.</li>
+      <li>Select Save. </li>
+    </ol>
+    <p>After saving, the Process Object detail page displays. If the process you started was configured to create a Task immediately, it will be visible under Activities or Next Steps.</p>
+    <p>A process will be considered finished when all the tasks are either completed or canceled.</p>
+  </conbody>
+</concept>

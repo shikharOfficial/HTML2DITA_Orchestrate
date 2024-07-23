@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc5c357" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Automatically Create a Document after Adding Clause Bundles with Conga Orchestrate</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Create a Definition that automatically generates a document after completing Clause Bundle steps. This allows users to automate Clause Bundle selection and the creation of a contract document that includes the selected Clauses.</p>
+    <p>To create a Definition that generates a document after completing Clause Bundle steps:</p>
+    <ol>
+      <li>Navigate to the existing Definition or <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">create a new Definition</xref>.</li>
+      <li><xref href="orchestrateprocessstages.dita#tabf5c2" scope="local" format="dita">Create a new Stage</xref> for the Clause Bundle steps.</li>
+      <li>Click New Stage Step on the stage.</li>
+      <li>Change the Step Type field value to Clause Bundle.</li>
+      <li>Begin typing the desired Clause Bundle name in the Clause Bundle Name field and select the Clause Bundle.</li>
+      <li>Enter a numeric value in the Clause Bundle Sort Order field.</li>
+      <li>Click Save.</li>
+      <li>
+        <p>Repeat Steps 3 - 7 for each Clause Bundle needed.</p>
+        <p>Note</p>
+        <p>Each Clause Bundle for the contract document requires its own Clause Bundle step.</p>
+      </li>
+      <li>Navigate back to the stage and Click New Stage Child Step.</li>
+      <li>Change the Step Type field's value to the Generate Document.</li>
+      <li>Fill out the required Step Name field and customize the Generate Document step by selecting field values for the Application, Source, and Merge Template fields.Note: For more information on the Generate Document step, see <xref href="/pages/createpage.action?spaceKey=ORCHESTRATE&amp;title=Creating+a+Step+that+Generates+a+Document&amp;linkCreation=true&amp;fromPageId=143888717" scope="external" format="html">Creating a Step that Generates a Document</xref></li>
+      <li>Click Save.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

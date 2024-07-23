@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2b9d4b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Conga Orchestrate Scaling Enhancement</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>The Conga Orchestrate 14.27 package, and all packages following version 14.27, feature scaling enhancements that reduce the overall product footprint in Salesforce orgs.</p>
+    <p>Notes</p>
+    <ul>
+      <li>These scaling enhancements do not impact the current execution of processes. Although if users configure new object for use, Conga Orchestrate uses the new Process Instance object to track required fields, instead of putting required fields on the new objects themselves.</li>
+      <li>You must have Conga Orchestrate version 14.27 or higher to leverage these scaling enhancements.</li>
+    </ul>
+  </conbody>
+</concept>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tdfc24c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Essential Configuration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>To fully integrate Conga Orchestrate with your Salesforce organization, some initial setup is required. The instructions that follow take you through configuring Conga Orchestrate, such as adding Conga Orchestrate object-related lists to your customized Account and Contact page layouts.</p>
+    <p>To add these components, use our <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">automatic setup</xref> functionality, or follow the instructions in <xref href="orchestratemanualsetupvoctober23.dita#t40504b" scope="local" format="dita">manual setup</xref>. Once the essential configuration steps are complete, you will be ready to automate your business processes.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t8d86bf" xml:lang="en-us">
+  <title class="- topic/title ">Notes</title>
+  <body>
+    <ol>
+      <li>
+        <p>If you manually add the Process_Instance__c lookup field to an object that was configured with the old fields in Version 13, double-check that the trigger running it contains nothing but the following code snippet: FSTR.COTriggerHandler.handleProcessObjectTrigger();</p>
+        <p>If the Conga Orchestrate trigger code was inserted into an existing trigger with other custom code created by a client, ensure that the Conga Orchestrate snippet changes to the code above (if not already thus changed).</p>
+      </li>
+      <li>
+        <p>A process instance record is only created and attached to a process or step object if that object has a process instance lookup field with the API name Process_Instance__c. Conga Orchestrate does not allow that to be mapped to a field with another name. It must use that specific API name, but the field label does not matter.</p>
+      </li>
+      <li>
+        <p>The process instance houses all information previously stored on the step or process object to give Conga Orchestrate the information it needs to execute definitions. This reduces the product's footprint on objects, reducing the previously required 14 (or more) fields to only 2 required fields and the process object lookup fields. To view data that was previously stored on the object, such as a definition that was executed, navigate to the process instance and check the definition field.</p>
+      </li>
+      <li>
+        <p>The new process instance results in no changes to approval or checklist objects. These objects are outside the realm of step or process objects and therefore function the same.</p>
+      </li>
+    </ol>
+    <p/>
+  </body>
+</topic>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc0208c" xml:lang="en-us">
+  <title class="- topic/title ">To whitelist OAuth addresses</title>
+  <conbody>
+    <p>If you are using trusted IP ranges, enter the static IP addresses below in Salesforce Setup.</p>
+  </conbody>
+</concept>

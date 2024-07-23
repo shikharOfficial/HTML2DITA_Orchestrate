@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tfc0605" xml:lang="en-us">
+  <title class="- topic/title ">To create the custom process details button</title>
+  <body>
+    <ol>
+      <li>Go to <b>Setup</b> and navigate to the process object you desire to create the button.</li>
+      <li>Select the<b> Buttons, Links, and Actions</b> link and click <b>New Button or Link</b>.</li>
+      <li>Enter a <b>Label</b>, <b>Name</b>, and <b>Description</b> for the button.</li>
+      <li>
+        Select these parameters:
+        <ul>
+          <li><b>Display Type</b>: Detail Page Button</li>
+          <li><b>Behavior</b>: Display in the new window</li>
+          <li><b>Content Source</b>: URL</li>
+        </ul>
+      </li>
+      <li>
+        Configure the URL beginning with /apex/FSTR__ProcessDetails and add parameters (some required, others optional).
+        <ul>
+          <li>Required Parameters</li>
+        </ul>
+        <ul>
+          <li>id – Id of the process object.</li>
+          <li>objType – API object name of the process object (Business_Process__c).</li>
+        </ul>
+      </li>
+      <li>Click <b>Save</b>.</li>
+      <li>
+        <p>Add the button to all applicable Page Layouts on the Process Object.</p>
+        <p>By default, the report displays the Account, Process Name, Step Name, Due Date, Status, Step Object Type, Actual/Estimated (whether the Step has been created or its data is estimated), Assignee, Role, Parent Step, and Stage.</p>
+        <ul>
+          <li>
+            <p>Optional Parameters (from columns on the Process Object; use API Names)</p>
+            <p>You may add up to two additional fields of data to display from the Process Object (p1 and p2).</p>
+            <ul>
+              <li>p1 – API name, parameter 1</li>
+              <li>p2 – API name, parameter 2.</li>
+            </ul>
+          </li>
+          <li>
+            You may add an additional Column Label (ecl) with an identical value (ecv) on all report rows returned.
+            <ul>
+              <li>ecl – Extra column label</li>
+              <li>ecv – Extra column value.</li>
+            </ul>
+          </li>
+          <li>
+            Configure the Report Data Export to Excel / CSV
+            <ul>
+              <li>xl – True or False (defaults to true if omitted).</li>
+            </ul>
+          </li>
+        </ul>
+        <p>Example</p>
+        <pre>/apex/FSTR__ProcessDetails?id={!Insurance_Policy__c.Id}&amp;objType=Insurance_Policy__c&amp;p1=Premium__c&amp;p2=Type__c&amp;xl=false</pre>
+        <p>The example URL looks at the selected insurance policy record and displays the default columns (described above) as well as the 'Premium__c' and 'Type__c' fields; the report is displayed on screen, rather than exporting to Excel.</p>
+      </li>
+    </ol>
+  </body>
+</topic>

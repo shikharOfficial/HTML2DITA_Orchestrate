@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t8e38cd" xml:lang="en-us">
+  <title class="- topic/title ">Upgrading from Conga Orchestrate Version 12</title>
+  <conbody>
+    <p>To upgrade from version 12:</p>
+    <ol>
+      <li>
+        <p>Upgrade to version 12.14.3: <xref href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g00000081NMAAY" scope="external" format="html">https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g00000081NMAAY</xref></p>
+      </li>
+      <li>
+        <p>Upgrade to version 13.4.7: <xref href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g000000pCLn" scope="external" format="html">https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g000000pCLn</xref></p>
+      </li>
+      <li>
+        <p>Upgrade to version 14.18.2: <xref href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g000000KKjz" scope="external" format="html">https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g000000KKjz</xref></p>
+      </li>
+      <li>
+        <p>Upgrade to version 14.165: <xref href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4u000000RcQX" scope="external" format="html">https://login.salesforce.com/packaging/installPackage.apexp?p0=04t4u000000RcQX</xref></p>
+      </li>
+    </ol>
+  </conbody>
+</concept>

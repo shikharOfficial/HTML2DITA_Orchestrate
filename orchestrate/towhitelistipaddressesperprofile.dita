@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="td6f5d4" xml:lang="en-us">
+  <title class="- topic/title ">To whitelist IP addresses per profile</title>
+  <conbody>
+    <p>Only add the IP addresses below if your organization restricts IP ranges. Adding these IP addresses without whitelisting other ranges may lock users out of Salesforce.</p>
+    <ol>
+      <li>Go to Setup > Manage Users > Profiles > (select the profile name) > Login IP Ranges.</li>
+      <li>
+        <p>Enter the IP addresses:</p>
+        <table>
+          <tgroup cols="2">
+            <colspec colname="c1"/>
+            <colspec colname="c2"/>
+            <thead>
+              <row>
+                <entry>Start IP Address</entry>
+                <entry>End IP Address</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>104.214.119.36</entry>
+                <entry>104.214.119.36</entry>
+              </row>
+              <row>
+                <entry>13.85.76.19</entry>
+                <entry>13.85.76.19</entry>
+              </row>
+              <row>
+                <entry>13.85.76.166</entry>
+                <entry>13.85.76.166</entry>
+              </row>
+              <row>
+                <entry>13.85.75.231</entry>
+                <entry>13.85.75.231</entry>
+              </row>
+              <row>
+                <entry>13.84.158.191</entry>
+                <entry>13.84.158.191</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

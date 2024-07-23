@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t115dbf" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Default Team Members vOctober-23</title>
+  <shortdesc>Created by  William Abernathy on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>The Default Team Members functionality enables you to specify team members for all accounts a given account owner (user) owns.</context>
+    <steps>
+      <step>
+        <cmd>Pick the <b>Default Teams</b> tab.</cmd>
+      </step>
+      <step>
+        <cmd>Use the lookup button to select a user that owns account records.</cmd>
+      </step>
+      <step>
+        <cmd>Use the lookup button to add team members in the Default Team Members section.</cmd>
+      </step>
+      <step>
+        <cmd>Select the team role for each user. You can add, change, or remove the Team Role picklist values in the Team Members object. To set up team member roles:
+          Now, when a new account owned by this user is created, their default team populates with these team members and team roles. Assign steps within your definitions to team members by choosing “Role” as the assignee type.</cmd>
+        <substeps>
+          <substep>
+            <cmd>In Setup, enter Objects in the Quick Find. Select <b>Object Manager</b> (or <b>Objects</b> in Salesforce Classic).</cmd>
+          </substep>
+          <substep>
+            <cmd>Select <b>Team Member</b>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Select the <b>Team Role</b> field.</cmd>
+          </substep>
+          <substep>
+            <cmd>Add or edit any roles needed. See <xref href="orchestrateeditingaccountpagelayoutsforrolesvjune23.dita#t254276" scope="local" format="dita">Editing Account Page Layouts for Roles</xref> to add the Team Member related list to your account page layouts.</cmd>
+          </substep>
+          <substep>
+            <cmd>Decide whether to apply the team you’ve configured to all accounts owned by the selected user by checking the <b>On Save, Automatically Assigned Default Team Members</b> checkbox.</cmd>
+          </substep>
+          <substep>
+            <cmd>Click <b>Save</b>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+    <postreq/>
+  </taskbody>
+</task>

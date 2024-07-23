@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tb129f0" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Security Profile Configuration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>After you install Conga Orchestrate, you can configure security via <xref href="orchestratesecurityusingpermissionsetsvoctober23.dita#t7b6557" scope="local" format="dita">permission sets</xref>, profiles, or a combination of both. If you have already followed the directions for permission sets, you can decide whether to configure your profiles.</p>
+    <p>To configure profiles, follow the steps for <xref href="orchestrateenduserprofilesecurityconfigurationvoctober23.dita#tee6a0c" scope="local" format="dita">End User Security</xref> access and <xref href="orchestrateadministratorprofilesecurityconfigurationvoctober23.dita#t3a98f2" scope="local" format="dita">Administrator Security</xref>. An end user executes or participates in a process. An administrator defines processes. Whether you chose to grant access to all users or grant access to administrators when installing Conga Orchestrate, configure your security profiles to match. Apply these changes to the appropriate custom profiles in your organization.</p>
+    <p>When you upgrade Conga Orchestrate, your security settings are not overridden. Therefore, it is safe to choose <b>Grant Access to All Users</b> when upgrading Conga Orchestrate.</p>
+  </conbody>
+</concept>

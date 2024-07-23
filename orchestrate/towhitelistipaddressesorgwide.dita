@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t7d4b54" xml:lang="en-us">
+  <title class="- topic/title ">To whitelist IP addresses org-wide</title>
+  <body>
+    <ol>
+      <li>
+        <p>Go to Setup > Security Controls > Network Access.</p>
+      </li>
+      <li>
+        <p>Click <b>New</b>.</p>
+      </li>
+      <li>
+        <p>Enter the IP addresses:</p>
+        <table>
+          <tgroup cols="2">
+            <colspec colname="c1"/>
+            <colspec colname="c2"/>
+            <thead>
+              <row>
+                <entry>Start IP Address</entry>
+                <entry>End IP Address</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>104.214.119.36</entry>
+                <entry>104.214.119.36</entry>
+              </row>
+              <row>
+                <entry>13.85.76.19</entry>
+                <entry>13.85.76.19</entry>
+              </row>
+              <row>
+                <entry>13.85.76.166</entry>
+                <entry>13.85.76.166</entry>
+              </row>
+              <row>
+                <entry>13.85.75.231</entry>
+                <entry>13.85.75.231</entry>
+              </row>
+              <row>
+                <entry>13.84.158.191</entry>
+                <entry>13.84.158.191</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </li>
+    </ol>
+  </body>
+</topic>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tabf94d" xml:lang="en-us">
+  <title class="- topic/title ">Using the Custom Criteria Filter for Multiple Step Creation Conditions</title>
+  <conbody>
+    <p>If you have more than one step creation condition, use the Custom Criteria Filter to determine how the Step Creation Conditions are evaluated together. Use the And/Or links to automatically insert the corresponding logic in the Custom Criteria Filter, or manually type your filters in the Custom Criteria Filter text box.</p>
+    <p>Use the Reevaluate When to define scenarios that require Step Creation Conditions to be reevaluated. Check the Deletable checkbox option in the Step's Advanced Settings section to delete a created Step automatically when Creation Conditions no longer match.</p>
+    <p>The Advanced Settings section is only present on the Create Record Step Type.</p>
+    <p>For example, you can automatically reevaluate defined Step Creation Conditions when a Contract's primary document File has a new content version uploaded by choosing Event and File Version Change as the field values for the Reevaluate When field.</p>
+  </conbody>
+</concept>

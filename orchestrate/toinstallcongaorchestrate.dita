@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t0d2745" xml:lang="en-us">
+  <title class="- topic/title ">To install Conga Orchestrate</title>
+  <body>
+    <ol>
+      <li>Go to the <xref href="https://appexchange.salesforce.com/listingDetail?listingId=a0N300000058f6JEAQ" scope="external" format="html">AppExchange listing</xref> and click <b>Get It Now</b>.</li>
+      <li>Log in to your Salesforce account.</li>
+      <li>Select <b>Install for Admins</b>.</li>
+      <li>Select<b> Install</b>.</li>
+      <li>Select the <b>Yes, access to these third-party web sites</b> checkbox to use this web service to manage access to Conga Orchestrate features. Conga enables features based on the license level you purchase. This web service reports user counts to Conga for license auditing.</li>
+      <li>Click <b>Continue</b>.</li>
+      <li>Click <b>Done</b> to return to Setup. You will receive an email when the installation is complete.</li>
+    </ol>
+  </body>
+</topic>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t86890e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Importing and Exporting Definitions</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Before exporting and importing Definitions between Salesforce organizations, ensure that you first migrate all Salesforce customizations. This includes Record Types, Page Layouts, Custom Fields, Validation Rules, and so on. The easiest way to migrate customizations is through <xref href="https://help.salesforce.com/articleView?amp;language=en&amp;id=changesets.htm&amp;type=5" scope="external" format="html">Change Sets</xref>.</p>
+    <p>Refer to:</p>
+    <ul>
+      <li>
+        <xref href="orchestrateexportingasingledefinition.dita#tfb94ce" scope="local" format="dita">Exporting a Single Definition</xref>
+      </li>
+      <li>
+        <xref href="orchestrateexportingmultipledefinitions.dita#t4b48a1" scope="local" format="dita">Exporting Multiple Definitions</xref>
+      </li>
+      <li>
+        <xref href="orchestrateimportingdefinitions.dita#t265952" scope="local" format="dita">Importing Definitions</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

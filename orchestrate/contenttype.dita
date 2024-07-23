@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t8cbbfe" xml:lang="en-us">
+  <title class="- topic/title ">Content Type</title>
+  <conbody>
+    <p>Requests made to the API must be encoded as JSON and contain the header</p>
+    <p>Content-Type: application/json</p>
+  </conbody>
+</concept>

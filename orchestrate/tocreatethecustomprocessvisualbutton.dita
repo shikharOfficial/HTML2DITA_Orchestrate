@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t91dd1a" xml:lang="en-us">
+  <title class="- topic/title ">To create the custom process visual button</title>
+  <body>
+    <ol>
+      <li>Go to <b>Setup</b> and navigate to the process object you desire to create the button.</li>
+      <li>Select the<b> Buttons, Links, and Actions</b> link and click <b>New Button or Link</b>.</li>
+      <li>Enter a <b>Label</b>, <b>Name</b>, and <b>Description</b> for the button.</li>
+      <li>
+        Select these parameters:
+        <ul>
+          <li><b>Display Type</b>: Detail Page Button</li>
+          <li><b>Behavior</b>: Display in the new window</li>
+          <li><b>Content Source</b>: URL</li>
+        </ul>
+      </li>
+      <li>
+        Configure the URL beginning with /apex/FSTR__definitionvisual? and add the following parameter:
+        <ul>
+          <li>
+            <p>recid – Id of the process object record. Example</p>
+            <pre>/apex/FSTR__definitionvisual?recid={!Insurance_Policy__c.Id}</pre>
+          </li>
+        </ul>
+      </li>
+      <li>Click <b>Save</b>.</li>
+      <li>Add the button to all applicable Page Layouts on the Process Object.</li>
+    </ol>
+  </body>
+</topic>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="taf9f1d" xml:lang="en-us">
+  <title class="- topic/title ">To create an Event Placeholder step</title>
+  <body>
+    <ol>
+      <li>Navigate to the definition where you will place this step.</li>
+      <li>In the Steps section of the screen, click the <b>New Event Placeholder</b> button.</li>
+      <li>
+        Complete the fields:
+        <ul>
+          <li><b>Step Name:</b> Enter the name for this step.</li>
+          <li><b>Step Type:</b> Select Event Placeholder.</li>
+          <li><b>Event SubType(s):</b> Select the event sub-type to associate with this step. See <xref href="orchestratecreatingeventsubtypesvoctober23.dita#t214fb0" scope="local" format="dita">Creating Event Sub-Types</xref> to configure the sub-types needed for your event placeholders.</li>
+        </ul>
+      </li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </body>
+</topic>

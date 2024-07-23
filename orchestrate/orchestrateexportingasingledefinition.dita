@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="tfb94ce" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Exporting a Single Definition</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>To export a single Definition:</context>
+    <steps>
+      <step>
+        <cmd>Navigate to the Definitions tab.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Definition Name of the definition you desire to export.</cmd>
+      </step>
+      <step>
+        <cmd>Select Export.</cmd>
+      </step>
+      <step>
+        <cmd>The file will download or you will be prompted to save the file to your computer. This will depend on the browser you are working in and your particular browser "file download" settings.</cmd>
+      </step>
+      <step>
+        <cmd>Name and Save the file and note the file location.</cmd>
+      </step>
+    </steps>
+    <postreq>
+    </postreq>
+  </taskbody>
+</task>

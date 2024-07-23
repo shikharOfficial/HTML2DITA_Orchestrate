@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tb1a275" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step with an Event Placeholder vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 29, 2023</p>
+    <p>As part of a process, an event placeholder waits for an event with a matching sub-type to be created before child step(s) can begin. This step holds the place for the event to occur in a process. Any child step from an event placeholder step can reference the event date in its due date and due date adjustment.</p>
+    <p>For example, the screenshot below shows two steps that use event placeholder functionality. The Prepare for Onboarding Meeting task is due five days before the meeting and the Send Meeting Followup task is due the day after the meeting. These two tasks are initiated when an event related to the process object record is created with the Onboarding Meeting subtype.</p>
+    <p>
+      <image href="../images/154928084.jpg"/>
+    </p>
+    <p>You can also have an entire process initiate when events are created. See <xref href="orchestrateeventinitiatorsvwinter20.dita#tc97bda" scope="local" format="dita">Event Initiators</xref> for more information.</p>
+    <p>Important</p>
+    <p>You must check the Enable Event Placeholder Step checkbox field in the Setup Information section of Conga Orchestrate Setup. This setting creates the sub_type__c field.</p>
+  </conbody>
+</concept>

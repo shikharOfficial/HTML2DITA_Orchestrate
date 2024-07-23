@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf11ad9" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step that Creates a Record vSpring-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified on May 20, 2021</p>
+    <p>When a step of this type executes, a standard or custom object record is created. In the Step Edit screen, you need to define the record type to create in addition to the other step parameters.</p>
+    <p>
+      <image href="../images/143889018.jpg"/>
+    </p>
+    <p>Note</p>
+    <p>If you already have steps in the Definition, you can either use the New Child link next to the Step name while viewing the Definition or you can use the New Child Step button while viewing the existing Step (towards the bottom of the page).</p>
+    <ol>
+      <li>Navigate to the Definition where you desire to place this step.</li>
+      <li>In the Steps section of the screen, click the New Step button.</li>
+      <li>
+        Complete the following fields:
+        <ul>
+          <li>Step Name - Enter the name for this Step. This field copies into the Subject when the process executes.</li>
+          <li>Step Type - Select Create Record.</li>
+          <li>
+            Status Managed By - select one of the following picklist values:
+            <ul>
+              <li>Approvals - Select Approvals to manage the status of the step based on whether the step was approved or rejected. For more information, see <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Managing the Status of a Step with an Approval</xref>.</li>
+              <li>Checklist - Select Checklist to manage the status of the step using a checklist.When the Step Checklist Items section displays, review the information provided. During process execution, the completion of all configured checklist items determines when a step's status is updated to Completed.</li>
+              <li>Status Field - Select Status Field to manage the status of a step with the Status field located in the step Information section of the Step.</li>
+              <li>Create Record Only - Select Create Record Only if you do not want to have the status of the step determined by additional criteria.</li>
+            </ul>
+          </li>
+          <li>
+            Parent Step - Use Lookup to define the parent step, which is the step that must be completed before the Create Record step is initiated.
+            <ul>
+              <li>Leave the field blank if the Create Record step needs to be initiated as soon as the process starts.</li>
+            </ul>
+          </li>
+          <li>Parent Stage - If a parent step is part of a Parent Stage, all of the steps in the stage must complete before the Create Record step is created.</li>
+          <li>Definition - The field is automatically populated based on the Definition.</li>
+          <li>Stage - Use Lookup to select the Stage to associate with the Create Record step, if applicable.</li>
+          <li>Object Type to Create - Select the type of object that should create when this step executes.</li>
+          <li>Object Record Type to Create - Select the record type that should be assigned to the record that is created when this step executes. This field dynamically displays the record types from the object you specify in the Object Type to Create field.</li>
+          <li>Assignee Type - Select the type of Assignee to whom the step should be assigned. See <xref href="orchestrateassigneetypesforprocesssteps.dita#tc805de" scope="local" format="dita">Assignee Types</xref> for more information.</li>
+          <li>Assignee - Use Lookup to select the person who should be assigned to the step.</li>
+          <li>Generate Email Notification - Select the checkbox to send an email message to the Assignee, notifying them that the step was created.</li>
+          <li>
+            Due Date Adjustment Base Date - Select the option that should be used to calculate the due date of this step.
+            <ul>
+              <li>Current Date - Calculation is based on the current date, which is the date the step is created.</li>
+              <li>Parent Object - Calculation uses the Due Date field on the object specified in the Object Name field in the Definition screen. If the Object Name field is set to Lead, Campaign, or Opportunity, the current date is used in the calculation.</li>
+              <li>Parent Event - Calculation uses the Event date as the base date for the calculation. This only applies if the step is a child of an Event Placeholder step.</li>
+              <li>Date Field - Calculation uses any Date or DateTime field from the Related Account, Contact, or Process Object.</li>
+            </ul>
+          </li>
+          <li>
+            Due Date Adjustment - Enter a negative (before date) or positive (after date) number to add or subtract from the date in the Due Date Adjustment Base Date field.
+            <ul>
+              <li>For example, if you enter 5, the due date of this step will be calculated by adding five days to the date in the Due Date Adjustment Base Date field. A common example is the steps that need to be due prior to a parent event, such as meeting preparation steps. Enter -3 if this step should be due three days before the meeting. This step would need to be a child of an Event Placeholder step and the Due Date Adjustment Base Date would need to be set to Parent Event.</li>
+            </ul>
+          </li>
+          <li>
+            Delay Creation - Select the checkbox to define the conditions that must be met before the email is sent, or specify a certain date the email is sent. Populate the adjusted due date fields:
+            <ul>
+              <li>
+                Send Date Adjustment Base Date - The date selected in this field will be used to calculate when the delayed email alert will be sent.
+                <ul>
+                  <li>Parent Object - Calculation uses the Due Date Field on the object specified in the Object Name field for the Definition.</li>
+                  <li>Current Date - Calculation is based on the current date. The current date is the date that the Send Step is created.</li>
+                  <li>Parent Event - Calculation uses the Event date as the base date. This only applies if the current step is a child of an Event Placeholder Step.</li>
+                  <li>Date Field - Calculation uses any Date or DateTime field from the Related Account, Contact, or Process Object selected.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>Send Date Adjustment - This number will be added to the date specified in the Send Date Adjustment Base Date field.</li>
+            </ul>
+          </li>
+          <li>Skip if Past Due - Select the checkbox to skip the step if the calculated due date is in the past (earlier than today).</li>
+          <li>
+            <p>Copy Subject From Parent Process Object - Select the checkbox to copy the Subject from the Parent Process Object instead of the Step Name field.</p>
+            <p>Note</p>
+            <p>Does not apply to Standard Object process objects, only to custom objects used as process objects.</p>
+          </li>
+          <li>
+            Deletable - Select the checkbox to allow users to delete this step in an executing process. The default is unchecked and will prevent a user from deleting a step in a process.
+            <ul>
+              <li>A Step is deleted automatically when Deletable is selected, Step Creation Conditions are used, the Reevaluate When the option is selected, and the Creation Conditions for the Step no longer match.</li>
+            </ul>
+          </li>
+          <li>Stop Process if Status Set To - Select a value to stop the process when that Status occurs.</li>
+        </ul>
+      </li>
+      <li>Configure any needed <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref>.</li>
+      <li>Configure any needed <xref href="orchestratestepfieldvalidations.dita#t2c574c" scope="local" format="dita">Step Field Validations</xref>.</li>
+      <li>
+        Step Loop Back Criteria - Use Conditional login to determine if the process loops back to a previous step or stage.Note: The Step Loop Back Criteria section is only available for steps where the Step Type field is set to Create Record, the Status Managed By field is set to Approval or Status Field, and the Parent Step or Parent Stage fields are populated.
+        <ul>
+          <li>Go Back to Step - Select a preceding step to loop the process back to.</li>
+          <li>Go Back to Stage - Select a preceding step to loop the process back to.</li>
+          <li>Add Loop Back Criteria - Create a conditional statement, referencing specific objects and fields, to determine if the step will loop back.</li>
+        </ul>
+      </li>
+      <li>
+        Enter applicable process information in the Capture Object Information section.
+        <ul>
+          <li>For example, if Task is chosen as the Object Type to Create, you can add specific instructions to the Description field telling the user what they need to do in order to complete the step. When this step executes in a process, the task is created and these instructions show in the Comments field on the task.</li>
+        </ul>
+      </li>
+      <li>Select the Save button.</li>
+    </ol>
+  </conbody>
+</concept>

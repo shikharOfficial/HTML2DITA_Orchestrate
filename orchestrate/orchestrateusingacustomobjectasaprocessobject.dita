@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t32d074" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Using a Custom Object as a Process Object</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Follow these steps to create and use a custom object as a Process Object.</p>
+    <p>Alternatively, you can use the <xref href="orchestratecustomobjectwizardvwinter20.dita#t35180b" scope="local" format="dita">Custom Object Wizard</xref> in Conga Orchestrate Setup to streamline setting up a Custom Object and Process Object</p>
+    <p>Note: If the custom process object is from a managed package, and therefore, has a namespace, add the namespace to the Allowed Namespaces field on the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> page.</p>
+    <p>Create a Custom Object using the <xref href="https://help.salesforce.com/articleView?id=dev_objectcreate_task_parent.htm&amp;type=5" scope="external" format="html">Salesforce help article</xref>, or skip this step if your organization already created a custom object.</p>
+    <ol>
+      <li>
+        Ensure these properties are set on the custom object:
+        <ul>
+          <li>Allow Reports</li>
+          <li>Allow Activities</li>
+          <li>Track Field History</li>
+          <li>Add Notes &amp; Attachments</li>
+          <li>Allow Search</li>
+        </ul>
+      </li>
+      <li>Create the <xref href="orchestratefieldsforcustomobjectsasprocessobjectsvsummer21.dita#tc158e9" scope="local" format="dita">required fields</xref> necessary for Conga Orchestrate to use the custom object as a Process Object.</li>
+      <li>(Optional) Create a Master Page Layout to make creating new page layouts easier in the future.</li>
+      <li>Create a clone of the Master Page Layout for specific processes.</li>
+      <li>Create record types using the <xref href="https://trailhead.salesforce.com/en/content/learn/projects/customize-a-salesforce-object/create-record-types" scope="external" format="html">Salesforce help article</xref>, and associate with Page Layouts for the specific processes.</li>
+      <li>Create an <xref href="orchestratecreatinganapextriggerforacustomobjectasaprocessobjectvsummer21.dita#t9a90ad" scope="local" format="dita">Apex Trigger</xref> for the custom object.</li>
+      <li>Create an <xref href="orchestratecreatinganapextestclassforacustomobjectasaprocessobject.dita#t2de78f" scope="local" format="dita">Apex Test Class</xref> for the custom object.</li>
+      <li>Create <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Process Definitions </xref>using your custom object. </li>
+    </ol>
+  </conbody>
+</concept>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tad4426" xml:lang="en-us">
+  <title class="- topic/title ">Using Conga Composer to Generate Documents</title>
+  <conbody>
+    <p>When you choose Conga Composer as the selected application, the options available must be from the same object type as the definition to which you want to add a Generate Document step. Document generation occurs in background mode.</p>
+    <p>The Source picklist allows you to choose one of the following options:</p>
+    <ul>
+      <li>Template: Uses the process object’s ID as the master object record.</li>
+      <li>Solution: Uses the Custom Button URL field on the selected solution record.</li>
+      <li>Custom Button: Uses the configured button URL. Only button URLs that begin with "/apex/APXTConga4__Conga_Composer" will display as options.</li>
+    </ul>
+    <p>For Solution and Custom Button options:</p>
+    <ul>
+      <li>You must predefine a template in the Composer solution or button with the TemplateID parameter.</li>
+      <li>Allowed merge fields are process object and user merge fields in parameters.</li>
+      <li>When creating a Composer solution or button URL to use for a Generate Document step, the button URL can only contain merge fields that start with "{!User.", "{!ProcessObject." (object definition is triggered by), "{!Today()}", and "{!Now()}". Other merge fields or formulas in the button URL are not supported.</li>
+      <li>Template fields are also supported.</li>
+      <li>Embedded URL formulas are not supported.</li>
+      <li>A workaround is to build a formula field on the process object and include it in the URL.</li>
+    </ul>
+    <p>When using a lookup field as the value of the OFN parameter, only the record ID displays as the file name. A workaround is to use a QVar to pull in the record name.</p>
+  </conbody>
+</concept>

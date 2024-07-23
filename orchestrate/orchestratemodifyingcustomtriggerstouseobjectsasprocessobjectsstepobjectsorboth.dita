@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t6b18a3" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Modifying Custom Triggers to Use Objects as Process Objects, Step Objects, or Both</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Add additional code to existing custom triggers to use objects as a process objects, step object, or both for Conga Orchestrate.</p>
+    <p>Use existing Conga Orchestrate triggers to set up and use an object as a Process object, Step object, or both.</p>
+    <p>Previously, Conga Orchestrate required administrators to deploy new custom triggers in Conga Orchestrate Setup, or manually create each one, to use an object as a Process object, Step object, or both. For example, a custom object set up as a Process object would require an additional custom trigger to use it as both a Step and Process object moving forward.</p>
+    <p>Now, administrators can simply add an additional line of code to existing triggers to use an object as a Process object, Step object, or both.Note: Adding this code to the custom triggers only pertains to users with existing triggers.</p>
+    <p>To modify an existing trigger:</p>
+    <ol>
+      <li>Navigate to Salesforce Setup.</li>
+      <li>Navigate to the desired object using Quick Find Search Box or the Object Manager.</li>
+      <li>Click Triggers.</li>
+      <li>Click the custom trigger created for Conga Orchestrate. Example: Custom_ObjectStepTrigger</li>
+      <li>Click Edit.</li>
+      <li>
+        Copy one of the code options below and paste it as a new line of code after all the current logic in the trigger.
+        <ul>
+          <li>To setup as a Process object, add: FSTR.COTriggerHandler.handleProcessObjectTrigger();</li>
+          <li>To setup as a Step object, add: FSTR.COTriggerHandler.handleStepObjectTrigger();</li>
+          <li>To setup as both, add: FSTR.COTriggerHandler.handleBothTrigger();</li>
+        </ul>
+      </li>
+      <li>Click Save.</li>
+    </ol>
+    <p>See the example below for correct trigger syntax.Important: Orchestrate requires that the following trigger hooks are present in the modified Apex Trigger:</p>
+    <pre>before insert, after insert, before update, after update, before delete, after delete, after undelete</pre>
+  </conbody>
+</concept>

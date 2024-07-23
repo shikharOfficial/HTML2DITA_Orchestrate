@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t265952" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Importing Definitions</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>To import Definitions:</context>
+    <steps>
+      <step>
+        <cmd>Navigate to the Definitions tab.</cmd>
+      </step>
+      <step>
+        <cmd>Select a List View.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Import Definitions button.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Choose File button.</cmd>
+      </step>
+      <step>
+        <cmd>In the File Explorer popup, navigate to the exported file and open it.</cmd>
+      </step>
+      <step>
+        <cmd>Select Process File.</cmd>
+      </step>
+      <step>
+        <cmd>Note any errors and resolve them as appropriate. Errors typically occur if you have not properly migrated your Salesforce customizations.</cmd>
+      </step>
+      <step>
+        <cmd>Verify Record Types and configure any User Assignments.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Import button.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p>All Definitions are imported with the Is Active box unchecked. Each process will not execute until their Is Active box is checked.</p>
+    </postreq>
+  </taskbody>
+</task>

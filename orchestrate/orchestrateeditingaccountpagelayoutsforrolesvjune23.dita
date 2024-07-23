@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t254276" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Editing Account Page Layouts for Roles vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Aug 29, 2023</p>
+    <p>In a Conga Orchestrate process, you can assign responsibilities at each step to different team roles.</p>
+    <p>To view the team member(s) involved in a process for an account, add the team member related list to applicable account page layouts:</p>
+    <ol>
+      <li>In Setup, use the Quick Find and enter Accounts.</li>
+      <li>Select <b>Page Layouts</b>.  </li>
+      <li>Select <b>Edit </b>next to the page layout to which you're adding the Team Members related list.</li>
+      <li>Select <b>Related Lists</b>.</li>
+      <li>Drag and drop the Team Member section onto the page layout. </li>
+      <li>Select the related list properties (wrench icon) on the Team Members related list. </li>
+      <li>Add Team Member and Team Role to the Selected Fields frame. </li>
+      <li>Click <b>OK</b>.</li>
+      <li>Select the Save button in the page layout editor.</li>
+    </ol>
+  </conbody>
+</concept>

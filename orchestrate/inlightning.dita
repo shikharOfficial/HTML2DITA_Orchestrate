@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tf4ae36" xml:lang="en-us">
+  <title class="- topic/title ">In Lightning</title>
+  <body>
+    <ol>
+      <li>In Setup, enter Lightning App Builder in the Quick Find.</li>
+      <li>Select <b>Lightning App Builder</b> under User Interface.</li>
+      <li>Select <b>View</b> next to the Event Record Page Label.</li>
+      <li>Click the <b>Activation</b> button at the top right of the page.</li>
+      <li>Click the <b>Assign as Org Default</b> button.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Repeat steps 2–5 for the "Task" Lightning page.</li>
+    </ol>
+  </body>
+</topic>

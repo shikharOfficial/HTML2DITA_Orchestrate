@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t2ef939" xml:lang="en-us">
+  <title class="- topic/title ">To remove the PCE - Settings tab in Lightning</title>
+  <body>
+    <ol>
+      <li>Go to <b>Setup</b>.</li>
+      <li>Under the Platform Tools section, click <b>User Interface</b>.</li>
+      <li>Click <b>Tabs</b>.</li>
+      <li>Under the Visualforce Tabs section, click <b>Del </b>next to PCE - Settings.</li>
+      <li>Once prompted, click <b>OK </b>to delete the tab.</li>
+    </ol>
+  </body>
+</topic>

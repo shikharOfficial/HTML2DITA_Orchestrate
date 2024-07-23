@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t6977d1" xml:lang="en-us">
+  <title class="- topic/title ">To create a Definition</title>
+  <body>
+    <ol>
+      <li>Click the <b>Definitions</b> tab.</li>
+      <li>Select the <b>New</b> button.</li>
+      <li>Complete the following fields:</li>
+      <li>
+        Definition Information:
+        <ul>
+          <li>Definition Name - Enter the name for this definition template.</li>
+          <li>Is Active - Select the check box to make the process active after creating the definition.</li>
+          <li>Categories - Select the field(s) used to categorize the definition.</li>
+          <li>Use the <image href="../images/165939762.png"/> icon to remove chosen fields.</li>
+          <li>Click one or more fields in the Available list box and then click the <image href="../images/165939763.png"/> icon to add your selections to the Chosen list box.</li>
+        </ul>
+      </li>
+      <li><b>Disable Object Management - </b>Select the checkbox to disable Object Management. The Status field of the process object will not be managed by Conga Orchestrate when Object Management is disabled. If this checkbox remains unchecked, Orchestrate sets the Status field to Completed when all steps in a process are complete.</li>
+      <li>
+        <b>Definition Conditions</b>
+        <ul>
+          <li>
+            <p>Object Name - select Campaign, Case, Contract, Lead, Opportunity, or Business Process in the list. See <xref href="orchestrateprocessobjects.dita#t1bb950" scope="local" format="dita">Process Objects</xref> for additional information. </p>
+            <p>See <xref href="orchestrateusingacustomobjectasaprocessobject.dita#t32d074" scope="local" format="dita">Using a Custom Object as a Process Object</xref> to use your own object.</p>
+          </li>
+          <li>Object Record Type - select an available record type based on the selection made in the Object Name list, or click the Create Record Type link to create a new record type.</li>
+          <li>(Optional) Select the Add Definition Criteria link to enter <xref href="orchestrateaddingcriteriatoaprocessdefinitionvsummer21.dita#t00fd6b" scope="local" format="dita">additional criteria</xref> that must be met for the process to run after the rules are met.</li>
+          <li>(Optional) Status Options: When Process Status Set To - Select the Process Status value that will determine the Set Open Step To field.</li>
+          <li>Set Open Steps To - Select the Step Status value determined by the value of the When Process Status Set ToExample: When Process Status Set To Completed, Set Open Steps To Completed.</li>
+          <li>Description - Enter a description for the process definition.</li>
+          <li>Use the Toolbar to add formatting to the description. You can also insert an image or add a link.</li>
+          <li>(Optional) Owner - Change the default selection if you want another user to be the owner of the definition template.</li>
+        </ul>
+      </li>
+      <li>Select the <b>Save</b> button.</li>
+    </ol>
+    <p>Conga Orchestrate checks the integration health for a Definition that has Clause, Clause Bundles, or Managed Clause steps. It checks that the process instance field exists or the right fields exist on the Managed Clause object to make it a step object, field mappings on Managed Clause are in place, a trigger exists, and field permissions on Managed Clause are set to make sure the Managed Clause steps function correctly. If any of these are incorrectly configured, the system displays warning messages on the Definition and Step page.</p>
+  </body>
+</topic>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2de78f" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Creating an Apex Test Class for a Custom Object as a Process Object</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Create the following Class in order to deploy the trigger to your production environment.</p>
+    <p>If your custom object is the detail record in a master-detail relationship, create a formula field that retrieves the OwnerId from the master object. The structure of the field will be dependent on how the relationship is named. For example, if your object is related to the account object through a master-detail relationship the formula is: Business_Account__r.OwnerId.</p>
+    <ol>
+      <li>In your sandbox environment, select the Settings Cog icon (in Lightning) or your name (in Classic) in the upper right corner of Salesforce.</li>
+      <li>Select Developer Console.</li>
+      <li>Select File.</li>
+      <li>Hover over New and choose Apex Class.</li>
+      <li>Give your class a descriptive name. Something like CustomObjectNameTriggerTest.</li>
+      <li>Select OK.</li>
+      <li>
+        Copy/Paste the following code into the new class window:
+        <pre>@isTest private class CustomObjectNameTriggerTest { private static testMethod void Test_CustomObjectNameTrigger () { YOUR_CUSTOM_OBJECT_API_NAME__c fw = new YOUR_CUSTOM_OBJECT_API_NAME__c(); insert fw; System.assertNotEquals(null, fw.id); update fw; delete fw; } }</pre>
+      </li>
+      <li>Replace CustomObjectNameTriggerTest with the name of the class you chose in step 5 above.</li>
+      <li>Replace the CustomObjectName within Test_CustomObjectNameTrigger with the name of your custom object (no spaces).</li>
+      <li>Replace YOUR_CUSTOM_OBJECT_API_NAME__c with the API name of your custom object.You may need to add additional code to your test method depending on what fields your object requires and validation rules that may be in place. When running tests in step 12, take note of any errors that may occur as these point out required fields that may not have been populated by your test code.</li>
+      <li>Save the class by pressing Ctrl+S on your keyboard or by selecting File > Save in the top menu of the Developer Console.</li>
+      <li>Select the Run Test button within the Developer Console.</li>
+      <li>Verify the minimum 75% code coverage was achieved. If applicable, fix any errors and run the test again.</li>
+      <li>Close the Developer Console window.</li>
+    </ol>
+    <p>Refer to the <xref href="https://trailhead.salesforce.com/en/modules/app_deployment/units/app_deployment_changesets" scope="external" format="html">Deploy from Sandbox with Change Sets</xref> module in Trailhead for instructions on the deployment process.</p>
+  </conbody>
+</concept>

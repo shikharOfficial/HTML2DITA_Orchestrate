@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t78a58d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Renaming the Conga Orchestrate Salesforce App vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>When upgrading Conga Orchestrate from a previous version, you must manually rename the Conga Orchestrate app from ProcessComposer to Conga Orchestrate. A Salesforce limitation prevents the Conga Orchestrate installed packages from automatically updating the application name.</p>
+    <p>Renaming the Conga Orchestrate Salesforce app only applies to Conga Orchestrate instances that are upgraded to the newest version of Conga Orchestrate.</p>
+    <p>When renaming the app in Lightning, the App Manager allows you to rename the app for both Lightning and Classic. If you are renaming the app in Classic, you can only rename the app for Classic.</p>
+    <p>To rename the Conga Orchestrate app in Lightning after upgrading to the most recent version of Conga Orchestrate:</p>
+    <ol>
+      <li>Go to the Setup menu in Salesforce Lightning.</li>
+      <li>Under the Apps section in Setup, click <b>App Manager</b>.</li>
+      <li>Locate ProccessComposer Apps in the Lightning Experience App Manager and click the drop-down arrow next to the app.</li>
+      <li>Change the app label from ProcessComposer to Conga Orchestrate and save the change. </li>
+      <li>Repeat this process for both the ProcessComposer_Lightning and Process_Composer app records.</li>
+    </ol>
+    <p>To rename the Conga Orchestrate app in Classic after upgrading to the most recent version of Conga Orchestrate:</p>
+    <ol>
+      <li>Navigate to the Setup menu in Classic.</li>
+      <li>Under the Build selection, click <b>Apps</b>.</li>
+      <li>Click <b>Edit </b>next to the ProcessComposer app.</li>
+      <li>Change the app label from ProcessComposer to Conga Orchestrate and save the change. </li>
+    </ol>
+  </conbody>
+</concept>

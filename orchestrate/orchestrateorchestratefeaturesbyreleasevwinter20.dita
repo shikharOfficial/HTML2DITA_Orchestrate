@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="te27e1c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Orchestrate Features by Release vWinter-20</title>
+  <conbody>
+    <p>Created by  Sandip Patel on Nov 22, 2021</p>
+    <p>Review the latest Conga Orchestrate Features by Release document.</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestratefeaturesbyreleasevwinter20.dita#t4423e9" scope="local" format="dita">Features by Release</xref>
+      </li>
+    </ul>
+    <p/>
+  </conbody>
+</concept>

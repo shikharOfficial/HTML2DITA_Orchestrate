@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t7e4ff0" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Configuring Closed Status Values</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>Use the following process to enter the closed status values applicable to your organization.</context>
+    <steps>
+      <step>
+        <cmd>Navigate to the Conga Orchestrate Setup tab. </cmd>
+      </step>
+      <step>
+        <cmd>In the Closed Status Values field, enter the closed status values applicable to your organization. The default fields are Completed and Canceled. Add any additional values and separate them by semi-colons. The values must match status values you define in the Status field on your custom step object. Refer to Fields for Custom Objects as Steps. </cmd>
+      </step>
+      <step>
+        <cmd>Select Save.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p/>
+    </postreq>
+  </taskbody>
+</task>

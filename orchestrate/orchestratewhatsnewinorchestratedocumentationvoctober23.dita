@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tead67b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .What's New in Orchestrate Documentation vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>This section lists changes in the documentation to support each release.</p>
+    <p>October '23</p>
+    <table>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody>
+          <row>
+            <entry>
+              <p>Document</p>
+            </entry>
+            <entry>Publication Date</entry>
+            <entry>
+              <p>Topic</p>
+            </entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <p>October '23</p>
+              <p/>
+            </entry>
+            <entry>
+              <p>04 Oct 2023 </p>
+              <p/>
+            </entry>
+            <entry>
+              <xref href="orchestrateconfiguringapexexceptionnotificationsvoctober23.dita#tf75321" scope="local" format="dita">Configuring Apex Exception Notifications</xref>
+            </entry>
+            <entry>New topic</entry>
+          </row>
+          <row>
+            <entry>
+              <xref href="orchestratedisablingworkflowrulesvjune23.dita#t4e7fe9" scope="local" format="dita">Disabling Workflow Rules</xref>
+            </entry>
+            <entry>Added instructions for managing Workflow Rules retirement.</entry>
+            <entry/>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>September '22</p>
+    <table>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <thead>
+          <row>
+            <entry>
+              <p>Document</p>
+            </entry>
+            <entry>Publication Date</entry>
+            <entry>
+              <p>Topic</p>
+            </entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>September '22</entry>
+            <entry>
+              <p>07 Sep 2022 </p>
+            </entry>
+            <entry>
+              <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Managing the Status of a Step with an Approval</xref>
+            </entry>
+            <entry>Updated topic to include information on recalling approval requests in Orchestrate.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>December '21</p>
+    <table>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <thead>
+          <row>
+            <entry>
+              <p>Document</p>
+            </entry>
+            <entry>
+              <p>Publication Date</p>
+            </entry>
+            <entry>Topic</entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>December '21</entry>
+            <entry>
+              <p>07 Dec 2021 </p>
+            </entry>
+            <entry>
+              <xref href="orchestratecreatingastepthatcallsanapprovalprocessvfebruary23.dita#t33d506" scope="local" format="dita">Creating a Step that Calls an Approval Process</xref>
+            </entry>
+            <entry>New topic for calling an approval process.</entry>
+          </row>
+          <row>
+            <entry>
+              <p>03 Nov 2021 </p>
+            </entry>
+            <entry>
+              <xref href="orchestratecreatingastepthataddsamanagedclausevoctober23.dita#ta8de67" scope="local" format="dita">Creating a Step that Adds a Managed Clause</xref>
+            </entry>
+            <entry>Updated topic to include information on Sort Order Support for Clause Step Type.</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>
+              <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Creating a Process Definition</xref>
+            </entry>
+            <entry>
+              <p>Updated topic to include information on creating a record on a step from the definitions page and CFS integration health check trigger.</p>
+            </entry>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry>
+              <xref href="orchestratecustomizingthecolorcodesontheprocessvisualvdecember21.dita#te01659" scope="local" format="dita">Customizing the Color Codes on the Process Visual</xref>
+            </entry>
+            <entry>New topic customizing the process visual with color codes</entry>
+            <entry/>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Summer '21</p>
+    <table>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <thead>
+          <row>
+            <entry>
+              <p>Document</p>
+            </entry>
+            <entry>
+              <p>Publication Date</p>
+            </entry>
+            <entry>Topic</entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Summer '21</entry>
+            <entry>
+              <p>05 Jul 2021 </p>
+            </entry>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.About+Process+Steps+vSummer-21" scope="external" format="html">About Process Steps</xref>
+            </entry>
+            <entry>Updated topic.</entry>
+          </row>
+          <row>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Initiating+Definitions+vSummer-21" scope="external" format="html">Initiating Definitions</xref>
+            </entry>
+            <entry>New topic. New feature for this release.</entry>
+            <entry/>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>Spring '21</p>
+    <table>
+      <tgroup cols="3">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <thead>
+          <row>
+            <entry>
+              <p>Document</p>
+            </entry>
+            <entry>
+              <p>Topic</p>
+            </entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Spring '21 Rev A</entry>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Advanced+Functionality+with+Step+Creation+Conditions+vSpring-21" scope="external" format="html">Advanced Functionality with Step Creation Conditions</xref>
+            </entry>
+            <entry>Updated topic. Added information on Troubleshooting Step Creation Conditions.</entry>
+          </row>
+          <row>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Managing+the+Status+of+a+Step+with+a+Checklist+vSpring-21" scope="external" format="html">Managing the Status of a Step with a Checklist</xref>
+            </entry>
+            <entry>Updated topic. Added information on added checklist component on the community page.</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>Spring '21</entry>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Advanced+Functionality+with+Step+Creation+Conditions+vSpring-21" scope="external" format="html">Advanced Functionality with Step Creation Conditions</xref>
+            </entry>
+            <entry>Updated topic. Added note about Optimizing drill-down criteria.</entry>
+          </row>
+          <row>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Creating+a+Step+that+Generates+a+Document+vSpring-21" scope="external" format="html">Creating a Step that Generates a Document</xref>
+            </entry>
+            <entry>Updated the topic to add a missing parameter. </entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>
+              <xref href="https://documentation.conga.com/display/ORCHSPR21/Orchestrate+REST+APIs" scope="external" format="html">Orchestrate REST APIs</xref>
+            </entry>
+            <entry>New APIs introduced in this release. </entry>
+            <entry/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

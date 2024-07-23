@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tee6a0c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .End User Profile Security Configuration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Note</p>
+    <p>Conga Orchestrate is not compatible with the Guest User profile in Salesforce Communities.</p>
+    <p>Steps to configure the end-user security profile.</p>
+    <ol>
+      <li>In Setup, enter Profiles in the Quick Find.</li>
+      <li>Select the profile for <b>End Users</b>. You can enable and disable the Enhanced Profile Editor from Setup > Customize > User Interface > Check/Un-Check Enable Enhanced Profile User Interface. If you are unsure how to match up these settings with the Enhanced Editor, temporarily disable it while configuring Conga Orchestrate.</li>
+      <li>
+        Click
+        <b>Edit</b>
+        . Enter the settings below.
+        <ul>
+          <li>Check the <b>Conga Orchestrate Visible </b>checkbox in Custom App Settings.</li>
+          <li>Select <b>Default On</b> from the <b>Custom Reports</b> drop-down list box.</li>
+          <li>Select <b>Default Off </b>from the <b>Default Teams</b> drop-down list box.</li>
+          <li>Select <b>Default On</b> from the <b>Definition Initiators</b> drop-down list box.</li>
+          <li>Select <b>Default On</b> from the <b>Definitions</b> drop-down list box.</li>
+          <li>Select <b>Default Off</b> from the <b>Process Team Members</b> drop-down list box.</li>
+          <li>Select <b>Tab Hidden</b> from the <b>Conga Orchestrate Setup</b> drop-down list box.</li>
+          <li>Select <b>Default Off</b> from the <b>Virtual Steps</b> drop-down list box.</li>
+          <li>Select <b>Default On</b> from the <b>Conga Orchestrate Help</b> drop-down list box.</li>
+          <li>Select <b>Default Off</b> from the <b>Process Groups</b> drop-down list box.</li>
+          <li>Select <b>Default On</b> from the <b>Process Tasks</b> drop-down list box. If you are not utilizing Process Tasks, set this to Default Off.</li>
+          <li>Select <b>Default Off</b> from the <b>Recurring Business Processes</b> drop-down list box.</li>
+          <li>
+            Select the
+            <b>Read</b>
+            ,
+            <b>Create</b>
+            ,
+            <b>Edit</b>
+            and
+            <b>Delete</b>
+            checkboxes for:
+            <ul>
+              <li>Business Processes</li>
+              <li>Default Team Members</li>
+              <li>Step Reassignments</li>
+              <li>Team Members</li>
+              <li>Virtual Steps</li>
+              <li>Process Archive</li>
+              <li>Process Groups</li>
+              <li>Process Tasks</li>
+              <li>Delayed Steps</li>
+              <li>Recurring Business Processes</li>
+            </ul>
+          </li>
+          <li>
+            Select the
+            <b>Read </b>
+            checkboxes for:
+            <ul>
+              <li>Callout Error Queues</li>
+              <li>Custom Reports</li>
+              <li>Definitions</li>
+              <li>Definition Criteria</li>
+              <li>Definition Initiators</li>
+              <li>Definition Initiators Criteria</li>
+              <li>Process Team Members</li>
+              <li>Stages</li>
+              <li>Steps</li>
+              <li>Step Assignments</li>
+              <li>Step Creation Conditions</li>
+              <li>Step Field Updates</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Click <b>Save</b>.</li>
+      <li>Go to <b>Selected Record Type</b>.</li>
+      <li>Select <b>Edit</b> next to Business Processes and remove the Sample Process Record Type from the Selected Record Types list. </li>
+      <li>Click <b>Save</b>.</li>
+      <li>Go to the Enabled Visualforce Page Access section and select <b>Edit</b>. </li>
+      <li>Enable Visualforce Page Access to all the pages that begin with "FSTR".</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </conbody>
+</concept>

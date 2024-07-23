@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="te2c6c5" xml:lang="en-us">
+  <title class="- topic/title ">New Installation</title>
+  <conbody>
+    <p>On a new installation, the only objects available to use "out of the box" are the<b> </b>Business Process and Process Task objects. Both objects are shipped by default with Conga Orchestrate. Both objects have all the previously required fields, as well as a lookup field to the new Process Instance object.</p>
+    <p>To set up a custom object or standard object (such as opportunity, contract, or task) as a step or process object, navigate to the Conga Orchestrate Setup page and use the Configure Object link in the Advanced Setup section.</p>
+    <p>When adding a new object as a step, process object, or both, only a process instance lookup field and a status field are created in the object. If the object is a step object or both a step and process object, you must also create a lookup field to the process object(s) that the step is used for.</p>
+    <p>If you are using an existing field, you are given the option to map certain fields to fields that were formerly required and are subsequently filled out during execution.</p>
+    <p>These are the field mappings for selecting an existing object as a process object. If you map any of these fields, they are filled out during execution like objects previously were. The only fields actually created are the process instance lookup and status fields.</p>
+    <p>The status field is not created if you map an existing picklist field in its place on this screen.</p>
+    <p>After this screen, the rest of the setup process is the same as it was in Conga Orchestrate version 13.</p>
+  </conbody>
+</concept>

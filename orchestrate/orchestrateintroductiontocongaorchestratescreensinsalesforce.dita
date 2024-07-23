@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2249ce" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Introduction to Conga Orchestrate Screens in Salesforce</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>When Conga Orchestrate is up and running, you must create Definitions and add Steps to them. At each Step, a Task is created. For example, when initiated on a Contact, a Definition automatically creates Tasks as previous Tasks are completed, reflecting the flow of a real-world process.</p>
+    <p>The following Conga Orchestrate screens display in Salesforce.</p>
+    <ul>
+      <li>Process Definition Detail Screen<image href="../images/143888846.png"/></li>
+      <li>Business Process Related List on a Contact<image href="../images/143888827.png"/></li>
+      <li>List of Steps in a Definition<image href="../images/143888838.png"/></li>
+      <li>Visualization<image href="../images/143888831.png"/></li>
+      <li>Activities<image href="../images/143888792.jpg"/></li>
+    </ul>
+  </conbody>
+</concept>

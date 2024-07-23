@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t81ac15" xml:lang="en-us">
+  <title class="- topic/title ">Best Practices for Using Orchestrate with Flow and Process Builder</title>
+  <conbody>
+    <p>When using Flow and Process Builder, use Salesforce <xref href="https://developer.salesforce.com/wiki/apex_code_best_practices" scope="external" format="html">best practices for code</xref>, as these tools are a nice user interface to code that executes behind the scenes. For example, insert all records of the same object type in one insert, just as you would in code. Even if you are using sub-flows, try to do one insert. Additionally, avoid another update to the same object in the same transaction.</p>
+    <p>There are several more best practices to consider as you use these tools. Review the resources below as you design flows or build processes to work with Orchestrate-managed processes.</p>
+    <ul>
+      <li>
+        <xref href="https://help.salesforce.com/articleView?id=process_considerations_design_bestpractices.htm&amp;type=5" scope="external" format="html">Best Practices for Designing Processes</xref>
+      </li>
+      <li>
+        <xref href="https://help.salesforce.com/articleView?id=flow_prep_bestpractices.htm&amp;type=5" scope="external" format="html">Flow Best Practices</xref>
+      </li>
+      <li><xref href="https://www.salesforce.com/video/1756610/" scope="external" format="html">Top 10 Flow/Process Builder Best Practices</xref> (Video)</li>
+    </ul>
+  </conbody>
+</concept>

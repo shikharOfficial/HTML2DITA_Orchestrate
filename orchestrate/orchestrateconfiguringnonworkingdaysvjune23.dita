@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t161941" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring Non-Working Days vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Aug 31, 2023</p>
+    <p>All of the Due Date and Delayed Step calculations within Conga Orchestrate can take into account your pre-configured Business Hours in Salesforce to avoid setting due dates on non-working days. This includes company holidays that are specific to your business or country. With Conga Orchestrate, you can prevent Step Due Dates from falling on a weekend or on other specified holidays. You can configure the days that your office is open and only have Task Due Dates fall on those days.</p>
+    <p>All of the Due Date and <xref href="orchestratedelayedsteps.dita#t2a10fb" scope="local" format="dita">Delayed Step</xref> calculations within Conga Orchestrate can take into account your pre-configured Business Hours in Salesforce to avoid setting due dates on non-working days. This includes company holidays that are specific to your business or country. With Conga Orchestrate, you can prevent Step Due Dates from falling on a weekend or on other specified holidays. You can configure the days that your office is open and only have Task Due Dates fall on those days. For example, if you have an important meeting on Monday and you have your meeting preparation Tasks due the day before the meeting, the preparation Tasks would be due on Friday, not Sunday.</p>
+    <p>To enable the ability to skip non-working days:</p>
+    <ol>
+      <li>In Lightning Experience, select Conga Orchestrate Setup from the App Launcher. In Classic, select the Conga Orchestrate Setup tab.</li>
+      <li>Select the Due Date – Skip Non-Working Days checkbox.</li>
+      <li>Select Save.</li>
+      <li><xref href="orchestrateconfiguringbusinesshoursvoctober23.dita#td77193" scope="local" format="dita">Configure your org's Business Hours</xref> in Salesforce.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

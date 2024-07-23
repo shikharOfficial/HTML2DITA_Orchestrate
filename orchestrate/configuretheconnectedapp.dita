@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t03f288" xml:lang="en-us">
+  <title class="- topic/title ">Configure the Connected App</title>
+  <conbody>
+    <p>Ensure the OrchestrateSetup Connected App is configured in Salesforce Setup. For more information, see <xref href="orchestrateinstallingcongaorchestratevoctober23.dita#t3b3c7f" scope="local" format="dita">Installing Conga Orchestrate</xref>.</p>
+  </conbody>
+</concept>

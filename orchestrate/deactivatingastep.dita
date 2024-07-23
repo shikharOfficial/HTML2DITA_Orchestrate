@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t9d5a06" xml:lang="en-us">
+  <title class="- topic/title ">Deactivating a Step </title>
+  <conbody>
+    <p>All the steps that you create are activated by default. You can also deactivate a specific step. If you deactivate a step, Conga Orchestrate will not execute the step and all of its children.</p>
+    <p>To deactivate a step, set<b> Deactivate Step</b> as <i>true</i> when you create or edit a step. Deactivated steps are depicted as a white box in the Definition and Process Visual pages.</p>
+    <p/>
+  </conbody>
+</concept>

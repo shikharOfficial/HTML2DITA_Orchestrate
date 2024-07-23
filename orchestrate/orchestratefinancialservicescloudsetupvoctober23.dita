@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="td69e96" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Financial Services Cloud Setup vOctober-23</title>
+  <shortdesc>Created by  William Abernathy on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>If Conga Orchestrate is not installed, you must:</context>
+    <steps>
+      <step>
+        <cmd>Install Conga Orchestrate from the <xref href="https://appexchange.salesforce.com/listingDetail?listingId=a0N300000058f6JEAQ" scope="external" format="html">AppExchange listing</xref>. (If you want to install in a sandbox, choose that option after clicking <b>Get It Now</b>.)</cmd>
+      </step>
+      <step>
+        <cmd>Grant access to all users.</cmd>
+      </step>
+      <step>
+        <cmd>
+          After package install, follow
+          <xref href="orchestratebasicsetup.dita#tfb6f85" scope="local" format="dita">Basic Setup</xref>
+          for Conga Orchestrate and assign
+          <xref href="orchestratesecurityusingpermissionsetsvoctober23.dita#t7b6557" scope="local" format="dita">security using permission sets</xref>
+          .
+              
+                
+                  For the specific Financial Services Cloud setup items listed below. Note that if some of the setup screenshots in the documentation reference classic setup pages, it may make sense to switch to Classic when following the setup steps below.
+                
+              
+              Set up Financial Services Cloud items:
+        </cmd>
+      </step>
+      <step>
+        <cmd>Go to Setup in Lightning and select <b>Object Manager </b>under the Objects and Fields section.</cmd>
+      </step>
+      <step>
+        <cmd>Click <b>Business Process</b>.</cmd>
+      </step>
+      <step>
+        <cmd>Select <b>Buttons Links and Actions</b>, click the down arrow next to New, and click <b>Edit</b>.</cmd>
+      </step>
+      <step>
+        <cmd>Select <b>Standard Page</b> under the Salesforce Classic Override section. Click <b>Save</b>.</cmd>
+      </step>
+      <step>
+        <cmd>Repeat Step 2, reopening Object Manager.</cmd>
+      </step>
+      <step>
+        <cmd>Select <b>Account</b>.</cmd>
+      </step>
+      <step>
+        <cmd>Click <b>Page Layouts</b>, then <b>Account (Individual)</b> to access the Account (Individual) page layout. If the Contact (Individual) Page Layout is configured per <xref href="orchestrateeditingcontactpagelayoutsforbusinessprocesses.dita#t3ac8eb" scope="local" format="dita">this documentation</xref>, necessarily related lists will display on the Account (Individual) Page Layout in Lightning.</cmd>
+      </step>
+      <step>
+        <cmd>Go to the Conga Orchestrate Setup tab and select <b>Disable Setting Account Lookup </b>from the Features Control section. This forces users to select the appropriate account (household or business) when executing business processes.</cmd>
+      </step>
+      <step>
+        <cmd>
+          Click
+          <b>Save</b>
+          .
+              
+                Important
+                
+                  When creating page layouts on the Business Process object, include the New Task (FSC) and New Event (FSC) custom actions so that you can create manual tasks and events correctly from a business process record. In addition, set the Account field to "Required on all Business Process Page layouts". For information on setting up the New Event action, see
+          <xref href="orchestratesettingupaneweventactionforthefinancialservicescloudvoctober23.dita#ta5ff04" scope="local" format="dita">Setting Up a New Event Action for the Financial Services Cloud</xref>
+          . For more on setting up the New Task action, see
+          <xref href="orchestratesettingupanewtaskactionforthefinancialservicescloudvoctober23.dita#t8e2956" scope="local" format="dita">Setting Up a New Task Action for the Financial Services Cloud</xref>
+          .
+        </cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p/>
+      <p/>
+    </postreq>
+  </taskbody>
+</task>

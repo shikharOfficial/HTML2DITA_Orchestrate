@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tc838c7" xml:lang="en-us">
+  <title class="- topic/title ">To create an Update Records step</title>
+  <body>
+    <ol>
+      <li>Navigate to the <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Definition</xref> where you will place this step.</li>
+      <li>In the Steps section of the screen, click the New Step button or select the dropdown to the right and click Update Records. If you already have steps in the Definition, you can either use the New Child link next to the Step name while viewing the Definition or you can use the New Child Step button while viewing the existing Step (towards the bottom of the page). Then just change the Step Type to Update Records in the Step Edit page.</li>
+      <li>
+        Complete the fields:
+        <ul>
+          <li>Step Name - Enter the name for this Step. This field copies into the Subject of a completed task when the step executes. Conga Orchestrate stores a completed task that shows which field(s) was updated as well as any errors if the field(s) wasn't updated for any reason.</li>
+          <li>Step Type - Select Update Records if it is not already selected.</li>
+          <li>Parent Step - The Parent Step is the step that once completed, will initiate this new step. Leave it blank if this step needs to initiate immediately when the process starts.</li>
+          <li>Parent Stage - If a step has a <xref href="orchestrateprocessstages.dita#tabf5c2" scope="local" format="dita">Parent Stage</xref>, all of the Steps in the Parent Stage must complete before this Step creates.</li>
+          <li>Definition - This should be automatically populated based on the Definition you started from.</li>
+          <li>Stage - Select the Stage with which this Step should be associated, if applicable.</li>
+          <li>Create if Parent - This field indicates the status(es) that will permit the creation of this step. The Parent Step status must be set to one of these values for this step to create.</li>
+          <li>Delay Creation - If checked, Conga Orchestrate will delay creating this step until the day specified by the Delay Creation Date Adjustment. See Delayed Steps for more information.</li>
+        </ul>
+      </li>
+      <li>Configure any needed Step Creation Conditions. See <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref> for more information.</li>
+      <li>
+        Configure the fields that should be updated when this step executes.
+        <ul>
+          <li>Select the + Add Record Update link (or the Create Step And Add Record Updates button, if it is a new Step).</li>
+          <li>Field to Update - Select the field to update. You can access fields of related objects by selecting a field with a > next to it.</li>
+        </ul>
+      </li>
+    </ol>
+    <ul>
+      <li>Update Type - The Value option allows you to set a value explicitly. The Reference option allows you to dynamically set the new value-based on another related field.</li>
+      <li>Updated Value - This is the new value that will be stored in the field chosen in the Field to Update section. If the selected Update Type is Reference, you can access fields of related objects by selecting a field with a > next to it.</li>
+      <li>If applicable, populate the Date Adjustment field. This will only be available if the data type of the Field to Update is Date.</li>
+      <li>Select the Save button and then close the record update configuration pop-out.</li>
+      <li>Select the + Add Row link if additional record updates are needed.</li>
+    </ul>
+    <ul>
+      <li>Select the Save button in the Step Edit screen.</li>
+    </ul>
+    <p>During process execution, you may need to refresh the page in order to see the updated field value.</p>
+  </body>
+</topic>

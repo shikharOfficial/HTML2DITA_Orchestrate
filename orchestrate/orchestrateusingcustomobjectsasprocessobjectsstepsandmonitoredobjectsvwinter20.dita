@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tfb836e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Using Custom Objects as Process Objects, Steps, and Monitored Objects vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Feb 03, 2022</p>
+    <p>Conga Orchestrate executes processes based on a given object, its record type, and optionally other field values. Administrators use standard Salesforce functionality to create/modify standard or custom objects, define fields, build page layouts, and define record types. You can use Conga Orchestrate to execute processes against the objects you create in addition to those Conga Orchestrate supports out of the box.</p>
+    <p>Using Conga Orchestrate with custom objects requires additional setup. An Administrator must add appropriate fields, then creates an Apex Trigger and Test Class to properly associate Conga Orchestrate with the custom object. The code and steps needed to complete the setup are provided in this help documentation. Then, using Conga Orchestrate functionality, Administrators create process definitions using this custom object. Refer to this <xref href="https://help.salesforce.com/articleView?id=dev_objectcreate_task_parent.htm&amp;type=5" scope="external" format="html">Salesforce help and training article</xref> for information on adding new custom objects.</p>
+    <p>Alternatively, use the <xref href="orchestratecustomobjectwizardvwinter20.dita#t35180b" scope="local" format="dita">Custom Object Wizard</xref> in Conga Orchestrate Setup to streamline setting up a custom object for Conga Orchestrate.</p>
+    <p>For an example of a custom object working with Conga Orchestrate, see the Business Process object that comes installed with Conga Orchestrate. It includes all of the necessary information, as well as record types and page layouts.</p>
+    <p>You can use your own custom object as an individual Process Object or a Step in Conga Orchestrate, or you can set up your custom object to work as both.</p>
+    <p>Set up your custom object as:</p>
+    <ul>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaprocessobject.dita#t32d074" scope="local" format="dita">Process Object</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasastepvoctober23.dita#t05a78d" scope="local" format="dita">Step</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaprocessobjectandstepvoctober23.dita#tc29aeb" scope="local" format="dita">Both a Process Object and a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaninitiatorsmonitoredobject.dita#t86d263" scope="local" format="dita">Initiator's Monitored Object</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

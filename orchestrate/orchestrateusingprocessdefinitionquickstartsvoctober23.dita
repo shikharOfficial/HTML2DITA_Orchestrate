@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t185bb9" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Using Process Definition Quick Starts vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 21, 2023</p>
+    <p>Use these processes to get up and running with Conga Orchestrate for several use cases and for examples of how you can use Orchestrate in your own business processes.</p>
+    <p>These processes are ready to use as-is, so you can get the feel for how to use Orchestrate to power your processes. Clone and modify the processes for your own use cases. Assign steps in ways that make sense for your organization and your team structures in Salesforce.</p>
+    <p>Standard or custom user lookup fields, Salesforce account teams, and queues all work with Orchestrate.</p>
+    <p>See the videos and steps below to use these processes. Setup and configuration take approximately 5 minutes.</p>
+    <ol>
+      <li><xref href="orchestrateinstallingcongaorchestratevoctober23.dita#t3b3c7f" scope="local" format="dita">Install Conga Orchestrate</xref> from the AppExchange. If you are not familiar with AppExchange, <xref href="https://share.vidyard.com/watch/rWgS347HrhwxqeXRgyrw19" scope="external" format="html">watch this video</xref> for a walkthrough on installing Conga Orchestrate.</li>
+      <li>
+        <p><xref href="https://share.vidyard.com/watch/pNKgCq3Ndp2SZG2gfCHZvP" scope="external" format="html">Configure</xref> Conga Orchestrate.</p>
+        <p>We recommend configuring Conga Orchestrate to work with the Salesforce Task object and running processes with the Business Process object that comes ready to use with Conga Orchestrate.</p>
+      </li>
+      <li>
+        Import Conga Orchestrate Processes and try them out.
+        <ol>
+          <li>Download <xref href="https://cdn.brandfolder.io/GSYIHDPR/as/q84ahm-28q4dc-c51436/Process_Definition_Examples_2020-03.txt" scope="external" format="html">this text file</xref>.</li>
+          <li>Use the downloaded text file to import the Conga Orchestrate Processes.</li>
+        </ol>
+      </li>
+    </ol>
+    <p>Follow along as we <xref href="https://share.vidyard.com/watch/i5dkPjpJ2kBqS747yMxSPy" scope="external" format="html">run an example process</xref> in this video overview.</p>
+  </conbody>
+</concept>

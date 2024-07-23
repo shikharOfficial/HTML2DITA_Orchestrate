@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="td77193" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring Business Hours vOctober-23</title>
+  <shortdesc>Created by  William Abernathy, last modified on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>To create your business hours record:</context>
+    <steps>
+      <step>
+        <cmd>At this time, Business Hours settings are only available in Salesforce Classic, so if you are working in Lightning, you will need to switch over to Classic to create a Business Hours record.</cmd>
+      </step>
+      <step>
+        <cmd>In Setup, use the Quick Find box and type Business Hours.</cmd>
+      </step>
+      <step>
+        <cmd>Select Business Hours. </cmd>
+      </step>
+      <step>
+        <cmd>Select New Business Hours. </cmd>
+      </step>
+      <step>
+        <cmd>Configure the Conga Orchestrate hours identical to the Conga Orchestrate screenshot below. Specifically, the name needs to be Conga Orchestrate, and the business hours for each day that you are open need to be 9 to 5 PM and the Active box must be checked. The Time Zone should be set to your local Time Zone. You can also go into the business hours record and associate holidays with it. Refer to <xref href="https://help.salesforce.com/HTViewHelpDoc?id=customize_supporthours.htm&amp;language=en_US" scope="external" format="html">Setting Business Hours</xref> and <xref href="https://help.salesforce.com/apex/HTViewHelpDoc?id=customizesupport_holidays.htm&amp;language=en_US" scope="external" format="html">Setting Holiday Hours</xref>. </cmd>
+      </step>
+      <step>
+        <cmd>Select Save.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p>Important</p>
+      <p>The holidays override the business hours and set normal business days as non-working days.</p>
+    </postreq>
+  </taskbody>
+</task>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t941a7b" xml:lang="en-us">
+  <title class="- topic/title ">Frequently Asked Questions</title>
+  <conbody>
+    <p>
+      <b>What do you recommend to get up and running with Orchestrate? </b>
+    </p>
+    <p>See <xref href="orchestrateusingprocessdefinitionquickstartsvoctober23.dita#t185bb9" scope="local" format="dita">Using Process Definition Quick Starts</xref>, which includes recorded videos for initial configuration and a process library you can use or clone.</p>
+    <p>
+      <b>Does Lucidchart work with Orchestrate? </b>
+    </p>
+    <p>Absolutely! See <xref href="https://documentation.conga.com/display/ORCHESTRATE/Lucidchart+Integration+with+Conga+Orchestrate" scope="external" format="html">Lucidchart Integration with Conga Orchestrate</xref> to learn about creating new process definitions from Orchestrate.</p>
+    <p>
+      <b>Why does my email fail to send when using a Salesforce email template in a Send Email step?</b>
+    </p>
+    <p>In Send Email steps using Salesforce email templates, you must populate the process object's Contact field and add field mappings for the required object's contact lookup. This is required even if the email is only sent to a user. Failing to populate the Contact field yields the Email alert failed to send due to either no Contact or Lead specified or a Contact or Lead specified with a blank Email field error message.</p>
+    <p>
+      <b>Why is my new Definition not executing?</b>
+    </p>
+    <p>Ensure that the active checkbox field on the definition is checked. A definition does execute until the active checkbox field is checked.</p>
+    <p>Ensure that all definition conditions are met. A definition with defined definition criteria does not execute until all definition conditions are met.</p>
+    <p>
+      <b>I checked "Generate Email Notification" on my Create Record (Task) step. Why am I not receiving an email?</b>
+    </p>
+    <p>When using Orchestrate to create Salesforce Tasks, Orchestrate leverages Salesforce's native email reminder functionality. Salesforce designed the email notification to occur when one user assigns a task to another user. As a result of this functionality, task assignment email notifications fire when the user completing the parent task is different than the user assigned the child task. Task assignment email notifications are not sent if the assigned user is the same for each task.</p>
+    <p> The email notification template is not customizable.</p>
+    <p>
+      <b>How does Orchestrate handle multiple users in the same team role (e.g., Salesforce Account Team)?</b>
+    </p>
+    <p>The best practice is to assign a single user per role for each account or opportunity team.</p>
+    <p>
+      <b>How is Conga Orchestrate's behavior different in Salesforce Lightning and Classic?</b>
+    </p>
+    <p>Although Conga Orchestrate works mostly the same in both Lightning and Classic, there are some differences.</p>
+    <p>For example, the <xref href="orchestrateusealightningcomponenttomanageapprovalsforaprocessobjectvoctober23.dita#t5e1c2e" scope="local" format="dita">ApprovalList component</xref>, which displays all approvals at the process object level, is only available in Lightning. For approvals on individual step records, such as tasks, the ApprovalItem and ChecklistItem communicate with the Lightning page view in real time. In Classic, the Task page requires a page refresh to see a change in status when the approval or checklist is completed.</p>
+    <p>
+      <b>How does the Conga Orchestrate work with other Conga products?</b>
+    </p>
+    <p>In most cases, if the Conga Composer, Conga Sign, Conga Contracts for Salesforce, and Conga Collaborate packages are installed and set up on Salesforce, these Conga products to work with Conga Orchestrate.</p>
+    <p>Minor setup items or limitations are noted in the application:</p>
+    <ul>
+      <li>
+        Conga Composer and Conga Sign:
+        <ul>
+          <li><xref href="orchestratecreatingastepthatgeneratesadocumentvjune23.dita#ted301c" scope="local" format="dita">Generate Composer documents</xref> from templates, solutions, or buttons.</li>
+          <li><xref href="orchestratecreatingastepthatsendsanemail.dita#t5adf89" scope="local" format="dita">Send emails</xref> from Conga email templates.</li>
+          <li>Use Conga Sign parameters in Composer solutions and buttons to generate the document and send for signature.</li>
+        </ul>
+      </li>
+      <li>
+        Conga Collaborate
+        <ul>
+          <li><xref href="orchestratecreatingastepthatgeneratesadocumentvjune23.dita#ted301c" scope="local" format="dita">Create a new document</xref>.</li>
+        </ul>
+      </li>
+      <li>
+        Conga Contracts for Salesforce
+        <ul>
+          <li>Add review steps that <xref href="orchestratecreatingastepthatcreatesarecordvspring21.dita#tf11ad9" scope="local" format="dita">create and a</xref><xref href="orchestratecreatingastepthatcreatesarecordvspring21.dita#tf11ad9" scope="local" format="dita">ssign a task</xref> related to the Conga Contracts for Salesforce solution.</li>
+          <li>Add <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Approvals</xref> to the definition.</li>
+          <li>
+            <p>Add <xref href="orchestratecreatingastepthatcreatesarecordvspring21.dita#tf11ad9" scope="local" format="dita">looping</xref> logic to the definition.</p>
+          </li>
+          <li>Add clause logic to the definition.</li>
+          <li>Respond to negotiation events (Contracts for Salesforce primary file version changes). For detailed information, see <xref href="orchestrateadvancedfunctionalitywithstepcreationconditionsvsummer21.dita#t3caa18" scope="local" format="dita">Advanced Functions with Step Creation Conditions</xref>.</li>
+          <li>Add Document Generation and eSignature functionality (Conga Composer + Conga Sign). For detailed information, see <xref href="orchestratecreatingastepthatgeneratesadocumentvjune23.dita#ted301c" scope="local" format="dita">Creating a Step that Generates a Document</xref>.</li>
+        </ul>
+      </li>
+    </ul>
+    <p>
+      <b>Can guest users use Conga Orchestrate?</b>
+    </p>
+    <p>No. Conga Orchestrate is not compatible with the Guest User profile in Salesforce Communities.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tad111c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring the SendGrid Integration vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Aug 19, 2021</p>
+    <p>Steps to configure the SendGrid integration</p>
+    <p>Use <xref href="https://sendgrid.com/" scope="external" format="html">SendGrid</xref> for your transactional email templates inside of Send Email steps.</p>
+    <p>This integration works only with SendGrid Legacy Transactional email templates at this time.</p>
+    <p>Follow the steps below to configure SendGrid integration.</p>
+    <ol>
+      <li>
+        <xref href="https://app.sendgrid.com/signup" scope="external" format="html">Create a SendGrid account.</xref>
+      </li>
+      <li>
+        <xref href="https://help.salesforce.com/articleView?id=configuring_remoteproxy.htm&amp;type=5" scope="external" format="html">Add a Remote Site</xref>
+        .
+        <ul>
+          <li>Remote Site URL: <xref href="https://api.sendgrid.com" scope="external" format="html">https://api.sendgrid.com</xref></li>
+        </ul>
+      </li>
+      <li>Obtain an API Key. You can read more about API Keys in SendGrid's online documentation <xref href="https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html" scope="external" format="html">here</xref>. Log into your SendGrid account and on the left side menu, select Settings. Select API Keys from the sub-menu. Select the Create API Key button. Name the Key and choose Full Access. Select Create &amp; View. Copy the API Key.</li>
+      <li>Navigate to the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> tab.</li>
+      <li>Click Email Alerts under the Integration Partners section on the left-hand side.</li>
+      <li>Paste the copied API Key in the SendGrid API Token field. </li>
+      <li>Click Save.</li>
+    </ol>
+    <p>Your transactional email templates will be displayed on the Send Email step along with Salesforce email templates.</p>
+  </conbody>
+</concept>

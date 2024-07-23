@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t6eb279" xml:lang="en-us">
+  <title class="- topic/title ">To deactivate Apex exception notifications</title>
+  <body>
+    <ol>
+      <li>Access Orchestrate Setup by clicking the gray gear icon at the top right of your Orchestrate home screen.</li>
+      <li>In the PLATFORM TOOLS section of the left navbar, expand <b>Custom Code</b> and select <b>Custom Settings</b>.</li>
+      <li>Locate the Don't Send Exception Email to Conga setting and select its adjacent <b>Edit</b> hypertext.</li>
+      <li>Under the General Options heading, change the Default Value toggle from Unchecked to <b>Checked</b>.</li>
+    </ol>
+    <p/>
+  </body>
+</topic>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc29aeb" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Using a Custom Object as a Process Object and Step vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>To create and use custom objects as both process objects and steps, follow the instructions below. Alternatively, use the <xref href="orchestratecustomobjectwizardvwinter20.dita#t35180b" scope="local" format="dita">Custom Object Wizard</xref> in Conga Orchestrate Setup to streamline setting up a custom object as a process object and step.</p>
+    <p>If the custom process object is from a managed package and therefore has a namespace, add the namespace to the Allowed Namespaces field on the Conga Orchestrate Setup page.</p>
+    <ol>
+      <li><xref href="https://help.salesforce.com/articleView?id=dev_objectcreate_task_parent.htm&amp;type=5" scope="external" format="html">Create a custom object</xref>, or skip this step if your organization already created a custom object.</li>
+      <li>
+        Ensure these properties are set on the custom object:
+        <ul>
+          <li>Allow Reports</li>
+          <li>Allow Activities</li>
+          <li>Track Field History</li>
+          <li>Add Notes &amp; Attachments</li>
+          <li>Allow Search</li>
+        </ul>
+      </li>
+      <li>Create the <xref href="orchestratefieldsforcustomobjectsasprocessobjectsandstepsvsummer21.dita#t4b52a6" scope="local" format="dita">required fields</xref> for Conga Orchestrate to use the custom object as a process object and a step.</li>
+      <li>(Optional) Create a master page layout to make creating new page layouts easier in the future.</li>
+      <li>Clone the master page layout for specific processes.</li>
+      <li><xref href="https://trailhead.salesforce.com/content/learn/projects/customize-a-salesforce-object/create-record-types" scope="external" format="html">Create record types</xref> and associate them with page layouts for the specific processes.</li>
+      <li>Create an <xref href="orchestratecreatinganapextriggerforacustomobjectasaprocessobjectandastepvsummer21.dita#t3764f3" scope="local" format="dita">Apex trigger</xref> for the custom object.</li>
+      <li>Create an <xref href="orchestratecreatinganapextestclassforacustomobjectasaprocessobjectandastep.dita#te53933" scope="local" format="dita">Apex test class</xref> for the custom object.</li>
+      <li>Go to <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> to set the <xref href="orchestrateconfiguringclosedstatusvalues.dita#t7e4ff0" scope="local" format="dita">Closed Status values</xref> in the Status field. </li>
+      <li>Create process definitions using your custom object.</li>
+      <li>
+        To assign the steps to a queue:
+        <ul>
+          <li>Add your custom step object to the list of supported objects in the queue setup edit screen.</li>
+          <li>Create a Salesforce Flow to notify queue members when a step is created and assigned to the queue.</li>
+        </ul>
+      </li>
+    </ol>
+  </conbody>
+</concept>

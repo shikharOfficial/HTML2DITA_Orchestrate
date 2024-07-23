@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t3dce97" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Creating a Step that Adds Managed Clause Bundles</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Add Managed Clause Bundles and the related Managed Clauses to a record using Conga Orchestrate.</p>
+    <p>Use Conga Orchestrate to dynamically select and add Clause Bundles for Contracts for Salesforce solution. The Clause Bundle step in a <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Process Definition</xref> allows users to add Clause Bundles and each related Clause record as Managed Clauses to a Salesforce object record. Step Creation Conditions provide the functionality to conditionally determine when a Clause Bundle should be added and subsequently adds the related Clauses as Managed Clauses to a process object record.Note: Conga Orchestrate 13.72 or greater must be installed to use the Clause Bundles Step Type. Conga Contracts for Salesforce version 1.97 or greater must be installed.</p>
+    <p>Follow the steps below to add a Clause Bundle step to a Process Definition.</p>
+    <ol>
+      <li>Navigate to an existing Definition or create a new Definition.</li>
+      <li>Click the dropdown arrow next to the New Step button and select Clause Bundle.</li>
+      <li>Name the step by filling out the Step field.</li>
+      <li>Begin typing the name of the desired Clause Bundle in the Clause Bundle field and select a Clause Bundle.</li>
+      <li>Enter a number value for the Sort Order value to determine the Clause Bundle's sort order. If there are multiple bundles defined, ensure unique values are used for the sort order.</li>
+      <li>
+        (Optional) Click + Add Creation Condition to add Creation Conditions to the Clause Bundle step.
+        <ul>
+          <li>Creation Conditions conditionally determine if a step is created and executed. It is recommended to use Step Creation Conditions if a Definition has multiple Clause Bundle steps.</li>
+          <li>For more information on adding Step Creation Conditions, see <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref>.</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Note: If a Definition contains several Clause Bundle steps, and those bundles contain some of the same clauses (overlapping clauses), the overlapping clauses are only added once regardless of how many bundles contain those clauses. Additionally, if a step has Creation Conditions with the Reevaluate option selected and Deletable is checked, Orchestrate may not remove all clauses in another bundle containing those overlapping clauses and will continue to match its own Step Conditions.</p>
+  </conbody>
+</concept>

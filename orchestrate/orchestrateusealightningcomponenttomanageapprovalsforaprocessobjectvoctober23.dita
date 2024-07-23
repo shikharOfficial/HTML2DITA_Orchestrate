@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t5e1c2e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Use a Lightning Component to Manage Approvals for a Process Object vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Dec 08, 2023</p>
+    <p>Use Conga Orchestrate's ApprovalList Lightning component to manage a process object's related approvals. Using this custom Lightning component, you can manage all related approvals by rejecting or approving them directly on the process object.</p>
+    <p>Note</p>
+    <p>MyDomain must be enabled to use custom Lightning components.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="td04f93" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Editing Account Page Layouts for Business Processes</title>
+  <shortdesc>Created by  user-0266f, last modified by  William Abernathy on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>To view the business processes related to an account:</context>
+    <steps>
+      <step>
+        <cmd>In Setup, enter Accounts in the Quick Find.</cmd>
+      </step>
+      <step>
+        <cmd>Select <b>Page Layouts</b>. </cmd>
+      </step>
+      <step>
+        <cmd>Click <b>Edit </b>next to the page layout to which you're adding the Business Processes related list.</cmd>
+      </step>
+      <step>
+        <cmd>Select <b>Related Lists</b>.</cmd>
+      </step>
+      <step>
+        <cmd>Drag and drop the Business Processes (Account) section onto the page layout. </cmd>
+      </step>
+      <step>
+        <cmd>Select the <b>Related List Properties </b>(wrench) icon in the Business Processes related list.</cmd>
+      </step>
+      <step>
+        <cmd>Add the following fields to the Selected Fields frame.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Business Process Name</cmd>
+          </substep>
+          <substep>
+            <cmd>Subject</cmd>
+          </substep>
+          <substep>
+            <cmd>Definition</cmd>
+          </substep>
+          <substep>
+            <cmd>Due Date</cmd>
+          </substep>
+          <substep>
+            <cmd>Status</cmd>
+          </substep>
+          <substep>
+            <cmd>Contact</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select any other fields you want in the related list and order the fields as needed.</cmd>
+      </step>
+      <step>
+        <cmd>Click <b>OK</b>.</cmd>
+      </step>
+      <step>
+        <cmd>
+          Repeat the steps above to add the Recurring Business Processes related list to any applicable account page layouts. In Related List Properties, add the following fields to the
+          <b>Selected Fields</b>
+          frame:
+        </cmd>
+        <substeps>
+          <substep>
+            <cmd>Recurring Business Process Name</cmd>
+          </substep>
+          <substep>
+            <cmd>Recurrence Type</cmd>
+          </substep>
+          <substep>
+            <cmd>Interval</cmd>
+          </substep>
+          <substep>
+            <cmd>Interval Number</cmd>
+          </substep>
+          <substep>
+            <cmd>Begin Date</cmd>
+          </substep>
+          <substep>
+            <cmd>End Date</cmd>
+          </substep>
+          <substep>
+            <cmd>Next Scheduled Occurrence</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select the plus sign icon in the Buttons frame.</cmd>
+      </step>
+      <step>
+        <cmd>De-select the <b>New </b>checkbox and click the <b>OK </b>button. </cmd>
+      </step>
+      <step>
+        <cmd>Click the <b>Save </b>button in the Page Layout editor.</cmd>
+      </step>
+    </steps>
+    <postreq>
+    </postreq>
+  </taskbody>
+</task>

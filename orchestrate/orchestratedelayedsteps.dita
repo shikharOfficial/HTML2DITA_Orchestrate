@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2a10fb" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Delayed Steps</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Instead of creating a step as soon as a parent step is completed, a delay can be applied to postpone the creation of the step. For example, use a delayed email step to send an email reminder two days after a prior step is created, or as Marketing Automation lite to send emails on a schedule you specify.</p>
+    <p>When you select the Delay Creation checkbox on the Step edit screen, Conga Orchestrate will delay creating the step until the day specified by the Delay Creation Date Adjustment fields.</p>
+    <p>To create a step with a delay, select the Delay Creation checkbox and populate the adjusted due date fields:</p>
+    <ul>
+      <li>Delay Creation Base Date - The date selected in this field will be used to calculate when the delayed step will be created.</li>
+      <li>Parent Object - Creation date calculation uses the Due Date Field on the object specified in the Object Name field for the Definition.</li>
+      <li>Current Date - Creation date calculation will be based on the current date. Current date is the date that this Step is being created.</li>
+      <li>Parent Event - Creation date calculation uses the Event date as the base date for the calculation. This only applies if the current Step is a child of an Event Placeholder Step.</li>
+      <li>Date Field - Creation date calculation uses any Date / DateTime field from the Related Account, Contact, or Process Object you select.</li>
+      <li>Delay Creation Date Adjustment - This number will be added to the date specified in the Delay Creation Base Date field.Delay Creation Time - The time selected in this field will determine the specific time the step is created on the designated Delay Creation Base Date.The Delay Creation fields do not control the due date of the step; they only control when the step will be created. Use the Due Date Adjustment Base Date and Due Date Adjustment fields to calculate the due date of the step.Delayed Steps in a Process</li>
+    </ul>
+    <p>It is recommended that you add the Delayed Steps related list to any Process Object page layouts for processes that use Delayed Steps. When a process gets to the delayed step, a Delayed Step is created as a placeholder. Conga Orchestrate will monitor the Delayed Steps and create the step when the date matches the criteria you specified in the step. You will be able to see the Delayed Steps on the Process Object record if you add the Delayed Steps related list to the page layout. We recommend adding these fields to the related list: Name, Step, Status, Type, and Date to Create.</p>
+    <p>If a Delayed Step is set to create on an event date, and the event is created with an event date of today, the Delayed Step will fire the task today because the batch job runs every hour. So, it will pick it up at most 60 minutes after the event queues it up.</p>
+    <p>Failed Delayed Steps</p>
+    <p>We also recommend that you schedule the Failed Delayed Steps report to run every day that will email a user in your org who can monitor any failed Delayed Steps. This report will only send out if there are any failed Delayed Steps.</p>
+  </conbody>
+</concept>

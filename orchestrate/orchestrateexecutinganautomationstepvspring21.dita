@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf157f5" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Executing an Automation Step vSpring-21</title>
+  <conbody>
+    <p>Created by  user-0266f on May 20, 2021</p>
+    <p>Automation Steps are executed in the same way that other process steps are. Automation Steps can have parent steps, be child steps, or be top-level steps.</p>
+    <p>For information on setting up an Automation Step, see <xref href="orchestratecreatingastepwithroboticprocessautomationvoctober23.dita#tc6c753" scope="local" format="dita">Creating a Step with Process Automation</xref>. </p>
+    <p>In Salesforce orgs that upgrade to Conga Orchestrate version 14 or greater, you must run through the Object Setup in Conga Orchestrate Setup and configure the Task object, even if it is already configured.</p>
+  </conbody>
+</concept>

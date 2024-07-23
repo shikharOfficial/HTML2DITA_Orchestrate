@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t1f4275" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : View Your Conga Orchestrate Usage</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>Use the Display Usage button to display all statistics for Conga Orchestrate usage.</context>
+    <steps>
+      <step>
+        <cmd>Navigate to the Definitions tab.</cmd>
+      </step>
+      <step>
+        <cmd>Change the view from Recently Viewed to any other view. This reveals the custom list view button.</cmd>
+      </step>
+      <step>
+        <cmd>Click Display Usage. </cmd>
+      </step>
+    </steps>
+    <postreq>
+    </postreq>
+  </taskbody>
+</task>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t922346" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Advanced Setup vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>This section details advanced setup options for Conga Orchestrate.</p>
+    <p>All these items are optional.</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestratecongaorchestratescalingenhancements.dita#tbcca57" scope="local" format="dita">Conga Orchestrate Scaling Enhancements</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingcustomobjectsasprocessobjectsstepsandmonitoredobjectsvwinter20.dita#tfb836e" scope="local" format="dita">Using Custom Objects as Process Objects, Steps, and Monitored Objects</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaprocessobject.dita#t32d074" scope="local" format="dita">Using a Custom Object as a Process Object</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasastepvoctober23.dita#t05a78d" scope="local" format="dita">Using a Custom Object as a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaprocessobjectandstepvoctober23.dita#tc29aeb" scope="local" format="dita">Using a Custom Object as a Process Object and Step</xref>
+      </li>
+      <li>
+        <xref href="orchestratedisablingacustomobjecttriggervjune23.dita#tb8d3b7" scope="local" format="dita">Disabling a Custom Object Trigger</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusingacustomobjectasaninitiatorsmonitoredobject.dita#t86d263" scope="local" format="dita">Using a Custom Object as an Initiator's Monitored Object</xref>
+      </li>
+      <li>
+        <xref href="orchestratecustomprocessdetailsbuttonandprocessvisualbuttonforcustomobjectsasprocessobjectsvspring21.dita#tbe51fa" scope="local" format="dita">Custom Process Details Button and Process Visual Button for Custom Objects as Process Objects</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringnonworkingdaysvjune23.dita#t161941" scope="local" format="dita">Configuring Non-Working Days</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringbusinesshoursvoctober23.dita#td77193" scope="local" format="dita">Configuring Business Hours</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringoutofofficelinkinclassic.dita#t8af135" scope="local" format="dita">Configuring Out of Office Link in Classic</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringaganttchartvoctober23.dita#tfc76c5" scope="local" format="dita">Configuring a Gantt Chart</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingprocessgroupsforreportingandganttchartsvoctober23.dita#tc7087d" scope="local" format="dita">Creating Process Groups for Reporting and Gantt Charts</xref>
+      </li>
+      <li>
+        <xref href="orchestratenotifyingonassignmentvoctober23.dita#t1a3f84" scope="local" format="dita">Notifying on Assignment</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringvirtualstepsvoctober23.dita#t44acd0" scope="local" format="dita">Configuring Virtual Steps</xref>
+      </li>
+      <li>
+        <xref href="orchestratecustomizingtheprocessobjectlookupfieldtasks.dita#t6f19f1" scope="local" format="dita">Customizing the Process Object Lookup Field (Tasks)</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringthesendgridintegrationvwinter20.dita#tad111c" scope="local" format="dita">Configuring the SendGrid Integration</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringthetwiliointegration.dita#t52948a" scope="local" format="dita">Configuring the Twilio Integration</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringuipathintegrationvoctober23.dita#tb882fa" scope="local" format="dita">Configuring UiPath Integration</xref>
+      </li>
+      <li>
+        <xref href="orchestrateimplicationsofenablingsharedcontacts.dita#t91d3ae" scope="local" format="dita">Implications of Enabling Shared Contacts</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextestclassforacustomobjectasaprocessobject.dita#t2de78f" scope="local" format="dita">Creating an Apex Test Class for a Custom Object as a Process Object</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextestclassforacustomobjectasaprocessobjectandastep.dita#te53933" scope="local" format="dita">Creating an Apex Test Class for a Custom Object as a Process Object and a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextestclassforacustomobjectasastep.dita#tcbd58e" scope="local" format="dita">Creating an Apex Test Class for a Custom Object as a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextriggerforacustomobjectasaprocessobjectvsummer21.dita#t9a90ad" scope="local" format="dita">Creating an Apex Trigger for a Custom Object as a Process Object</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextriggerforacustomobjectasaprocessobjectandastepvsummer21.dita#t3764f3" scope="local" format="dita">Creating an Apex Trigger for a Custom Object as a Process Object and a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatinganapextriggerforacustomobjectasastepvsummer21.dita#tf30fc7" scope="local" format="dita">Creating an Apex Trigger for a Custom Object as a Step</xref>
+      </li>
+      <li>
+        <xref href="orchestrateconfiguringapexexceptionnotificationsvoctober23.dita#tf75321" scope="local" format="dita">Configuring Apex Exception Notifications</xref>
+      </li>
+      <li>
+        <xref href="orchestratemodifyingcustomtriggerstouseobjectsasprocessobjectsstepobjectsorboth.dita#t6b18a3" scope="local" format="dita">Modifying Custom Triggers to Use Objects as Process Objects, Step Objects, or Both</xref>
+      </li>
+      <li>
+        <xref href="orchestratecustomobjectwizardvwinter20.dita#t35180b" scope="local" format="dita">Custom Object Wizard</xref>
+      </li>
+      <li>
+        <xref href="orchestratefieldsforcustomobjectsasprocessobjectsvsummer21.dita#tc158e9" scope="local" format="dita">Fields for Custom Objects as Process Objects</xref>
+      </li>
+      <li>
+        <xref href="orchestratefieldsforcustomobjectsasprocessobjectsandstepsvsummer21.dita#t4b52a6" scope="local" format="dita">Fields for Custom Objects as Process Objects and Steps</xref>
+      </li>
+      <li>
+        <xref href="orchestratefieldsforcustomobjectsasstepsvwinter20.dita#tac2f09" scope="local" format="dita">Fields for Custom Objects as Steps</xref>
+      </li>
+      <li>
+        <xref href="https://documentation.conga.com/display/ORCHESTRATE/Lucidchart+Integration+with+Conga+Orchestrate" scope="external" format="html">Lucidchart Integration with Conga Orchestrate</xref>
+      </li>
+      <li>
+        <xref href="orchestratesettingupareportforcongaorchestrate.dita#t6bea5d" scope="local" format="dita">Setting Up a Report for Conga Orchestrate</xref>
+      </li>
+      <li>
+        <xref href="orchestrateusealightningcomponenttomanageapprovalsforaprocessobjectvoctober23.dita#t5e1c2e" scope="local" format="dita">Use a Lightning Component to Manage Approvals for a Process Object</xref>
+      </li>
+      <li>
+        <xref href="orchestratecongaorchestratescalingenhancement.dita#t2b9d4b" scope="local" format="dita">Conga Orchestrate Scaling Enhancement</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

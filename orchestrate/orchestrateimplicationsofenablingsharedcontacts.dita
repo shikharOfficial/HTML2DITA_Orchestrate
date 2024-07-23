@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t91d3ae" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Implications of Enabling Shared Contacts</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>The Shared Contacts feature allows users to relate a single Contact to multiple Accounts (households, businesses, etc.). Formerly, users would have to create duplicate Contacts to accomplish this same goal. With this new feature, each contact still has a primary account, but its other accounts become indirect relationships.</p>
+    <p>So what are the implications here?</p>
+    <p>How Shared Contacts Affect Activities</p>
+    <p>There are several ramifications of the Shared Contacts feature, but the one we’ll address in this post primarily relates to Activities. If you use Salesforce Tasks for workflows, you are likely used to relating a Task to a Contact (via the Name field) and then viewing those activities on that Contact’s Account. (Conga Orchestrate uses the Task’s Related To field to link it to a specific process object.) This is Salesforce’s default behavior — rolling those activities up to the Contact’s Account automatically for easy viewing.</p>
+    <p>Per <xref href="https://help.salesforce.com/articleView?id=customizeactivities_activities_account_rollup.htm&amp;language=en_US&amp;type=0" scope="external" format="html">Salesforce documentation</xref>:</p>
+    <p>“By default, the Related To field on an activity determines which account the activity appears on. Often that account ends up being the contact’s primary account, but this behavior doesn’t always make the most sense. For example, if users can relate a contact to multiple accounts, the contact’s primary account isn’t always relevant to the activity. It might make more sense for the activity to appear on one of the contact’s secondary, or indirect, accounts. You can turn off this default roll up behavior from the Activities Settings page, but be aware of the implications.”</p>
+    <p>So associating a Contact to many Accounts causes all of those activities to show on that Contact’s primary Account even if the activity doesn’t seem to logically belong there. In this case, users may think there are too many activities displayed.</p>
+    <p>For users who disable this roll-up behavior, the Contact’s activities will no longer show at the Account level. Here, users may miss seeing those activities.</p>
+    <p>Correctly Associating Tasks</p>
+    <p>We have a couple of potential solutions. If the default roll-up behavior is enabled, we can use a formula field to help distinguish tasks that are associated with the primary Account from those that are not.</p>
+    <p>If the roll-up behavior is disabled, we recommend a solution using a custom Account lookup field that will allow only that Account’s activities to display in a separate related list.</p>
+  </conbody>
+</concept>

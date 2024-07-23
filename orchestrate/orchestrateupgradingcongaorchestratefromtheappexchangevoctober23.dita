@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t25c3c8" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Upgrading Conga Orchestrate from the AppExchange vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 21, 2023</p>
+    <p>Conga Orchestrate periodically pushes upgrades to all customers automatically, unless you have opted out. You may also upgrade to the latest version of Conga Orchestrate yourself from the Salesforce AppExchange.</p>
+    <p>To upgrade to a newer version of the product:</p>
+    <ol>
+      <li>Go to the <xref href="https://appexchange.salesforce.com/listingDetail?listingId=a0N300000058f6JEAQ" scope="external" format="html">Orchestrate AppExchange listing</xref> and click <b>Get It Now</b>.</li>
+      <li>Log into your Salesforce account.</li>
+      <li>Select <b>Install in Production</b> or <b>Install in a Sandbox</b>.</li>
+      <li>On the Confirm Installation Details screen, check <b>I have read and agree to the terms and conditions</b> and click <b>Confirm and Install</b>.</li>
+      <li>Select <b>Install for All Users</b>.</li>
+      <li>Click <b>Upgrade</b>.</li>
+      <li>Select <b>Yes, access to these third-party web sites to use this web service to manage access to Conga Orchestrate features</b>.</li>
+      <li>Click <b>Continue</b>. You will receive an email notification when the installation is complete.</li>
+      <li>Select <b>Done </b>to return to Setup.</li>
+    </ol>
+  </conbody>
+</concept>

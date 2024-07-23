@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf5004e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Adding a Sub-Type to the Event Page Layout vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>A process can involve events as well as tasks. Events can have sub-types that you can use in a filter, or dependency, to determine whether a step has or has not started.</p>
+    <p>To add a sub-type to the Event Page layout:</p>
+    <p>To add the Process Details custom button to Process Object Page Layout(s):</p>
+    <ol>
+      <li>In Setup, use Quick Find and enter Event Page Layouts.</li>
+      <li>Select Page Layouts. </li>
+      <li>Select <b>Edit </b>next to the Page Layout you will modify.</li>
+      <li>Drag and drop the Sub Type field to the desired location on the page layout . </li>
+      <li>Select <b>Save</b> or <b>Quick Save</b> and repeat for any other page layouts that should contain the field.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

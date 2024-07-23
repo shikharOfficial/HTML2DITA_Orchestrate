@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t35180b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Custom Object Wizard vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Aug 19, 2021</p>
+    <p>Conga Orchestrate allows you to create complex processes with custom objects, in addition to standard Salesforce objects. More specifically, Conga Orchestrate provides functionality to reference custom objects as a <xref href="orchestrateprocessobjects.dita#t1bb950" scope="local" format="dita">Process Object</xref> and <xref href="orchestrateaboutprocessstepsvsummer21.dita#tf89b4c" scope="local" format="dita">Step Object</xref>.</p>
+    <p>To reference custom objects with Conga Orchestrate, use the Custom Object wizard to easily configure custom objects as a Process Object or Step Object:</p>
+    <p>You must complete the Custom Object wizard to make a custom object eligible as a Process Object or Step Object.</p>
+    <ol>
+      <li>Click the Conga Orchestrate Setup tab.</li>
+      <li>Under the Advanced Setup section, click Custom Objects.</li>
+      <li>Choose Process, Step, or Both to proceed with setting the custom object up as a Process Object or Step Object.</li>
+      <li>Click Verify to verify that OAuth is connected.</li>
+      <li>
+        Choose Create New Custom Object or Select Existing Custom Object depending on whether you are using an existing custom object or creating a new one.
+        <ul>
+          <li>
+            When creating a new custom object in the Custom Object wizard, enter in values for the name and data type (Text or Auto Number), then click Create a New Custom Object.
+            <ul>
+              <li>Creating a new custom object automatically generates the mandatory Conga Orchestrate fields and field mapping (Step 6) is skipped.</li>
+            </ul>
+          </li>
+          <li>When referencing an existing custom object, choose the specific custom object and click Use Selected Object.</li>
+        </ul>
+      </li>
+      <li>
+        Once an existing custom object is selected, map the required Conga Orchestrate fields to existing fields on the custom object, or create new fields using the Custom Object wizard.
+        <ul>
+          <li>Select Default in the Custom Object Field to create new custom fields that map to the required Conga Orchestrate fields.</li>
+          <li>Select Choose Existing to choose existing fields that map to the mandatory Conga Orchestrate fields.</li>
+          <li>Click Map Fields to Custom Object once all fields are mapped or created.</li>
+        </ul>
+      </li>
+      <li>Choose which fields are added to the custom object's Page Layout and click Assign Fields.</li>
+      <li>Choose the field level security for each user profile. Click Save Field Security to apply the selected field-level security to the referenced profiles.</li>
+      <li>Click Deploy Trigger to deploy the required Trigger and Text Class.</li>
+    </ol>
+  </conbody>
+</concept>

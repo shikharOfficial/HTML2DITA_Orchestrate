@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t1bb950" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Process Objects</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>A Process Object is an object used to run processes. Standard objects such as Campaigns, Cases, Contracts, Leads, and Opportunities can be used as Process Objects. Conga Orchestrate ships with a custom Process Object called Business Process. You can also <xref href="orchestrateusingacustomobjectasaprocessobject.dita#t32d074" scope="local" format="dita">configure your own custom object as a Process Object</xref>.</p>
+    <p>If Require Validation for Converted Leads is not checked in the Lead settings, a process won't fire when an opportunity is created, even if there is an initiator looking at the opportunity. If that setting is not visible, a case will need to be opened with SF Support.</p>
+    <p>Download this Conga Orchestrate Object Diagram to get a better understanding of the objects and relationships used in the Conga Orchestrate app.</p>
+    <p>Use this decision tree to determine when a new Page Layout and Record Type are necessary, and when adding criteria to your process definition will be sufficient to translate your process with Conga Orchestrate.</p>
+    <p>Illustrates how to decide between creating a process using a unique page layout and record type, versus using a 'global' record type with multiple processes that execute based on set criteria.</p>
+    <p/>
+  </conbody>
+</concept>

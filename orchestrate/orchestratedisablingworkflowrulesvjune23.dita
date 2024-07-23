@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t4e7fe9" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Disabling Workflow Rules vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 13, 2023</p>
+    <p>Salesforce has deprecated its Workflow Rules feature in favor of Salesforce Flow. Orchestrate dependencies cannot be carried forward on Workflow Rules and have been replaced with Flow rules. To avoid conflicts, before any update to Flow-enabled Orchestrate instances, you must disable the deprecated workflow rules. </p>
+    <p>To disable Workflow Rules:</p>
+    <ol>
+      <li>
+        <p>Go to Setup > Workflow Rules.</p>
+      </li>
+      <li>
+        <p>Click <b>Deactivate </b>adjacent to the workflow rule. </p>
+      </li>
+    </ol>
+    <p>Look for the following rules to deactivate: </p>
+    <ul>
+      <li>Email When Assigned to Queue (Process Step)</li>
+      <li>Email When Assigned to Queue (Test PCE Step)</li>
+    </ul>
+  </conbody>
+</concept>

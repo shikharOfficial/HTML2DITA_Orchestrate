@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t7ee8a4" xml:lang="en-us">
+  <title class="- topic/title ">Troubleshooting Step Creation Conditions</title>
+  <conbody>
+    <p>You can capture debug logs to troubleshoot step creation conditions.</p>
+  </conbody>
+</concept>

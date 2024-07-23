@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t526f7a" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Connected App Configuration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Note</p>
+    <p>Salesforce's <xref href="https://releasenotes.docs.salesforce.com/en-us/spring20/release-notes/rn_security_domains_stabilize_mydomain_cruc.htm" scope="external" format="html">Stabilize the Hostname for My Domain URLs in Sandboxes</xref> critical update must be activated. This critical update is turned on automatically after 7/18/2020.</p>
+    <ol>
+      <li>In Setup, enter Connected Apps in the Quick Find. </li>
+      <li>Click <b>Connected Apps</b>. </li>
+      <li>Click <b>Orchestrate Setup</b>. </li>
+      <li>Click the <b>Edit Policies</b> button.</li>
+      <li>In the Permitted Users dropdown, select <b>Admin approved users are pre-authorized</b>. </li>
+      <li>Click <b>OK</b> to accept the security warning. You will satisfy the requirements in the following steps.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Scroll down and select <b>Manage Profiles</b> or <b>Manage Permission Sets</b> (depending on how you want to manage access to Conga Orchestrate). </li>
+      <li>Choose the profiles or permission sets that will have access to Conga Orchestrate.</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+    <p>With the Orchestrate Connected App configured, follow the steps below to ensure the remote site settings are properly configured.</p>
+    <ol>
+      <li>In Salesforce Setup, enter Remote Sites in the Quick Find.</li>
+      <li>Select <b>Remote Site Settings</b>.</li>
+      <li>Select the <b>Orchestrate Setup Service Remote Site</b>.Note: You may have to click <b>Next Page</b> to access this remote site.</li>
+      <li>Click <b>Edit</b>.</li>
+      <li>Ensure that the <b>Active</b> checkbox is checked.</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </conbody>
+</concept>

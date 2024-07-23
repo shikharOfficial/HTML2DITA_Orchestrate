@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t6cdbc7" xml:lang="en-us">
+  <title class="- topic/title ">New Features and Functionality</title>
+  <body>
+    <ul>
+      <li>
+        Some default fields shipped with previous Conga Orchestrate packages are now removed.
+        <ul>
+          <li>Fields are removed from the Case, Campaign, Contract, Lead, Opportunity, and Activity objects.</li>
+        </ul>
+        <p>Important</p>
+        <ul>
+          <li>Upgrading from version 13 to version 14 deprecates fields previously shipped on the contract, lead, opportunity, campaign, case, and activity objects. This can result in issues if the deprecated fields are referenced in custom code or within field sets in an org.</li>
+        </ul>
+      </li>
+      <li>
+        Track automated process steps (such as emails, record updates, and document generation) without being required to use tasks.
+        <ul>
+          <li>Use the process instance related list for step track.</li>
+        </ul>
+      </li>
+      <li>
+        Tasks are now available in queues.
+        <ul>
+          <li>If it exists in your org, deactivate the existing "task_cant_be_queue" validation rule in the Setup > Object Manager > Step > Validation Rules > task_cant_be_queue step object.</li>
+        </ul>
+      </li>
+      <li>
+        Assign queues to approval and checklist steps
+        <ul>
+          <li>Easily assign approval and checklist steps to queues after adding the step, approval, or checklist object to the queue's available objects.</li>
+          <li>This queue shows up as Assignee Type on the step and your queue is on the list.</li>
+        </ul>
+      </li>
+      <li>
+        Create definitions from Lucidchart.
+        <ul>
+          <li>
+            Add the Create from Lucidchart button to the Definition List view.
+            <ul>
+              <li>Object Manager > Definition > Search Layouts (for Salesforce Classic) > List View > Edit.</li>
+              <li>Add Create From Lucidchart to the list of selected buttons.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</topic>

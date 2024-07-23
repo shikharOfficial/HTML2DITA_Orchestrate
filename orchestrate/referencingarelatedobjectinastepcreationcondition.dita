@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tb2367f" xml:lang="en-us">
+  <title class="- topic/title ">Referencing a Related Object In a Step Creation Condition</title>
+  <conbody>
+    <p>For example, if the Definition's master object is Opportunity, Step Creation Conditions allow you to reference the Opportunity's Primary Contact (a custom Contact lookup field) as a related object.</p>
+    <p>Once the related object is selected in the Creation Condition user interface, you can choose any of the corresponding fields of that related object as criteria for the Step Creation Condition.</p>
+    <p>When the field from the related object is selected, it is referenced within the Creation Condition's statement. Using the Operator and Field Values fields, the cross object field reference is now available to conditionally determine whether or not the step is created.</p>
+    <p>An example of drilling down to child data in Step Creation Conditions is referencing an Opportunity's related Opportunity Products. When drilling down, the Creation Condition user interface provides Drill Down Operators to allow for advanced filtering of child records.</p>
+    <p>Drill Down Operators help define or narrow down the amount child records related to a parent record that is included within a Step Creation Condition.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t52948a" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Configuring the Twilio Integration</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Use <xref href="https://www.twilio.com/" scope="external" format="html">Twilio</xref> for SMS notifications for steps, similar to generating email notifications when a step is created. We’re developing additional SMS functionality with future releases.</p>
+    <p>To configure the integration:</p>
+    <ol>
+      <li>
+        <xref href="https://www.twilio.com/try-twilio" scope="external" format="html">Create a Twilio account.</xref>
+      </li>
+      <li><xref href="https://help.salesforce.com/articleView?id=configuring_remoteproxy.htm&amp;type=5" scope="external" format="html">Add a Remote Site</xref>. URL: <xref href="https://api.twilio.com" scope="external" format="html">https://api.twilio.com</xref></li>
+      <li>Obtain an AccountSid, ApplicationSid, and Auth Token from your Twilio Console. You can read more about these in Twilio's online documentation <xref href="https://support.twilio.com/hc/en-us/articles/223136027-Auth-Tokens-and-how-to-change-them" scope="external" format="html">here</xref>.</li>
+      <li>Navigate to <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref>.</li>
+      <li>In the Integration Partners: SMS Notifications section:<ol><li>Toggle the Enabled button to Active.</li><li>Paste the Twilio AccountSid, ApplicationSid, and AuthToken into their respective fields. <image href="../images/143888824.png"/></li><li>Click the Others tab. <image href="../images/143888828.png"/></li><li>Fill in the Twilio From Number, Text Notification Message, Text Link URL and Text Reassignment Message.</li></ol></li>
+      <li>Save the settings.</li>
+    </ol>
+  </conbody>
+</concept>

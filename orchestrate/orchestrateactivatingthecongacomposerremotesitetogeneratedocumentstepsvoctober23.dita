@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t9265f4" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Activating the Conga Composer Remote Site to Generate Document Steps vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Important</p>
+    <p>This task is only required for orgs that upgraded to a new version of the Conga Orchestrate. It is not required for orgs with new installations of Conga Orchestrate.</p>
+    <p>To activate the Conga_Composer remote site to use Conga Composer to Generate a document step:</p>
+    <ol>
+      <li>Go to Salesforce Setup.</li>
+      <li>Enter Remote Sites in the Quick Find search box.</li>
+      <li>Click <b>Remote Site Settings</b>.</li>
+      <li>Find the Conga_Composer Remote Site and click <b>Edit</b>.</li>
+      <li>Check the <b>Active</b> checkbox field to activate the remote site.</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

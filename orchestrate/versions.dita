@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tee2798" xml:lang="en-us">
+  <title class="- topic/title ">Versions</title>
+  <conbody>
+    <p>The Orchestrate API ensures backward compatibility by properly versioning any changes to the APIs. Should changes to the API structure need to be made, it will occur within a new version and older functionality will be preserved.</p>
+  </conbody>
+</concept>

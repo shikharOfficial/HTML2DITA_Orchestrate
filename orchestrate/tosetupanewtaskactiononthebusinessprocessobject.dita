@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t9cd841" xml:lang="en-us">
+  <title class="- topic/title ">To set up a New Task action on the Business Process object</title>
+  <body>
+    <ol>
+      <li>Go to Salesforce Setup in Lightning and select <b>Object Manager</b> under the Objects and Fields section.</li>
+      <li>Click <b>Business Process</b>.</li>
+      <li>Click <b>Buttons, Links, and Actions</b>.</li>
+      <li>Click <b>New Action</b>.</li>
+      <li>Select <b>Create a Record</b> in the Action Type field.</li>
+      <li>Select <b>Task</b> in the Target Object field.</li>
+      <li>Select <b>Advisor Task</b> in the Record Type field.</li>
+      <li>Enter New Task (FSC) in the Label field</li>
+      <li>Enter New_Task_FSC in the Name field.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Put any fields you want on the page layout.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Go back to Button, Links, and Actions and click <b>New Task (FSC)</b>.</li>
+      <li>Click <b>New </b>in Predefined Field Values.</li>
+      <li>Select Name (under Standard Fields) for the Field Name field.</li>
+      <li>Insert FSTR__Business_Process__c.FSTR__Client__c into the Formula Value field.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Put the new custom action on the business process page layouts where you want the action to appear.</li>
+    </ol>
+  </body>
+</topic>

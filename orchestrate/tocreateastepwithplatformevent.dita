@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tb31e92" xml:lang="en-us">
+  <title class="- topic/title ">To create a step with platform event</title>
+  <body>
+    <ol>
+      <li>Navigate to the definition where you will place this step.</li>
+      <li>In the Steps section of the screen, click the New Step button. The Step Edit page appears.</li>
+      <li>
+        In the General Information section, fill in the following fields:
+        <ul>
+          <li>Step Name - Enter a name for the step. This field is copied into the subject when the process executes.</li>
+          <li>Step Type - Select <b>Platform Event</b>.</li>
+          <li>
+            Parent Step - Use Lookup to define the parent step, which is the step that must be completed before the Create Record step is initiated.
+            <ul>
+              <li>Leave the field blank if the Create Record step requires initiation as soon as the process starts.</li>
+            </ul>
+          </li>
+          <li>Parent Stage - If a parent step is part of a parent stage, all of the steps in the stage must complete before the Create Record step is created.</li>
+          <li>Stage - Use Lookup to select the stage to associate with the Create Record step, if applicable.</li>
+          <li>Definition - The field is automatically populated based on the selected definition.</li>
+        </ul>
+      </li>
+      <li>
+        In the Publish Event Setting section, set the values of the platform event that will be created when this step executes.
+        <ul>
+          <li>From the Find an Object picklist, select an object type. For example, Orchestrate Event. </li>
+          <li>
+            <p>Configure the values for the Event field to be set when the event is published.</p>
+            <ul>
+              <li>You can now set the fields on the selected object. For example, Event Number.</li>
+              <li>
+                From the Type column, select one of the following:
+                <ul>
+                  <li>Number </li>
+                  <li>Reference  </li>
+                </ul>
+              </li>
+              <li>If you select Type = Number, in the Value column, enter a value for the selected field. In case of Event Number it must always be 9.If Type = Reference, you must select the business process and the object/field to be used for the event.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>In the Subscribe Event Setting section, you can set completion conditions. The step remains open until a subsequent platform event has been subscribed, too.</p>
+        <p>For Subscribe, you must first create a platform event trigger and call the SubscribeEventSrvc.processSubscribeEventRecords(List&lt;SObject> events) class.</p>
+        <p/>
+        <ul>
+          <li>From the Find An Object picklist, select an object type. For example, Orchestrate Event. </li>
+          <li>
+            <p>Configure Event field values to set when the event is published.</p>
+            <ul>
+              <li>You can now set the fields on the selected object. For example, Event Number.</li>
+              <li>
+                From the Type column, select one of the following:
+                <ul>
+                  <li>Number </li>
+                  <li>Reference  </li>
+                </ul>
+              </li>
+              <li>If you select Type = Number, in the Value column, enter a value for the selected field. In case of Event Number it must always be 9.If Type = Reference, you must select the business process and the object/field to be used for the event.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Click Save.</li>
+    </ol>
+    <p>When a platform event step is configured, at that point in the process the event is published with all fields populated as configured on the step. If a flow or process builder is subscribed to this event, it fires just after Orchestrate publishes the event. After the flow or process builder publishes the event, Orchestrate listens for this event and continues the Orchestrate process. </p>
+  </body>
+</topic>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t33d506" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step that Calls an Approval Process vFebruary-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Feb 20, 2024</p>
+    <p>When a step of this type executes, Conga Approvals capabilities are provided at a single-step level in Orchestrate. You can select an existing approval process from a lookup with Orchestrate. </p>
+    <p>
+      <image href="../images/239545474.png"/>
+    </p>
+    <p>NoteIf you already have steps in the definition, you can either use the New Child link next to the step name while viewing the definition or you can use the New Child Step button while viewing the existing step (towards the bottom of the page).</p>
+    <ol>
+      <li>Go to the definition where you will place this step.</li>
+      <li>In the Steps section of the screen, click the New Step button.</li>
+      <li>
+        Complete the following fields:
+        <ul>
+          <li>Step Name: Enter the name for this step. This field copies into the subject when the process executes.</li>
+          <li>Step Type: Select Approval.</li>
+          <li>
+            Parent Step: Use Lookup to define the parent step, which is the step that must be completed before the Create Record step is initiated.
+            <ul>
+              <li>Leave the field blank if the Create Record step must be initiated as soon as the process starts.</li>
+            </ul>
+          </li>
+          <li>Parent Stage: If a parent step is part of a parent stage, all steps in the stage must complete before the Create Record step is created.</li>
+          <li>Stage: Use Lookup to select the stage to associate with the Create Record step, if applicable.</li>
+          <li>Definition: The field is automatically populated based on the definition.</li>
+          <li>Object Type to Create Name: Select the type of object to create when this step executes.</li>
+          <li>Object Record Type to Create Name: Select the record type to be assigned to the record that is created when this step executes. This field dynamically displays the record types from the object you specify in the Object Type to Create field.</li>
+          <li>Event Placeholder: Select this to make this step a placeholder for an event. </li>
+          <li>Event Sub Type: Select the event sub-type to associate with this step. See <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Creating+Event+Sub-Types+vSummer-21" scope="external" format="html">Creating Event Sub Types</xref> to configure the subtypes needed for your Event Placeholders.</li>
+          <li>Assignee Type: Select the type of assignee to assign the step to. See <xref href="https://documentation.conga.com/display/ORCHESTRATE/Assignee+Types+for+Process+Steps" scope="external" format="html">Assignee Types</xref> for more information.</li>
+          <li>Assignee: Use Lookup to select the person who should be assigned to the step.</li>
+          <li>Role: This field indicates the role that this step is assigned to.</li>
+          <li>Generate Email Notification: Select the checkbox to send an email message to the assignee, notifying them that the step was created.</li>
+          <li>Create if Parent: This field indicates the status(es) that will permit creation of this step. The Parent Step status must be set to one of these values for this step to be created.</li>
+          <li>
+            Due Date Adjustment Base Date: Select the option to be used to calculate this step's due date.
+            <ul>
+              <li>Current Date: Calculation is based on the current date, which is the date the step is created.</li>
+              <li>Parent Object: Calculation uses the Due Date field on the object specified in the Object Name field in the Definition screen. If the Object Name field is set to Lead, Campaign, or Opportunity, the current date is used in the calculation.</li>
+              <li>Parent Event: Calculation uses the Event date as the base date for the calculation. This only applies if the step is a child of an Event Placeholder step.</li>
+              <li>Date Field: Calculation uses any Date or DateTime field from the related account, contact, or process object.</li>
+            </ul>
+          </li>
+          <li>Due Date Adjustment: Enter a negative (before date) or positive (after date) number to add or subtract from the date in the Due Date Adjustment Base Date field. For example, if you enter 5, the due date of this step is calculated by adding five days to the date in the Due Date Adjustment Base Date field; for example, the steps that must be due before a parent event, such as meeting preparation steps. Enter –3 for this step to be due three days before the meeting. This step must be a child of an Event Placeholder step and the Due Date Adjustment Base Date must be set to Parent Event.</li>
+          <li>Create with Status: The step is created with the status value set in this field.</li>
+          <li>Stop Process if Status Set To: This field overrides the Ignore In Stage Completion checkbox on child steps if set in a parent step. If the step is set to one of the status values selected here, the process stops even if the Ignore box is checked on all steps within a range.</li>
+          <li>Ignore In Stage Completion: Ignore this step when determining whether stage child steps should be created. This only applies if this step is part of a stage and has field dependencies.</li>
+          <li>Copy Subject From Parent Process Object: This field copies the subject field from the parent process object to the subject/name of this step.</li>
+          <li>
+            Deletable: Select this checkbox to allow users to delete this step in an executing process. The default is unchecked, which prevents a user from deleting any process steps.
+            <ul>
+              <li>A step is deleted automatically when Deletable is selected, step creation conditions are used, the Reevaluate When option is selected, and the creation conditions for the step no longer match.</li>
+            </ul>
+          </li>
+          <li>Document Merge: Select this to set this step as a document merge step.</li>
+          <li>Email Alert: Select this to set this step to send email alerts.</li>
+          <li>Do Not Reopen: If a step has already been closed, do not reopen it if the Due Date Adjustment Base Date is modified.</li>
+          <li>Skip if Past Due: Select the checkbox to skip the step if the calculated due date is in the past (earlier than today).</li>
+          <li>
+            Delay Creation: Select the checkbox to define the conditions that must be met before the email is sent, or specify a certain date the email is sent. Populate the adjusted due date fields:
+            <ul>
+              <li>
+                Send Date Adjustment Base Date: The date selected in this field will be used to calculate when the delayed email alert will be sent.
+                <ul>
+                  <li>Parent Object: Calculation uses the Due Date Field on the object specified in the Object Name field for the Definition.</li>
+                  <li>Current Date: Calculation is based on the current date. The current date is the date that the Send Step is created.</li>
+                  <li>Parent Event: Calculation uses the Event date as the base date. This only applies if the current step is a child of an Event Placeholder Step.</li>
+                  <li>Date Field: Calculation uses any Date or DateTime field from the Related Account, Contact, or Process Object selected.</li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>Send Date Adjustment: This number will be added to the date specified in the Send Date Adjustment Base Date field.</li>
+            </ul>
+          </li>
+          <li>
+            <p>SendGrid Email Template Name: Name of the SendGrid Email template.</p>
+          </li>
+          <li>
+            <p>Field Update: This step is a field update.</p>
+          </li>
+          <li>
+            <p>Submit For E-Signature: Select this if E-Signature is enabled.</p>
+          </li>
+          <li>
+            <p>Contingent Assignee: Optional. Select this if the configured assignee type is not found. If the configured assignee user is null, the task is assigned to the contingent assignee. If the configured assignee user is not null but inactive, the task is assigned to the business process owner.In the above example, an inactive user will not count as "a user not found" and the customer would like to have this information documented in our documentation.</p>
+          </li>
+          <li>
+            <p>SendGrid Email Sender</p>
+          </li>
+          <li>
+            <p>Checklist</p>
+          </li>
+          <li>
+            <p>Delay Creation Base Date: Used to calculate the delayed creation of this step.</p>
+          </li>
+          <li>
+            <p>Delay Creation Date Adjustment: This number is added or subtracted from the date specified in the Delay Creation Base Date field. This number can be negative or positive.</p>
+          </li>
+          <li>
+            <p>Delay Creation Date Field</p>
+          </li>
+          <li>
+            <p>Delay Creation Date Field Name</p>
+          </li>
+          <li>
+            <p>Validation Rule Message: Message specified here is displayed when using step validation rules.</p>
+          </li>
+          <li>
+            <p>Chatter Notification: Select this to enable Chatter notifications.</p>
+          </li>
+          <li>
+            <p>Chatter Notification Message: This field determines the information that is posted to Chatter.</p>
+          </li>
+          <li>
+            <p>Step Creation Custom Criteria</p>
+          </li>
+          <li>
+            <p>Collaborate Solution</p>
+          </li>
+          <li>
+            <p>Platform Event Object</p>
+          </li>
+        </ul>
+      </li>
+      <li>Select the Save button.</li>
+    </ol>
+  </conbody>
+</concept>

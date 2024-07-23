@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf30fc7" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating an Apex Trigger for a Custom Object as a Step vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f on Jun 01, 2021</p>
+    <p>A trigger is Apex code that executes before or after specific data manipulation language (DML) events occur, such as before object records are inserted into the database, or after records have been deleted. A list of all triggers in your organization is located in Setup under Apex Triggers. You can invoke Apex through the use of triggers. Apex triggers are stored as metadata in the application under the object with which they are associated.</p>
+    <p>A trigger is Apex code that executes before or after the following types of operations:</p>
+    <ul>
+      <li>Insert.</li>
+      <li>Update.</li>
+      <li>Delete.</li>
+      <li>Merge.</li>
+      <li>Upsert.</li>
+      <li>Undelete.</li>
+    </ul>
+    <p>In order for Conga Orchestrate to use a custom object you've created, you need to create a trigger and test class in a sandbox environment and deploy them to your production environment. Salesforce does not allow you to create an apex trigger or apex class directly in a production org. Refer to the <xref href="https://help.salesforce.com/articleView?id=000315564&amp;type=1&amp;mode=1" scope="external" format="html">Deploy from Sandbox with Change Sets</xref> for instructions on the deployment process.</p>
+    <p>Follow these steps to create the trigger in a sandbox environment:</p>
+    <ol>
+      <li>In your sandbox environment, select the Settings Cog icon (in Lightning) or your name (in Classic) in the upper right corner of Salesforce.</li>
+      <li>Select Developer Console.</li>
+      <li>Select File.</li>
+      <li>Hover over New and choose Apex Trigger.</li>
+      <li>Give your trigger a descriptive name. Something like CustomObjectNameAsStepTrigger.</li>
+      <li>Choose the custom object from the sObject dropdown.</li>
+      <li>Select Submit.</li>
+      <li>
+        <p>Copy/Paste the following code into the new trigger window:</p>
+        <pre>trigger TRIGGERNAME on YOUR_CUSTOM_OBJECT_API_NAME (after insert, before insert, before update, after update, before delete, after delete, after undelete) { FSTR.COTriggerHandler.handleOrchestrateTrigger();}</pre>
+      </li>
+      <li>Replace the TRIGGERNAME in line 1 with the name of your new trigger. This will be the name you chose in step 5 above.</li>
+      <li>Replace YOUR_CUSTOM_OBJECT_API_NAME with the API name of your custom object.</li>
+      <li>Save the trigger by pressing Ctrl+S on your keyboard or by selecting File > Save in the top menu of the Developer Console.</li>
+      <li>Close the Developer Console window.</li>
+      <li>Ensure the correct configuration exists for your step or process object on the <b>Conga Orchestrate Object</b> custom setting. This setting dictates whether the object is used as a process, step, or as both, by Conga Orchestrate.</li>
+    </ol>
+  </conbody>
+</concept>

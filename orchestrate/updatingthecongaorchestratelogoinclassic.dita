@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t19388c" xml:lang="en-us">
+  <title class="- topic/title ">Updating the Conga Orchestrate Logo in Classic</title>
+  <body>
+    <ol>
+      <li>Navigate to the Setup menu.</li>
+      <li>Under the Build section of the Setup menu, click the Create arrow to expand the list of options and then click Apps.</li>
+      <li>Click Edit next to Conga Orchestrate.</li>
+      <li>Click Insert an Image.</li>
+      <li>In the pop-out window's dropdown menu, select the Logo folder.</li>
+      <li>Select the Conga Orchestrate Logo.</li>
+      <li>Click Save on the Conga Orchestrate App record.</li>
+    </ol>
+  </body>
+</topic>

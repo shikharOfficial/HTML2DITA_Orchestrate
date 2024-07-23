@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t6f19f1" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Customizing the Process Object Lookup Field (Tasks)</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>By default, Conga Orchestrate uses the Related To’(WhatId) field on a Task by default. The field relates the Task to a Business Process or other process object. Alternatively, Conga Orchestrate can use a custom lookup field instead. Use this function if you want to relate Conga Orchestrate-generated Tasks to another standard or custom object using the ‘Related To’ field.</p>
+    <p>Salesforce allows custom lookup fields on activities so you can relate Conga Orchestrate-generated Tasks to Accounts or any other standard or custom object via the Related To field, Contacts (via the ‘Name’ field), and the process object through a new lookup field you create using the setup instructions below).Important: If you use multiple process objects, you must repeat steps 1-9 for every process object you use.</p>
+    <p>To custom lookup fields on activities so you can relate Conga Orchestrate-generated Tasks to Accounts or any other standard or custom object via the Related To field:</p>
+    <ol>
+      <li>In Setup, use the Quick Find and type Activity Custom Fields.</li>
+      <li>Select the New button.</li>
+      <li>Select Lookup Relationship.</li>
+      <li>Select the Process Object (Business Process, Case, Lead, etc).</li>
+      <li>Enter the Label and Name for the lookup field.</li>
+    </ol>
+    <p>The Field Name and Object API Name for use in the next step. If using a Business Process object lookup, set this field’s API Name differently from the Business Process object’s API name. For example, use ‘BP’ for the API name (something other than ‘business_process’). The label can be anything you’d like.</p>
+    <ol>
+      <li>Navigate to the Conga Orchestrate Setup tab.</li>
+      <li>Click Custom Activity Lookup on the left.</li>
+      <li>Click the Task Steps: Custom Process Object Lookup field and select the new lookup fields.</li>
+      <li>OPTIONAL: Once a custom lookup field is specified, Conga Orchestrate will populate the Task’s ‘Related To’ field with the Process Object’s Related Account. To specify a different field to pass through from the process object, specify that field’s API Name in the Task Steps: Related To Passthrough Field.</li>
+      <li>Click Save at the top of the Custom Activity Lookup page.</li>
+      <li>Navigate to Salesforce Setup and remove the Open Activities and Activity History related lists from the Process Object’s page layouts.</li>
+      <li>Add the new Activities related list to the Process Object’s page layouts.</li>
+    </ol>
+  </conbody>
+</concept>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t8e25e6" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Process Definition vDecember-21</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Oct 26, 2021</p>
+    <p>After adding criteria to the process definition, you can create your process definition. You can quickly execute a Definition by creating a record and set required fields for a criteria from the Definitions page. This enables you to validate the conditions you set, whether they are working as expected.</p>
+  </conbody>
+</concept>

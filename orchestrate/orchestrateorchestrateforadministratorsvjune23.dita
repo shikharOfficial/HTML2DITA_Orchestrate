@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tdc94cd" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Orchestrate for Administrators vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Aug 18, 2023</p>
+    <p>This section describes how to install and set up Conga Orchestrate.</p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <thead>
+          <row>
+            <entry>
+              <p>Topic</p>
+            </entry>
+            <entry>
+              <p>Description</p>
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>What's Covered</entry>
+            <entry>
+              <p>This section is designed to provide administrators with information on installing and setting up processes within Conga Orchestrate. This section covers the most common use cases for administration and assumes a level of familiarity with basic Salesforce.</p>
+            </entry>
+          </row>
+          <row>
+            <entry>Primary Audience</entry>
+            <entry>Admin users responsible for setting up Conga Orchestrate. </entry>
+          </row>
+          <row>
+            <entry>IT Environment</entry>
+            <entry>For information pertaining to the requirements and recommendations, see <xref href="https://documentation.conga.com/display/SRSPSF" scope="external" format="html">System Requirements and Supported Platforms Matrix</xref>.</entry>
+          </row>
+          <row>
+            <entry>Updates</entry>
+            <entry>
+              <p>For a comprehensive list of updates for each release, see <xref href="orchestratewhatsnewinorchestratedocumentationvoctober23.dita#tead67b" scope="local" format="dita">What's New in Orchestrate Documentation</xref>.</p>
+            </entry>
+          </row>
+          <row>
+            <entry>Other Resources</entry>
+            <entry>
+              <ul>
+                <li>See <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Orchestrate+for+Users+vWinter-20" scope="external" format="html">Orchestrate for Users</xref> for information on Orchestrate workflow and use cases.</li>
+                <li>See <xref href="orchestrateorchestrateforrestapidevelopersvspring21.dita#t376654" scope="local" format="dita">Orchestrate for REST API Developers</xref> for detailed information on REST APIs.</li>
+              </ul>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>This section describes the following tasks: </p>
+    <ul>
+      <li>
+        <p>Installing Orchestrate</p>
+      </li>
+      <li>
+        <p>Setting up and configuring Orchestrate </p>
+      </li>
+      <li>Security Configurations</li>
+    </ul>
+    <p>Before using Orchestrate, you must be familiar with the following:</p>
+    <ul>
+      <li>
+        <p>Basic Salesforce administration</p>
+      </li>
+      <li>
+        <p>Salesforce and Conga terms and definitions</p>
+      </li>
+    </ul>
+    <p>Select one of the following topics for more information:</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestratecongaorchestratetechnicalrequirementsvwinter20.dita#ta609b4" scope="local" format="dita">Conga Orchestrate Technical Requirements</xref>
+      </li>
+      <li>
+        <xref href="orchestrateinstallationandsetup.dita#t69a592" scope="local" format="dita">Installation and Setup</xref>
+        <ul>
+          <li>
+            <xref href="orchestratebasicsetup.dita#tfb6f85" scope="local" format="dita">Basic Setup</xref>
+          </li>
+          <li>
+            <xref href="orchestrateadvancedsetupvoctober23.dita#t922346" scope="local" format="dita">Advanced Setup</xref>
+          </li>
+          <li>
+            <xref href="orchestratefaqstipsandknownissuesvoctober23.dita#te817c6" scope="local" format="dita">FAQs, Tips, and Known Issues</xref>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <xref href="https://documentation.conga.com/display/ORCHESTRATE/.Uninstalling+Conga+Orchestrate+vOctober-23" scope="external" format="html">Uninstalling Conga Orchestrate</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

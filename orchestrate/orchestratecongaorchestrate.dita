@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="te25817" xml:lang="en-us">
+  <title class="- topic/title ">
+    <image href="../images/home_page_16.png"/>
+    Orchestrate : Conga Orchestrate
+  </title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Conga Orchestrate lets you easily configure, automate, and manage large numbers of workflow steps without any coding or custom development from your Salesforce environment.</p>
+  </conbody>
+</concept>

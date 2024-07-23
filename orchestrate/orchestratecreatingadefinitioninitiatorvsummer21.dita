@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t27ef18" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Definition Initiator vSummer-21</title>
+  <shortdesc>Created by  Rakesh Singh on Aug 20, 2021</shortdesc>
+  <taskbody>
+    <context>This section details how to create Definition Initiators. To create a Definition Initiator:</context>
+    <steps>
+      <step>
+        <cmd>Navigate to the Definition Initiators tab.</cmd>
+      </step>
+      <step>
+        <cmd>Select the New button.</cmd>
+      </step>
+      <step>
+        <cmd>Enter the Definition Initiator Name.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Active checkbox to make this initiator active.</cmd>
+      </step>
+      <step>
+        <cmd>Select Search to chose the type of Definition to Initiate.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Object you desire to monitor from the Monitored Object list.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p>Configure a custom trigger to add a Custom Object to the Initiator's Monitored Object list.</p>
+      <div>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+        <ul>
+          <li>Select the Monitored Operation(s) that cause(s) the Definition to initiate. Hold the Ctrl key on your keyboard to select multiple Monitored Operations, if applicable.
+                Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.
+                Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.
+                Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.
+                Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Update - When the Monitored Object's record is updated to meet the criteria, the process will initiate.</li>
+          <li>Insert - When the Monitored Object's record is created and meets criteria, the process will initiate.</li>
+          <li>Record Matches Criteria - Button Click - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Button Click, you will see a button labeled Initiate Process on Matching Records. Once clicked, a process will initiate for each record that matches criteria based on the parameters and fields defined in the Definition Initiator. See Record Match Initiators - Button Click to see it in action.</li>
+          <li>Record Matches Criteria - Daily Check - After you have configured and saved the Definition Initiator with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria defined in the Definition Initiator. See Record Match Initiators - Daily Check to see it in action. Navigate to the Conga Orchestrate Setup Tab to auto-schedule the batch job.</li>
+          <li>Select the + Add Criteria to link to provide rules about when the Initiator should run.
+                The Object Name defaults to the Monitored Object.
+                Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.
+                Select the type of Operator to compare the value against.
+                Select the Field Value to compare the value against.
+                The Data Type automatically displays the data type of the chosen Field Name.
+                Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>The Object Name defaults to the Monitored Object.</li>
+          <li>Select the Field Name that you desire to qualify. This field changes depending on the chosen Object Name.</li>
+          <li>Select the type of Operator to compare the value against.</li>
+          <li>Select the Field Value to compare the value against.</li>
+          <li>The Data Type automatically displays the data type of the chosen Field Name.</li>
+          <li>Select a Joining Operator. Only applicable if there are multiple criteria for the definition.Note: The Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like:
+ Criteria1 AND Criteria2 AND Criteria3 AND (Criteria4 OR Criteria5 OR Criteria6)
+ if there were 6 criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</li>
+          <li>Select + Add Row to include additional criteria.</li>
+          <li>Select an Assignee Type in the Assign Process Object By drop downfield.</li>
+          <li>Select the Process Object Owner based on your selection in the Assign Process Object By field.</li>
+          <li>Enter a positive number in the Due Date Adjustment field to add a certain number of days to the date the process initiates. This will dynamically calculate the date in which the process is due.</li>
+          <li>Enter a Description detailing what this Definition Initiator does.</li>
+          <li>Select the Owner of this Definition Initiator.</li>
+          <li>Populate any necessary information in the Capture Process Information section.</li>
+          <li>Select the Save button.</li>
+        </ul>
+      </div>
+      <p>See <xref href="https://share.vidyard.com/watch/9HBSyKyYDGMqaQ8vx7LkRD" scope="external" format="html">this video</xref> for more in-depth information on creating Definition Initiators.</p>
+    </postreq>
+  </taskbody>
+</task>

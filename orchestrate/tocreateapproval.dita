@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t6d593b" xml:lang="en-us">
+  <title class="- topic/title ">To create Approval</title>
+  <body>
+    <ol>
+      <li>Create or edit a step with a step type of Create Record.</li>
+      <li>Select Approval in the Status Managed By field.</li>
+      <li>In the Step Approval Items section, set the Approval Status field to the status you wish the step to be set to upon step approval. This list is populated with <xref href="orchestrateconfiguringclosedstatusvalues.dita#t7e4ff0" scope="local" format="dita">Closed Status Values</xref>.</li>
+      <li>Set the Rejection Status to the status you wish the step to be set to upon step approval. This list is populated with <xref href="orchestrateconfiguringclosedstatusvalues.dita#t7e4ff0" scope="local" format="dita">Closed Status Values</xref>.</li>
+      <li>
+        <p>Set the Rejection Action to Continue if you wish for the step to follow a different path in the event of a rejection; set it to <i>Stop Process</i> if you wish for the process to stop upon rejection of the step. Choose Go Back to loop the process back to a prior Step or Stage; the lookups (Step and Stage) will appear when this option is selected and one or the other is required to be populated when choosing this option.</p>
+        <p>You may wish to reassign the generated step to another approver. The current (assigned) approver, their manager, or a system administrator can reassign the step.</p>
+      </li>
+      <li>If the approval request is recalled, the step status is set to the status selected in the Recalled Status field set at the time of step creation. In the example below, it is set to Canceled.<image href="../images/193692515.png"/></li>
+      <li>Click Save.</li>
+    </ol>
+    <p>If you have configured a custom object as a step, a new custom lookup relationship field must be added to your custom object that looks up to the Approval object. The API name of the field needs to be approval__c. Also, in order to view the approval items on a custom object's page layout in Classic, a Visualforce page will need to be created and added to the page layout.</p>
+  </body>
+</topic>

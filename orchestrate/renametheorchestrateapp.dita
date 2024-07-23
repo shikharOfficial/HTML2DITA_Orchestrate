@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t76df61" xml:lang="en-us">
+  <title class="- topic/title ">Rename the Orchestrate App</title>
+  <conbody>
+    <p>When upgrading Conga Orchestrate from a previous version, you must manually rename the Conga Orchestrate Application from ProcessComposer to Conga Orchestrate. A Salesforce limitation prevents the Conga Orchestrate installed packages from automatically updating the application name.</p>
+    <p>See <xref href="orchestraterenamingthecongaorchestratesalesforceappvoctober23.dita#t78a58d" scope="local" format="dita">Renaming the Conga Orchestrate Salesforce App</xref> for instructions on renaming the Conga Orchestrate App.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf47de8" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Starting a Recurring Business Process</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Recurring Business Processes allow you to execute any defined process (<xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Definition</xref>) on a recurring basis. They hold information on how often the process is supposed to start, who it should be assigned to, and how its Due Date should be set. Like a single Business Process, you can use Recurring Business Processes with Accounts and Contacts. Refer to <xref href="orchestraterecurringbusinessprocessesoverviewvwinter20.dita#ta9237b" scope="local" format="dita">Recurring Business Processes Overview</xref> for more information.</p>
+    <p>To set up a Recurring Business Process:</p>
+    <p>The fields in the Capture Object Information section populate dynamically depending on the field values you select in the Object Type to Create and Record Type to Create fields from the Recurring Process Settings section. Required fields are marked and other fields are optional. If the selected Record Type references a Conga Orchestrate-managed object, the values in these fields are used by the Recurring Business Process to initiate a Single Business Process at the Interval over the time period you have specified.</p>
+    <ol>
+      <li>Navigate to the Contact for which you would like to associate a new Recurring Business Process.</li>
+      <li>Select the New Recurring Business Process button from the Recurring Business Process Related List. See <xref href="orchestrateeditingcontactpagelayoutsforbusinessprocesses.dita#t3ac8eb" scope="local" format="dita">Editing Contact Page Layouts for Business Processes</xref> if the Recurring Business Process Related List is not shown on the page layout.</li>
+      <li>Type your desired Recurring Business Process Name.</li>
+      <li>Choose the applicable object in the Object Type To Create picklist.</li>
+      <li>Select the associated Record Type in the Record Type to Create field.</li>
+      <li>The Contact and Account fields will auto-populate.</li>
+      <li>Configure the Recurrence Type as Completed Date or Created Date. This is most commonly set to Created Date. Refer to Recurring Business Processes Overview for an explanation of the Created Date and Completed Date picklist values.</li>
+      <li>Set the Begin Date for the recurrence. If the Begin Date is set to the current date, the first occurrence begins immediately. Otherwise, the process starts on the Next Scheduled Occurrence date.</li>
+      <li>Set an End Date for the recurrence. (If you do not select the No End Date checkbox, the process executes according to its Interval forever. If you select an End Date, the process executes according to its Interval until the End Date passes.</li>
+      <li>Select the Interval for which you would like this process to recur - Year, Quarter, Month, Week, or Day.</li>
+      <li>Set the Interval Number which allows you to further customize the Interval. For example, if 'Week' is selected in the Interval picklist and Interval Number is set to '2', this process would recur every two weeks.</li>
+      <li>Select how to assign the process with the Assign Process Object by field.</li>
+      <li>Select the associated owner in the Process Object Owner field.</li>
+      <li>Set the Due Date Adjustment (default is 0 days). This field tells the system how to adjust the Due Date of the Business Process that will create. This can be longer (greater than 0), shorter (less than 0), or the same (0) as the Business Process created date. For example, if your Business Process is set to create on the 1st of each month and the Due Date Adjustment is '2', the Due Date of the process will be set to the 3rd day of the month.</li>
+      <li>Enter the Subject field to uniquely identify this process when it runs.</li>
+      <li>Select Save.</li>
+      <li>On the Recurring Process Information screen, verify your settings. If the time period you have specified includes the current date, a newly-created Business Process displays under the ‘Business Process’ list. Over the time period you have specified, a new Business Process will be created at each Interval you set.</li>
+    </ol>
+  </conbody>
+</concept>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t03848f" xml:lang="en-us">
+  <title class="- topic/title ">To capture debug log for Step Creation Conditions</title>
+  <body>
+    <ol>
+      <li>Navigate to Setup in Salesforce and use the Quick Find search box to locate Custom Settings.</li>
+      <li>Click <b>Manage</b> next to <b>Conga Orchestrate Settings. </b></li>
+      <li>Select <b>Enable Orchestrate Debug Logs.</b></li>
+      <li>Click Save. </li>
+    </ol>
+    <p>Orchestrate will now create a record for Orchestrate Debug Log Object when the step creation condition fails. Orchestrate Debug Log object contains the following information:</p>
+    <ul>
+      <li>Process object details</li>
+      <li>Drill-down Criteria Details</li>
+      <li>Drill-down Criteria Check</li>
+      <li>Drill-down Queries</li>
+    </ul>
+  </body>
+</topic>

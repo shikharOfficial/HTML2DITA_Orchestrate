@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t9c9e2f" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Master Page Layout vOctober-23</title>
+  <shortdesc>Created by  William Abernathy on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>Create a master page layout (template) with the Contact, Account, Due Date, and Subject fields and any other fields you desire. After creating a master page layout, you can copy (save it as, or clone it) every time you need to create a new page layout without having to start from scratch.</context>
+    <steps>
+      <step>
+        <cmd>In Setup, go to the custom object for which the master page layout is needed.</cmd>
+      </step>
+      <step>
+        <cmd>Select the <b>Page Layouts</b> link or scroll down to that frame.</cmd>
+      </step>
+      <step>
+        <cmd>Click the <b>New </b>button.</cmd>
+      </step>
+      <step>
+        <cmd>Leave the Existing Page Layout as None.</cmd>
+      </step>
+      <step>
+        <cmd>
+          Enter *Master Page Layout in the Page Layout Name field and click the
+          <b>Save </b>
+          button.
+              
+                Note
+                The asterisk (*) makes this page layout name always appear at the top of the list.
+        </cmd>
+      </step>
+      <step>
+        <cmd>Drag and drop the fields, buttons, and related lists where you want them:</cmd>
+        <substeps>
+          <substep>
+            <cmd>Add Contact, Account, Due Date, Subject and any other fields you want future page layouts to have as defaults.</cmd>
+          </substep>
+          <substep>
+            <cmd>Add the Open Activities, Activity History, and Notes &amp; Attachments related lists.</cmd>
+          </substep>
+          <substep>
+            <cmd>Add the Process Visual and Process Details buttons.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Click <b>Save.</b></cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p/>
+    </postreq>
+  </taskbody>
+</task>

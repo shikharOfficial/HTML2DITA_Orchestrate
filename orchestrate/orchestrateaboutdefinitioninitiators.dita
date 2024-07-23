@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t927393" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : About Definition Initiators</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Definition Initiators allow you to take process execution to the next level. When setting up an Initiator, you simply tell Conga Orchestrate what Object (Account, Contact, or Event) and what Operations (Insert and/or Update) on that Object you desire to monitor. Additionally, you provide rules (Criteria) about when the Initiator should run based on the Definition you select. Finally, you provide the information (Assignment, Due Date, custom / standard field settings) that you want the initiated process to contain. Conga Orchestrate waits and initiates your process when all Definition Initiators criteria is met.</p>
+    <p>For example, you can initiate a Client Onboarding process when an Account’s Type field changes from Prospect to Client, or you can create a Definition Initiator that starts an Address Change process when the address is updated on the Contact or Account.</p>
+    <p>Definition Initiators perform in a specific manner:</p>
+    <ul>
+      <li>If your Initiator is monitoring updates (i.e. Account Updates), Conga Orchestrate only initiates a process the first time the fields specified in your criteria are modified and match the Initiator. Subsequent updates to the record that match the Initiator, will not run additional processes unless the fields are modified again.</li>
+      <li>Definition Initiators have an Operator in the Criteria called “Is Changed”. If you select this Operator for your Criteria item, Conga Orchestrate verifies if the field value changes and evaluates the criteria to see if it is true. This enables you to initiate a process if a field, or series of fields, changes regardless of what they were changed.</li>
+      <li>If you are creating a Definition Initiator to monitor the Contact Object, you can create criteria that evaluate fields from the Contact and Account Objects. This allows you to be very specific when initiating processes from Contact record changes by joining information from its related Account. To gain maximum visibility within Salesforce, relate all processes to an Account or Contact.</li>
+      <li>If you are creating a Definition Initiator to monitor the Events, create the events using a Contact specified in the Name field on the Event. This ensures that the process that is initiated is associated with the correct Contact and Account.</li>
+      <li>Definition Initiators automatically attempt to select an associated Contact record when they initiate a process. To do so, Conga Orchestrate initially looks for the following (in this order):</li>
+      <li>A specified Contact Lookup field on the monitored Account. Create a custom Contact Lookup field on the Account object, edit the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> setting labeled "Initiator Custom Object - Contact Field" and "Initiator Custom Objects" as shown in the screenshot, and populate the new Contact Lookup field on all Account records.</li>
+      <li><xref href="https://help.salesforce.com/articleView?id=contactroles.htm&amp;language=en&amp;type=0" scope="external" format="html">Contact Roles</xref> related to the monitored Account. If a Contact is specified in a Contact role and is set as Primary, it is used first.</li>
+      <li>If neither Contact Roles nor a specific Contact Lookup has been configured on the monitored Account, Conga Orchestrate queries all related Contacts alphabetically, based on the full name, and selects the first one returned.</li>
+      <li>If there are no Contacts related to the monitored Account, the Contact field is left blank on the initiated process.</li>
+      <li>If using a <xref href="orchestrateusingacustomobjectasaninitiatorsmonitoredobject.dita#t86d263" scope="local" format="dita">Custom Object as the monitored object</xref> on the initiator, Create a custom Contact Lookup field on the Custom Object, edit the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> labeled "Initiator Custom Object - Contact Field" and "Initiator Custom Objects", and populate the new Contact Lookup field on all records.</li>
+    </ul>
+  </conbody>
+</concept>

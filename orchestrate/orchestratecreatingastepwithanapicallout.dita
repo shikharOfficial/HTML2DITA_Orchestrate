@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tabf1d8" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Creating a Step with an API Callout</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Use the following instructions to create a Step that makes a callout to a RESTful API.</p>
+    <p>When an API Callout is made as part of a step and the callout does not succeed, the callout is placed in a queue and retried for 24 hours before failing.</p>
+    <ol>
+      <li>Navigate to the Definition where you desire to place this step.</li>
+      <li>In the Steps section of the screen, click the API Callout button.</li>
+    </ol>
+    <p>If you already have steps in the Definition, you can either use the New Child link next to the Step name while viewing the Definition or you can use the New Child Step button while viewing the existing Step (towards the bottom of the page). Then just change the Step Type to API Callout in the Step Edit page.</p>
+    <ol>
+      <li>Complete the following fields:</li>
+    </ol>
+    <ul>
+      <li>Step Name - Enter the name for this Step. This field copies into the Subject when the process executes.</li>
+      <li>Step Type - Select API Callout.</li>
+      <li>Parent Step - The Parent Step is the step that once completed, will initiate this new step. Leave it blank if this step needs to initiate immediately when the process starts.</li>
+      <li>Parent Stage - If a step has a Parent Stage, all of the Steps in the Parent Stage must complete before this Step creates.</li>
+      <li>Definition - This should be automatically populated based on the Definition you started from.</li>
+      <li>Stage - Select the Stage with which this Step should be associated, if applicable.</li>
+      <li>Generate Step - Select to set up a task or custom object to generate when this callout occurs. The Step options display.</li>
+      <li>Perform Callout On - Select when the callout should be made such as when a Step object is Created, Updated, and / or Closed.</li>
+      <li>Merge Fields - Use to populate the static and dynamic query parameters in the API Callout URL field. Select Insert Field to URL or Insert Field to Request Body buttons to add your selections.</li>
+      <li>API Callout URL - Select the static and dynamic query parameters (Merge Fields and Insert Field options) to populate the Uniform Resource Locator frame.</li>
+    </ul>
+    <p>Ensure that your API Callout URL is setup as a Remote Site (Setup -> Security -> Remote Site Settings).</p>
+    <ul>
+      <li>API Callout Method - Select the HTTP verb to use for this callout. All standard callout verbs are available for use. The web service that you are calling specifies the verb to use for each method available in the service.</li>
+      <li>API Callout Headers - Enter any HTTP headers to include in the callout. Headers should follow the standard Header format with the Header Name and Value separated by a colon. If you include multiple Headers, separate them with semi-colons.</li>
+      <li>API Callout Body - Enter the Body to pass as part of the callout. When using the Body field, add a Content-Type header to the API Callout Headers field. For example, if you format the Body as a JSON string, add the Content-Type: text/json header to the Headers field. In addition, include merge fields in the Body field. Select the desired object and field then select the Insert Field to Request Body button to insert into the API Callout Body field.</li>
+      <li>Delay Creation - If checked, Conga Orchestrate will delay creating this step until the day specified by the Delay Creation Date Adjustment. See Delayed Steps for more information.</li>
+    </ul>
+    <ol>
+      <li>Configure any needed Step Creation Conditions. See Step Creation Conditions for more information.</li>
+      <li>Select the Save button.</li>
+    </ol>
+  </conbody>
+</concept>

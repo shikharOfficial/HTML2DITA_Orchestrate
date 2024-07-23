@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc805de" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Assignee Types for Process Steps</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>An Assignee is the user or queue to which a step can be assigned. Here is an overview of the Assignee Type options you have when creating your Steps.</p>
+    <ul>
+      <li><b>User</b> - Select a specific active User in your organization.</li>
+      <li><b>User Field</b> - Select any User Lookup field from the Related Account, Contact, or Process Object. Formula fields that include the word “user” in their API name display in the User Field list. The formula field must resolve to a User ID for this to work correctly.</li>
+      <li><b>Parent Object Owner</b> - Selects the Owner of the object specified in the Object Name field of the related Definition.</li>
+      <li><b>Related Account Owner</b> - Selects the Owner of the related Account.</li>
+      <li>
+        <b>Queue</b>
+        - Select a Queue. This option is only available when the Object Type to Create is an object in which queues ownership can be assigned.
+        <p>To use Approvals with Step Objects in Queues:</p>
+        <ol>
+          <li>Create an Approvals Queue (give it any name you like) and add the Step Object Approval and Process Instance objects to it.</li>
+          <li>The Queue will show up as Assignee Type on the Step and your Queue will be on the list.</li>
+        </ol>
+        <p>To use Checklists with Step Objects assigned to a Queue, add the Step Object, Checklist object, and Process Instance objects to the Queue.</p>
+      </li>
+      <li><b>Executing User</b> - Selects the User that caused the step to execute. This is usually the user initiating a process if the step doesn't have a parent, or the user completing the parent step.</li>
+      <li>
+        <b>Salesforce Account Team Role</b>
+        - Select a specific role based on the Salesforce Account Team member on the related Account. This utilizes native Salesforce Account Team functionality. See this
+        <xref href="https://help.salesforce.com/articleView?id=customize_accountteams.htm&amp;type=0" scope="external" format="html">Salesforce Knowledge Article</xref>
+        , to configure Salesforce Account Teams and Roles. To set up default Salesforce Account Teams:
+        <p>Enable Account Teams in Setup if you have not done so already. See this <xref href="https://help.salesforce.com/articleView?id=customize_accountteams.htm&amp;type=0" scope="external" format="html">Salesforce Knowledge Article</xref> for more information. When enabling Salesforce Account Teams, you will have the ability to automatically add the Account Team related list to account page layouts you specify.</p>
+        <ul>
+          <li>
+            <p>In Setup, use the Quick Find and type in <b>Users</b>. Select a User in which to assign a default team. Navigate to the Default Account Team section. Click the <b>Add</b> button. Use the lookups to find Users to add as Team Members. Set their Account, Opportunity, and Case access as well as their Team Role.</p>
+            <p>Select the <b>Automatically add my default account team to accounts that I create or accounts that are transferred to me</b> checkbox to have the team automatically populate when an account is created or transferred to the user in which you are adding the team members.</p>
+            <p>Select the <b>Update account teams with these members</b> checkbox to have the team automatically populate on the accounts owned by the user in which you're adding the team members. Click <b>Save</b>.</p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Role</b>
+        - Select a specific role based on the Team Member record on the related Account. Because native Salesforce Account Teams don't support having the same user assigned to multiple roles, we created Team Members. To set up Team Member Roles:
+        <ul>
+          <li>
+            <p>In Setup, use the Quick Find and type in <b>Objects</b>. Select the Object Manager (or Objects in Salesforce Classic). Select <b>Team Member</b>. Select the <b>Team Role</b> field. Add or Edit any roles needed.</p>
+            <p>See <xref href="orchestrateeditingaccountpagelayoutsforrolesvjune23.dita#t254276" scope="local" format="dita">Editing Account Page Layouts for Roles</xref> to add the Team Member related list to your account page layouts.</p>
+            <p>Add Team Members to all applicable accounts. See <xref href="orchestratedefaultteammembersvoctober23.dita#t115dbf" scope="local" format="dita">Default Team Members</xref> to automatically add Team Members based on Account Owner. Select the magnifying glass icon to Lookup the user. Select a Team Role. Click <b>Save</b>.</p>
+            <p/>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Process Team Role</b>
+        - The Process Team Role option defines global (org-wide) roles for your company. For example, if you have one user in your company that always performs the same task(s) for the entire company (not specific accounts), such as data processing or scheduling meetings, create a Process Team Member with the role of Office Assistant or Scheduler and assign it to that user. Then you can assign a step in a Definition to that Process Team Member's Role. To set up and assign Process Team Roles:
+        <ul>
+          <li>
+            <p>In Setup, use the Quick Find and type in <b>Objects</b>. Select the Object Manager (or Objects in Salesforce Classic). Select <b>Process Team Member</b>. Select the <b>Team Role</b> field. Add or Edit any roles needed. Navigate to the <b>Process Team Members</b> tab. Click the <b>New</b> button. Select the magnifying glass icon to Lookup the user. Select a Team Role. Click <b>Save</b>.</p>
+            <p/>
+          </li>
+        </ul>
+      </li>
+      <li><b>Salesforce Opportunity Team Role</b> - If Opportunity Teams are enabled in your Salesforce org and the Definition's object name is set to Opportunity, then the Salesforce Opportunity Team Role assignee type will show as an option. See this <xref href="https://help.salesforce.com/articleView?id=teamselling_enabling.htm&amp;type=0" scope="external" format="html">Salesforce Help &amp; Training article</xref> for more information on enabling and using Opportunity Teams.</li>
+    </ul>
+  </conbody>
+</concept>

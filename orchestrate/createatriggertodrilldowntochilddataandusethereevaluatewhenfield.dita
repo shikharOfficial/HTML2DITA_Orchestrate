@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t1c1c4d" xml:lang="en-us">
+  <title class="- topic/title ">Create a Trigger to Drill Down to Child Data and Use the Reevaluate When Field</title>
+  <conbody>
+    <p>Using the Reevaluate When field to reevaluate upon a process object change, in conjunction with drilling down to child data in a Step Creation Condition, requires the use of a custom trigger. The trigger below only pertains to Step Creation Conditions that use both the Reevaluate When field with a process object change and drill down to child data.</p>
+    <p>Without a custom trigger, users need to manually edit the process object to kick off the Reevaluate When field and allow Conga Orchestrate to evaluate the drilled down child object criteria. The custom trigger allows Conga Orchestrate to reevaluate drilled down child object criteria without the user making manual edits on the parent process object. More specifically, the custom trigger forces an update on the parent process object to prompt the Step Creation Condition.</p>
+    <p>Follow the steps below to implement the custom trigger.</p>
+    <ol>
+      <li>Navigate to Salesforce Setup.</li>
+      <li>Under the Objects and Fields section, click Object Manager.</li>
+      <li>Choose the child object of the parent process object. For example, if the process object is Opportunity and the drilled down criteria is on the Opportunity Product, select Opportunity Product in the Object Manager.</li>
+      <li>Click Triggers.</li>
+      <li>Create New to create a new trigger.</li>
+      <li>Delete the pre-existing code.</li>
+      <li>Copy and paste the code below into the new trigger and replace the text in the squared brackets with the child and parent objects, then click Save.[NameOfTrigger (can be named anything)] > [ChildObject_API_Name](after insert, after update, before delete){ Set&lt;Id parentObjectIds = new Set&lt;Id (); [ChildObject_API_Name] childObjects = Trigger.isDelete ? Trigger.old : Trigger.new; [ChildObject_API_Name] childObject : childObjects){ [ParentObject_Lookup_Field]); } FSTR.ForceReevaluateSrvc.forceReevaluatePreFuture(parentObjectIds); }</li>
+    </ol>
+    <p/>
+    <p>Below is an example trigger for a Step Creation Condition that drills down to the Opportunity Product and uses the Reevaluate When field with the process object (Opportunity).</p>
+    <p/>
+    <pre>trigger OpportunityLineItemTrigger on OpportunityLineItem (after insert, after update, before delete) { Set&amp;lt;Id&amp;gt; parentObjectsIds = new Set&amp;lt;Id&amp;gt;(); List&amp;lt;OpportunityLineItem&amp;gt; childObjects = Trigger.isDelete ? Trigger.old : Trigger.new; for(OpportunityLineItem childObject : childObjects){ parentObjectIds.add(childObject.OpportunityId); } FSTR.ForceReevaluateSrvc.forceReevaluatePreFuture(parentObjectIds);}</pre>
+    <p>Below is an example trigger for a Step Creation Condition that drills down to the CPQ Quote Product and uses the Reevaluate When field with the process object (CPQ Quote)</p>
+    <pre>trigger QutoeLineTrigger on SBQQ__QuoteLine__c (after insert, after update, before delete) {Set&amp;lt;Id&amp;gt; parentObjectIds = new Set&amp;lt;Id&amp;gt;();List&amp;lt;SBQQ__QuoteLine__c&amp;gt; childObjects = Trigger.isDelete ? Trigger.old : Trigger.new;for(SBQQ__QuoteLine__c childObject : childObjects) {parentObjectIds.add(childObject.SBQQ__Quote__c); }FSTR.ForceReevaluateSrvc.forceReevaluatePreFuture(parentObjectIds);}</pre>
+    <p>Optimizing the Drill-Down Criteria </p>
+    <p>If you introduce drill-down criteria on large definitions or if there are a large number of drill-down objects to look through for the criteria, Conga Orchestrate can give Apex CPU Timeout issues. To prevent those issues: </p>
+    <ul>
+      <li>Split the definitions into smaller definitions to reduce the overall process of drill-down criteria. </li>
+      <li>Conga recommends that you use <b>'='</b> or <b>'!='</b> operator whenever possible. When you use the <b>'='</b> or <b>'!=' </b>operator, the number of objects to check is reduced leading to faster performance. Do not use '<b>contains'</b> or <b>'>'</b> operator as your query performance might be impacted.  </li>
+    </ul>
+  </conbody>
+</concept>

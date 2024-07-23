@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t131807" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Running Processes</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>There is a process that you can run in Salesforce with Conga Orchestrate. For more information, see the topics in this section.</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestratemanuallyinitiateaprocess.dita#tb88b77" scope="local" format="dita">Manually Initiate a Process</xref>
+      </li>
+      <li>
+        <xref href="orchestrateautomaticallyinitiateaprocess.dita#t9d47fd" scope="local" format="dita">Automatically Initiate a Process</xref>
+      </li>
+      <li>
+        <xref href="orchestrateaboutdefinitioninitiators.dita#t927393" scope="local" format="dita">About Definition Initiators</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingadefinitioninitiatorvsummer21.dita#t27ef18" scope="local" format="dita">Creating a Definition Initiator</xref>
+      </li>
+      <li>
+        <xref href="orchestraterecordmatchinitiatorsbuttonclickvwinter20.dita#tab6f3d" scope="local" format="dita">Record Match Initiators - Button Click</xref>
+      </li>
+      <li>
+        <xref href="orchestraterecordmatchinitiatorsdailycheckvwinter20.dita#te1e2ff" scope="local" format="dita">Record Match Initiators - Daily Check</xref>
+      </li>
+      <li>
+        <xref href="orchestrateeventinitiatorsvwinter20.dita#tc97bda" scope="local" format="dita">Event Initiators</xref>
+      </li>
+      <li>
+        <xref href="orchestraterecurringbusinessprocessesoverviewvwinter20.dita#ta9237b" scope="local" format="dita">Recurring Business Processes Overview</xref>
+      </li>
+      <li>
+        <xref href="orchestratestartingarecurringbusinessprocess.dita#tf47de8" scope="local" format="dita">Starting a Recurring Business Process</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

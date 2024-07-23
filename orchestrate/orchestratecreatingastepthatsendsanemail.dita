@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t5adf89" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Creating a Step that Sends an Email</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Conga Orchestrate has the ability to embed email alerts inside of your Conga Orchestrate Definitions. This allows you to easily send an email to internal and/or external people as an automated step within your processes. For example, you can notify people within your organization when a process has reached a certain point. You can notify your clients via email as well, such as a Welcome Aboard email at the end of an onboarding process or a Transfer Complete email when a transfer is complete.</p>
+    <p>Email steps cannot have child steps. If you need to create a step to follow up on the email, create the child step at the same level as the Send Email step.</p>
+    <ol>
+      <li>Navigate to the Definition where you desire to place this step.</li>
+      <li>In the Steps section of the screen, click the New Email Alert button. If you already have steps in a Definition, you can either use the New Child link next to the Step name in the Definition screen or you can use the New Child Step button while viewing the existing Step, located near the bottom of the screen. Click the button and change the Step Type to Send Email in the Step Edit screen.</li>
+      <li>
+        Complete the fields:
+        <ul>
+          <li>Step Name - Enter a name for the step. This field copies into the Subject when the process executes.</li>
+          <li>Step Type - Select Send Email.</li>
+          <li>
+            Parent Step - Use Lookup to define the parent step, which is the step that must be completed before the Send Email step is initiated.
+            <ul>
+              <li>Leave the field blank if the Send Email step needs to be initiated as soon as the process starts.</li>
+            </ul>
+          </li>
+          <li>Parent Stage - If a parent step is part of a Parent Stage, all of the steps in the stage must complete before the Send Email step is created.</li>
+          <li>Definition - The field is automatically populated based on the Definition.</li>
+          <li>Stage - Use Lookup to select the Stage to associate with the Send Email step, if applicable.</li>
+          <li>Email From (Sender) - Select the email address of the user sending the email alert, the person who initiated the process or completed the parent task, or an organization-wide email address defined in Salesforce.</li>
+          <li>Email Recipients - Select the recipients for the email message, which can be individual users and the persons identified in a user or email field on the Account, Contact, or Process Object. In addition, Account team member and Team Member records can be recipients.</li>
+          <li>Email Additional To – Enter the email address for each additional person you want to receive the message, making sure to separate email addresses using a semi-colon (;).</li>
+          <li>Template Source - Select Salesforce, SendGrid, or Composer [Conga] to identify the source application for the template. Salesforce - Select a HTML or text-based template in the Email Template list, and select the Email Template Contains ONLY User Fields checkbox if the selected template contains only merge fields from the user record. Email Templates can contain merge fields from the Account, Contact, Business Process, and User records. If you do not select the checkbox, you can still send the email to a user since this option controls how Salesforce merges data into the email template.SendGrid - Select a SendGrid template in the SendGrid Email Template list. Click the Edit Template link to log in to Send Grid if you want to edit the template. Composer - Select a Conga Composer template in the Composer Email Template list. These are Email Templates defined on the same object type as your Definition's Object Type. When this option is selected, the Email From (Sender) must be set to an org-wide email address.</li>
+          <li>
+            Delay Creation - Select the checkbox to define the conditions that must be met before the email is sent, or specify a certain date the email is sent. For example, use the Delay option to send an email reminder two days after a prior step is created, or use it as Marketing Automation lite to send emails on a schedule.
+            <ul>
+              <li>Populate the adjusted due date fields:Send Date Adjustment Base Date - The date selected in this field will be used to calculate when the delayed email alert will be sent.Parent Object - Calculation uses the Due Date Field on the object specified in the Object Name field for the Definition.Current Date - Calculation is based on the current date. The current date is the date that the Send Step is created. Parent Event - Calculation uses the Event date as the base date. This only applies if the current step is a child of an Event Placeholder Step.Date Field - Calculation uses any Date or DateTime field from the Related Account, Contact, or Process Object selected.Send Date Adjustment - This number will be added to the date specified in the Send Date Adjustment Base Date field.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Configure any needed <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref>.</li>
+      <li>Click Save.</li>
+    </ol>
+  </conbody>
+</concept>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t667097" xml:lang="en-us">
+  <title class="- topic/title ">Errors</title>
+  <conbody>
+    <p>Any request that returns an error follows a standard format. The Orchestrate Import API will return an object that contains a list of errors with the import, the import status, and definition Ids imported</p>
+  </conbody>
+</concept>

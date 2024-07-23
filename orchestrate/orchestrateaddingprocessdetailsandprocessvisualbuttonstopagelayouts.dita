@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t35ee80" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Adding Process Details and Process Visual Buttons to Page Layouts</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified by  William Abernathy on Sep 20, 2023</p>
+    <p>You can add a Process Details button and a Process Visual button to page layouts.</p>
+    <p>The Process Details button enables you to download process details into an Excel spreadsheet. The Process Visual button displays the process graphically and visually represents how the steps execute. See <xref href="orchestrateintroductiontocongaorchestratescreensinsalesforce.dita#t2249ce" scope="local" format="dita">Introduction to Conga Orchestrate Screens in Salesforce</xref>.</p>
+    <p>To add the Process Details custom button to Process Object Page Layout(s):</p>
+    <ol>
+      <li>In Setup, go to the Page Layouts section of the process object (Cases, Campaigns, Opportunities, etc.)</li>
+      <li>Select <b>Edit </b>next to the page layout you are adding the buttons to. </li>
+      <li>Select the <b>Buttons </b>option in the left frame.</li>
+      <li>Drag and drop the Process Details and Process Visual buttons onto the page layout. </li>
+      <li>Select <b>Save</b> or <b>Quick Save.</b></li>
+    </ol>
+    <p>Repeat this process for any other page layouts that will contain the buttons.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tbdbfc1" xml:lang="en-us">
+  <title class="- topic/title ">To remove the PCE - Settings tab in Classic:</title>
+  <body>
+    <ol>
+      <li>Go to <b>Setup</b>.</li>
+      <li>Open the Create section and click <b>Tabs</b>.</li>
+      <li>Under the Visualforce Tabs section, click <b>Del</b> next to PCE - Settings.</li>
+      <li>Once prompted, click <b>OK</b> to delete the tab.</li>
+    </ol>
+  </body>
+</topic>

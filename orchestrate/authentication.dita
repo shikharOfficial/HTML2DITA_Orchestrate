@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tdab441" xml:lang="en-us">
+  <title class="- topic/title ">Authentication</title>
+  <conbody>
+    <p>All requests to the API need to be accompanied by an authorization header with a standard salesforce authentication token. </p>
+    <table>
+      <tgroup cols="1">
+        <colspec colname="c1"/>
+        <tbody>
+          <row>
+            <entry>Authorization: Bearer 00D230000000nZM!ARMAQHLLm33JxYYP.UJn1gF6FFmLv8sDYK_8szeckHWtbguztoBpF0HL8...</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p/>
+  </conbody>
+</concept>

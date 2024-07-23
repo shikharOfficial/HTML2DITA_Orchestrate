@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t56001e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Overriding the Task and Event View Page with the Conga Orchestrate Visualforce Page vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Orchestrate offers an optional functionality to Salesforce that does not display within standard page layouts. To override the Task and Event View pages to display additional process information:</p>
+  </conbody>
+</concept>

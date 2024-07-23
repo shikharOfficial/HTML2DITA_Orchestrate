@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t86d263" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Using a Custom Object as an Initiator's Monitored Object</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Definition Initiators allow you to take process execution to the next level. When setting up an Initiator, tell Conga Orchestrate what Object, which Operations on that Object you desire to monitor, as well as the conditions that should be met in order for a process record to be created. Initiators create the process object record and run the process you've defined. Read more <xref href="orchestrateaboutdefinitioninitiators.dita#t927393" scope="local" format="dita">About Definition Initiators</xref>.</p>
+    <p>To allow Initiators to monitor your custom object, follow one of the two methods below to deploy the necessary trigger.</p>
+    <p>Use Conga Orchestrate Configuration Assistant:</p>
+    <p>If your custom object is complex and utilizes universally required fields or has more than one master-detail relationship, then the Configuration Assistant will not work properly. Please use the instructions in the Manually Deploy Necessary Trigger section below.</p>
+    <ol>
+      <li>Create a Lookup relationship field from the Process Object (i.e. Business Process, Case, etc.) to your custom object.</li>
+      <li>Ensure your custom object has a Lookup field to the Contact object, and note the API name of the field. If not, create the Lookup field and make note of its API name.</li>
+      <li>Optional: Create a formula field with the label OwnerId so that the API name is ownerid__c. This field is optional and only needs to be created if your custom object is the detail record in a master-detail relationship. The formula field should retrieve the OwnerId from the master object. The structure of the field will depend on how the relationship is named. For example, if your object is related to the account object through a master-detail the formula is "Business_Account__r.OwnerId".</li>
+      <li>Navigate to the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> tab.</li>
+      <li>Under the Advanced Setup section of the Conga Orchestrate Setup page click Initiators.</li>
+      <li>Confirm the fields in steps 1-3 above have been created.</li>
+      <li>Select your custom object from the Custom Object dropdown.</li>
+      <li>Choose the Contact Lookup Field that the initiator should relate to the process object when a process initiates.</li>
+      <li>Click the Save button.</li>
+      <li>You will be redirected to the Deployment Status page in Setup to confirm the deployment was successful. These setup steps will automatically create the trigger needed for<xref href="orchestrateaboutdefinitioninitiators.dita#t927393" scope="local" format="dita"> Initiators</xref> to function properly as well as update the necessary Conga Orchestrate Setup settings.</li>
+    </ol>
+    <p>Manually Deploy Necessary Trigger:</p>
+    <ol>
+      <li>Create a Lookup Relationship field from the Process Object (i.e. Business Process, Case, etc.) to your custom object.</li>
+      <li>Ensure that your custom object has a Lookup field to the Contact object. If so, note the API name of the field. If not, create it and make note of the API name.</li>
+      <li>Optional: Create a formula field with the label OwnerId so that the API name is ownerid__c. This field is optional and only needs to be created if your custom object is the detail record in a master-detail relationship. The formula field should retrieve the OwnerId from the master object. The structure of the field will be dependent on how the relationship is named. For example, if your object is related to the account object through a master-detail the formula is Business_Account__r.OwnerId.</li>
+      <li>Edit the Conga Orchestrate Setup setting labeled Initiator Custom Object - Contact Field with the API name of your custom object followed by a colon (:) and the API name of the field in step 3. If there are multiple objects, separate each object: field name pair with semicolons. For example, Custom_Object__c:Contact_Field__c</li>
+      <li>
+        Edit the Conga Orchestrate Setup setting labeled "Initiator Custom Objects" with the API name of your custom object. If there are multiple objects, separate each with semicolons.
+        <image href="../images/143888843.png"/>
+      </li>
+      <li>In a sandbox environment, create a trigger and test class and then migrate them to your production org.</li>
+    </ol>
+    <pre>trigger CustomObjectTrigger on CustomObjectAPIName(after insert, after update) {
+ string operation = Trigger.isUpdate ? 'Update' : 'Insert';
+ FSTR.ProcessComposerInitiatorUtils.EvaluateInitiators(Trigger.oldMap, Trigger.newMap, operation);
+ }</pre>
+    <p>Create a trigger for the custom object. Change the highlighted items in yellow to the custom object name:</p>
+    <p>Create a <xref href="orchestratecreatinganapextestclassforacustomobjectasaprocessobject.dita#t2de78f" scope="local" format="dita">Test Class</xref> to test the trigger. It can be similar to the linked example, but you need to create a record that matches the custom object.</p>
+    <p>
+      Once you have configured your custom object utilizing one of the methods listed above, you can navigate to the
+      <xref href="orchestrateaboutdefinitioninitiators.dita#t927393" scope="local" format="dita">Definition Initiators</xref>
+      tab and create a new initiator. Your custom object displays as an option in the Monitored Object list.
+    </p>
+  </conbody>
+</concept>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t376654" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Orchestrate for REST API Developers vSpring-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified by  Rakesh Singh on Aug 19, 2021</p>
+    <p>This section explains the REST APIs provided by Conga Orchestrate. </p>
+    <table>
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody>
+          <row>
+            <entry>Topic</entry>
+            <entry>Description</entry>
+          </row>
+          <row>
+            <entry>What's Covered</entry>
+            <entry>This section walks you through the complete list of REST APIs provided by Conga Orchestrate.</entry>
+          </row>
+          <row>
+            <entry>Primary Audience</entry>
+            <entry>REST API Developers</entry>
+          </row>
+          <row>
+            <entry>IT Environment</entry>
+            <entry>For information pertaining to the requirements and recommendations, see <xref href="https://documentation.conga.com/display/SRSPSF" scope="external" format="html">System Requirements and Supported Platforms Matrix</xref>.</entry>
+          </row>
+          <row>
+            <entry>Updates</entry>
+            <entry>For a comprehensive list of updates for each release, see <xref href="orchestratewhatsnewinorchestratedocumentationvoctober23.dita#tead67b" scope="local" format="dita">What's New in Orchestrate Documentation</xref>.</entry>
+          </row>
+          <row>
+            <entry>Other Resources</entry>
+            <entry>
+              <ul>
+                <li>See <xref href="orchestrateorchestrateforadministratorsvjune23.dita#tdc94cd" scope="local" format="dita">Orchestrate for Administrators</xref> for information on installing and setting up Conga Orchestrate.</li>
+                <li>See <xref href="orchestrateorchestrateforusersvjune23.dita#t51c5c2" scope="local" format="dita">Orchestrate for Users</xref> for information on Orchestrate workflow and use cases.</li>
+              </ul>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>This section describes the following APIs:</p>
+    <ul>
+      <li>Orchestrate Export</li>
+      <li>Orchestrate Import</li>
+    </ul>
+    <p>Select one of the following topics for more information:</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestrateauthenticatingorchestrateapisvspring21.dita#t8515e3" scope="local" format="dita">Authenticating Orchestrate APIs</xref>
+      </li>
+      <li>
+        <xref href="orchestrateorchestraterestapisvspring21.dita#t73d61f" scope="local" format="dita">Orchestrate REST APIs</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

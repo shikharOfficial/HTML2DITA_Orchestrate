@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tc7087d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating Process Groups for Reporting and Gantt Charts vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>Process Groups enable you to group business processes for reporting and for display in a Gantt chart. Add the Process Group Lookup field to your Process Object page layout (Campaign, Case, Contract, Lead, Opportunity, or Business Process). Then create a Process Group from the Process Group tab.</p>
+    <p>Add the Process Group Field to Applicable Page Layouts</p>
+    <ol>
+      <li>Navigate to the list of page layouts on the applicable object in Setup.</li>
+      <li>Select Edit next to the Page Layout that needs the Process Group field.</li>
+      <li>Find the Process Group field and drag it onto the Page Layout where you want it to display.</li>
+      <li>Repeat for all necessary Page Layouts.</li>
+    </ol>
+    <p>If you are using a custom process object, create a custom Lookup field for the Process Group on your custom object:</p>
+    <p>To create a Process Group field on your custom object:</p>
+    <ol>
+      <li>Navigate to your custom object details in Setup.</li>
+      <li>Navigate to the Fields &amp; Relationships and select the New button.</li>
+      <li>Select Lookup Relationship and select Next.</li>
+      <li>Select Process Group in the Related To drop-down list box and select Next.</li>
+      <li>Enter Process Group in the Field Label box and enter "Displays the Process Group to which this process belongs" in the Description.</li>
+      <li>Select Next.</li>
+      <li>Enable the necessary security and select Next.</li>
+      <li>Select the desired Page Layout(s) where the new field should be displayed and select Next. </li>
+      <li>Specify the title that the related list will have in all of the layouts associated with the parent. Select the desired Page Layout(s) where the new related list should be displayed and select Save.</li>
+    </ol>
+    <p>Creating a New Process Group</p>
+    <ol>
+      <li>Navigate to the Process Groups tab.</li>
+      <li>Select the New button.</li>
+      <li>Enter the Process Group Name.</li>
+      <li>Select Start Date and the Expected Completion Date if necessary.</li>
+      <li>Select Save or Save &amp; New to create another Process Group.</li>
+    </ol>
+  </conbody>
+</concept>

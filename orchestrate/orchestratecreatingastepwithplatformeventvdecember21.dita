@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t6bada7" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step With Platform Event vDecember-21</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Jul 15, 2022</p>
+    <p>When a platform event step executes, a platform event is triggered. You can specify whether the system listens or not. The system may listen for a return message for a platform event. If not, the process moves on.</p>
+    <p>If you already have steps in the definition, you can either use the New Child link next to the step name while viewing the definition or you can use the New Child Step button while viewing the existing Step (towards the bottom of the page).</p>
+  </conbody>
+</concept>

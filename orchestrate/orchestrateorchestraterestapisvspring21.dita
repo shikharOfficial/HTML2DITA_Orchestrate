@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t73d61f" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Orchestrate REST APIs vSpring-21</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <pre>{ "openapi": "3.0.0", "info": { "version": "1.0", "title": "Orchestrate APIs", "license": { } }, "tags": [ { "name": "Orchestrate APIs", }, ],
+            "paths": {
+            "/services/apexrest/FSTR/OrchestrateExport": {
+            "get": {
+            "tags": [ "Orchestrate APIs" ],
+            "summary": "Returns JSON string of Definitions based on Definition Ids passed in",
+            "description": "Accepts a list of Definition Ids as a parameter, then will return a JSON string of the Definitions belonging to those Ids.",
+            "parameters": [
+            {
+            "name": "definitionids",
+            "in": "query",
+            "description": "Ids of Definitions to be exported",
+            "required": true,
+            "schema": {
+            "type": "array",
+            "description": "List of Definition Ids to export",
+            "items": {
+            "type": "string"
+            }
+            },
+            "examples": {
+            "definitionIds": {
+            "summary": "Example of a list of Definitions specified for export",
+            "value": ["a0J3B000004Kk9RUAS", "a0J3B000004Kk9RUAX", "a0J3B000004Kk9RUAY"]
+            }
+            }
+            }
+            ],
+            "responses": {
+            "200": {
+            "description": "JSON string of Definitions based on Definition Ids passed in",
+            "content": {
+            "application/json": {
+            "schema": {
+            "type": "string",
+            "description": "JSON string of Definitions and their Steps/Criteria to be used for import"
+            },
+            "examples": {
+            "definitionJSON": {
+            "summary": "JSON string of Definitions and their Steps/Criteria to be used for import",
+            "value": "{\"stepEvents\":[],\"rpaStepData\":[],\"queues\":{},\"orderedSteps\":[{\"attributes\":{\"type\":\"FSTR__PCE_Step__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Step__c/a0V3B000005KXBPUA4\"},\"LastModifiedDate\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Event_Placeholder__c\":false,\"FSTR__Rejection_Action__c\":\"Continue\",\"FSTR__Rejection_Status__c\":\"Completed\",\"FSTR__Delay_Creation_Time__c\":\"12:00 AM\",\"FSTR__Document_Merge__c\":false,\"Name\":\"Step 1\",\"FSTR__Email_Alert__c\":false,\"FSTR__Reevaluate_When__c\":\"--None--\",\"FSTR__Email_To_Target__c\":\"Contact\",\"FSTR__Obj_Data_2__c\":null,\"CreatedById\":\"0053B0000054rZSQAY\",\"FSTR__Copy_Subject_From_Parent_Process_Object__c\":false,\"FSTR__Number_of_Reevaluation_Criteria__c\":0.0,\"FSTR__Approval_Step__c\":false,\"FSTR__Generate_SMS_Notification__c\":false,\"FSTR__Number_of_Field_Validations__c\":0.0,\"IsDeleted\":false,\"FSTR__Create_with_Status__c\":\"Not Started\",\"FSTR__Object_Type_To_Create__c\":\"task\",\"FSTR__Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Do_Not_Reopen__c\":true,\"FSTR__Web_Service_Callout_Method__c\":\"GET\",\"FSTR__Web_Service_Callout__c\":false,\"FSTR__Merge_Product__c\":\"composer\",\"CreatedDate\":\"2021-02-01T19:18:40.000+0000\",\"Id\":\"a0V3B000005KXBPUA4\",\"FSTR__Create_if_Parent_Completed__c\":false,\"FSTR__Definition__r\":{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"Id\":\"a0J3B000004Kk9RUAS\",\"Name\":\"Test Definition\"},\"FSTR__Checklist__c\":false,\"FSTR__Create_On_First_Match_Only__c\":false,\"FSTR__Status_Managed_By__c\":\"Status Field\",\"FSTR__Skip_if_Past_Due__c\":false,\"FSTR__Field_Update__c\":false,\"FSTR__Ignore_In_Stage_Completion__c\":true,\"FSTR__Object_Record_Type_To_Create_Name__c\":\"Master\",\"FSTR__Perform_Callout_On__c\":\"Create\",\"FSTR__Reassignment_Count__c\":0.0,\"FSTR__Create_if_Parent_Canceled__c\":false,\"FSTR__Object_Record_Type_To_Create__c\":\"012000000000000AAA\",\"FSTR__Delay_Creation__c\":false,\"FSTR__Cumulative_Date_Adjustment__c\":0.0,\"FSTR__Merge_Product_Name__c\":\"Composer\",\"FSTR__Generate_Step__c\":false,\"FSTR__Number_of_Dependent_Fields__c\":0.0,\"FSTR__Assignee_Type__c\":\"Executing User\",\"FSTR__Output_to_PDF__c\":false,\"FSTR__Merge_Submit_ESign__c\":false,\"FSTR__Is_Deletable__c\":false,\"FSTR__Generate_Email_Notification__c\":false,\"SystemModstamp\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Approval_Status__c\":\"Completed\",\"FSTR__Obj_Data_1__c\":\"&lt;?xml version=\\\"1.0\\\"?>&lt;Task>&lt;priority datatype=\\\"string\\\">Normal&lt;/priority>&lt;/Task>\",\"FSTR__Object_Type_To_Create_Name__c\":\"Task\",\"FSTR__Chatter_Notification__c\":false,\"FSTR__Due_Date_Adjustment__c\":0.0,\"FSTR__Due_Date_Adjustment_Base_Date__c\":\"Current Date\",\"LastModifiedById\":\"0053B0000054rZSQAY\",\"FSTR__Field_Validation_Message__c\":\"You may not complete this Step because of one or more validation rules.\"}],\"orderedChildSteps\":{},\"loopBackCriteria\":[],\"initiators\":[],\"initCriteria\":{},\"fieldValidations\":[],\"fieldUpdates\":[],\"fieldDeps\":[],\"defStages\":{},\"defs\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"FSTR__Definition_Hierarchy__c\":\"[{\\\"Stage\\\":null,\\\"ParentStep\\\":null,\\\"ParentStage\\\":null,\\\"Id\\\":\\\"a0V3B000005KXBPUA4\\\",\\\"DelayCreation\\\":false,\\\"Definition\\\":\\\"a0J3B000004Kk9RUAS\\\"}]\",\"LastModifiedDate\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Definition_Criteria__c\":\"fstr__business_process__c.fstr__subject__c = Test Definition AND\",\"IsDeleted\":false,\"FSTR__Is_Active__c\":true,\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"FSTR__Chatter_Enabled__c\":false,\"FSTR__Object_Display_Name__c\":\"Business Process\",\"Name\":\"Test Definition\",\"SystemModstamp\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Criteria_Count__c\":1.0,\"OwnerId\":\"0053B0000054rZSQAY\",\"CreatedById\":\"0053B0000054rZSQAY\",\"FSTR__Disable_Object_Status_Management__c\":false,\"FSTR__Number_of_Top_Level_Reevaluation_Steps__c\":0.0,\"CreatedDate\":\"2021-02-01T19:15:36.000+0000\",\"Id\":\"a0J3B000004Kk9RUAS\",\"LastModifiedById\":\"0053B0000054rZSQAY\",\"FSTR__PCE_Definition_Criteria__r\":{\"totalSize\":1,\"done\":true,\"records\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition_Criteria__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition_Criteria__c/a0G3B000005cVMWUA2\"},\"FSTR__PCE_Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Joining_Operator__c\":\"AND\",\"FSTR__Field_Name__c\":\"fstr__subject__c\",\"FSTR__Field_Value__c\":\"Test Definition\",\"FSTR__Operator__c\":\"=\",\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"Id\":\"a0G3B000005cVMWUA2\",\"FSTR__DataType__c\":\"STRING\",\"FSTR__PCE_Definition__r\":{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"Id\":\"a0J3B000004Kk9RUAS\",\"Name\":\"Test Definition\"}}]}}],\"defCriteria\":{\"a0J3B000004Kk9RUAS\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition_Criteria__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition_Criteria__c/a0G3B000005cVMWUA2\"},\"FSTR__PCE_Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Joining_Operator__c\":\"AND\",\"FSTR__Field_Name__c\":\"fstr__subject__c\",\"FSTR__Field_Value__c\":\"Test Definition\",\"FSTR__Operator__c\":\"=\",\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"Id\":\"a0G3B000005cVMWUA2\",\"FSTR__DataType__c\":\"STRING\"}]},\"checklistItems\":[],\"approvalItems\":[]}"
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            },
+            "/services/apexrest/FSTR/OrchestrateImport": {
+            "post": {
+            "tags": [ "Orchestrate APIs" ],
+            "summary": "Returns import status and any errors found during validation",
+            "description": "Validates a Definition JSON string and imports the Definitions/Steps/Criteria in the string. Validation and import can be skipped by utilizing importOnly and previewOnly in the JSON body for the request. Returns the Definition Ids imported, the import status, and any errors with the import.",
+            "requestBody": {
+            "content": {
+            "application/json": {
+            "schema": {
+            "$ref": "#/components/schemas/importBody"
+            },
+            "examples": {
+            "definitionJSON": {
+            "$ref": "#/components/examples/definitionJSON"
+            }
+            }
+            }
+            }
+            },
+            "responses": {
+            "200": {
+            "description": "Import status and any errors found during validation",
+            "content": {
+            "application/json": {
+            "schema": {
+            "$ref": "#/components/schemas/validation"
+            },
+            "examples": {
+            "importResponse": {
+            "$ref": "#/components/examples/importResponse"
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+            },
+            "components": {
+            "examples": {
+            "definitionJSON": {
+            "summary": "Example input for Orchestrate Import",
+            "value": {
+            "definitionJSON": "{\"stepEvents\":[],\"rpaStepData\":[],\"queues\":{},\"orderedSteps\":[{\"attributes\":{\"type\":\"FSTR__PCE_Step__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Step__c/a0V3B000005KXBPUA4\"},\"LastModifiedDate\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Event_Placeholder__c\":false,\"FSTR__Rejection_Action__c\":\"Continue\",\"FSTR__Rejection_Status__c\":\"Completed\",\"FSTR__Delay_Creation_Time__c\":\"12:00 AM\",\"FSTR__Document_Merge__c\":false,\"Name\":\"Step 1\",\"FSTR__Email_Alert__c\":false,\"FSTR__Reevaluate_When__c\":\"--None--\",\"FSTR__Email_To_Target__c\":\"Contact\",\"FSTR__Obj_Data_2__c\":null,\"CreatedById\":\"0053B0000054rZSQAY\",\"FSTR__Copy_Subject_From_Parent_Process_Object__c\":false,\"FSTR__Number_of_Reevaluation_Criteria__c\":0.0,\"FSTR__Approval_Step__c\":false,\"FSTR__Generate_SMS_Notification__c\":false,\"FSTR__Number_of_Field_Validations__c\":0.0,\"IsDeleted\":false,\"FSTR__Create_with_Status__c\":\"Not Started\",\"FSTR__Object_Type_To_Create__c\":\"task\",\"FSTR__Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Do_Not_Reopen__c\":true,\"FSTR__Web_Service_Callout_Method__c\":\"GET\",\"FSTR__Web_Service_Callout__c\":false,\"FSTR__Merge_Product__c\":\"composer\",\"CreatedDate\":\"2021-02-01T19:18:40.000+0000\",\"Id\":\"a0V3B000005KXBPUA4\",\"FSTR__Create_if_Parent_Completed__c\":false,\"FSTR__Definition__r\":{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"Id\":\"a0J3B000004Kk9RUAS\",\"Name\":\"Test Definition\"},\"FSTR__Checklist__c\":false,\"FSTR__Create_On_First_Match_Only__c\":false,\"FSTR__Status_Managed_By__c\":\"Status Field\",\"FSTR__Skip_if_Past_Due__c\":false,\"FSTR__Field_Update__c\":false,\"FSTR__Ignore_In_Stage_Completion__c\":true,\"FSTR__Object_Record_Type_To_Create_Name__c\":\"Master\",\"FSTR__Perform_Callout_On__c\":\"Create\",\"FSTR__Reassignment_Count__c\":0.0,\"FSTR__Create_if_Parent_Canceled__c\":false,\"FSTR__Object_Record_Type_To_Create__c\":\"012000000000000AAA\",\"FSTR__Delay_Creation__c\":false,\"FSTR__Cumulative_Date_Adjustment__c\":0.0,\"FSTR__Merge_Product_Name__c\":\"Composer\",\"FSTR__Generate_Step__c\":false,\"FSTR__Number_of_Dependent_Fields__c\":0.0,\"FSTR__Assignee_Type__c\":\"Executing User\",\"FSTR__Output_to_PDF__c\":false,\"FSTR__Merge_Submit_ESign__c\":false,\"FSTR__Is_Deletable__c\":false,\"FSTR__Generate_Email_Notification__c\":false,\"SystemModstamp\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Approval_Status__c\":\"Completed\",\"FSTR__Obj_Data_1__c\":\"&lt;?xml version=\\\"1.0\\\"?>&lt;Task>&lt;priority datatype=\\\"string\\\">Normal&lt;/priority>&lt;/Task>\",\"FSTR__Object_Type_To_Create_Name__c\":\"Task\",\"FSTR__Chatter_Notification__c\":false,\"FSTR__Due_Date_Adjustment__c\":0.0,\"FSTR__Due_Date_Adjustment_Base_Date__c\":\"Current Date\",\"LastModifiedById\":\"0053B0000054rZSQAY\",\"FSTR__Field_Validation_Message__c\":\"You may not complete this Step because of one or more validation rules.\"}],\"orderedChildSteps\":{},\"loopBackCriteria\":[],\"initiators\":[],\"initCriteria\":{},\"fieldValidations\":[],\"fieldUpdates\":[],\"fieldDeps\":[],\"defStages\":{},\"defs\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"FSTR__Definition_Hierarchy__c\":\"[{\\\"Stage\\\":null,\\\"ParentStep\\\":null,\\\"ParentStage\\\":null,\\\"Id\\\":\\\"a0V3B000005KXBPUA4\\\",\\\"DelayCreation\\\":false,\\\"Definition\\\":\\\"a0J3B000004Kk9RUAS\\\"}]\",\"LastModifiedDate\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Definition_Criteria__c\":\"fstr__business_process__c.fstr__subject__c = Test Definition AND\",\"IsDeleted\":false,\"FSTR__Is_Active__c\":true,\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"FSTR__Chatter_Enabled__c\":false,\"FSTR__Object_Display_Name__c\":\"Business Process\",\"Name\":\"Test Definition\",\"SystemModstamp\":\"2021-02-01T19:18:40.000+0000\",\"FSTR__Criteria_Count__c\":1.0,\"OwnerId\":\"0053B0000054rZSQAY\",\"CreatedById\":\"0053B0000054rZSQAY\",\"FSTR__Disable_Object_Status_Management__c\":false,\"FSTR__Number_of_Top_Level_Reevaluation_Steps__c\":0.0,\"CreatedDate\":\"2021-02-01T19:15:36.000+0000\",\"Id\":\"a0J3B000004Kk9RUAS\",\"LastModifiedById\":\"0053B0000054rZSQAY\",\"FSTR__PCE_Definition_Criteria__r\":{\"totalSize\":1,\"done\":true,\"records\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition_Criteria__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition_Criteria__c/a0G3B000005cVMWUA2\"},\"FSTR__PCE_Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Joining_Operator__c\":\"AND\",\"FSTR__Field_Name__c\":\"fstr__subject__c\",\"FSTR__Field_Value__c\":\"Test Definition\",\"FSTR__Operator__c\":\"=\",\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"Id\":\"a0G3B000005cVMWUA2\",\"FSTR__DataType__c\":\"STRING\",\"FSTR__PCE_Definition__r\":{\"attributes\":{\"type\":\"FSTR__PCE_Definition__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition__c/a0J3B000004Kk9RUAS\"},\"Id\":\"a0J3B000004Kk9RUAS\",\"Name\":\"Test Definition\"}}]}}],\"defCriteria\":{\"a0J3B000004Kk9RUAS\":[{\"attributes\":{\"type\":\"FSTR__PCE_Definition_Criteria__c\",\"url\":\"/services/data/v50.0/sobjects/FSTR__PCE_Definition_Criteria__c/a0G3B000005cVMWUA2\"},\"FSTR__PCE_Definition__c\":\"a0J3B000004Kk9RUAS\",\"FSTR__Joining_Operator__c\":\"AND\",\"FSTR__Field_Name__c\":\"fstr__subject__c\",\"FSTR__Field_Value__c\":\"Test Definition\",\"FSTR__Operator__c\":\"=\",\"FSTR__Object_Name__c\":\"fstr__business_process__c\",\"Id\":\"a0G3B000005cVMWUA2\",\"FSTR__DataType__c\":\"STRING\"}]},\"checklistItems\":[],\"approvalItems\":[]}",
+            "previewOnly": false
+            }
+            },
+            "importResponse": {
+            "summary": "Example of error messages and corresponding Definition Ids from an import attempt",
+            "value": {
+            "definitionIds": ["a0J3B000004Kk9RUAS"],
+            "errorMessages":["The step could not be imported because this Object is not defined in the org: Test Object."],
+            "status": "Success with errors"
+            }
+            }
+            },
+            "schemas": {
+            "importBody": {
+            "type": "object",
+            "required": [
+            "definitionJSON"
+            ],
+            "properties": {
+            "definitionJSON": {
+            "type": "string",
+            "description": "JSON string of an exported Orchestrate Definition."
+            },
+            "previewOnly": {
+            "type": "boolean",
+            "description": "Set to true to only validate JSON string of exported Orchestrate Definition and skip actual importing. Otherwise set to false or omit."
+            }
+            }
+            },
+            "validation": {
+            "type": "object",
+            "properties": {
+            "definitionIds": {
+            "type": "array",
+            "description": "A list of Definition Ids from the source Org that were trying to be imported.",
+            "items": {
+            "type": "string"
+            }
+            },
+            "errorMessages": {
+            "type": "array",
+            "description": "A list of any issues that were found with the Definitions/Steps/Criteria that were trying to be imported.",
+            "items": {
+            "type": "string"
+            }
+            },
+            "status": {
+            "type": "string",
+            "description": "Status of the import. Values can be: 'Success', 'Success with errors' (the import succeeded but there are things the user must fix on the new definition), and 'Error' (import failed entirely)"
+            }
+            }
+            }
+            }
+            }
+            }</pre>
+    <p/>
+    <p/>
+    <p/>
+    <p/>
+  </conbody>
+</concept>

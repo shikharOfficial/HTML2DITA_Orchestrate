@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t043f09" xml:lang="en-us">
+  <title class="- topic/title ">Custom Code</title>
+  <conbody>
+    <p>When using your own custom code with Conga Orchestrate fields, make sure all classes involved in querying for Orchestrate fields reference the same Orchestrate version. The managed package version is set to Apex Class (in the browser) on the Version Settings tab. These are pulled in automatically when your code references one or more managed packages. For more information, see <xref href="https://help.salesforce.com/articleView?id=code_version_settings_apex.htm&amp;type=5" scope="external" format="html">Managing Version Settings for Apex</xref>.</p>
+  </conbody>
+</concept>

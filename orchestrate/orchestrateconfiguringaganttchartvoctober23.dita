@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tfc76c5" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring a Gantt Chart vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>Gantt visualizations allow you to view your running processes in a Gantt Chart. For processes associated with a valid, active Definition, the Gantt visualization displays process steps in a linear fashion with a list of process steps.</p>
+    <p>To enable viewing a process in a Gantt chart:</p>
+    <ol>
+      <li>Navigate to the Conga Orchestrate Setup tab.</li>
+      <li>
+        Scroll down to or click Process Summary and configure the fields. The defaults are set up automatically though you can optionally customize internal and external colors and labels yourself. During the installation process, Conga Orchestrate sets the colors with default values.
+        <ul>
+          <li>Select the Process Summary Enabled checkbox.</li>
+          <li>To optionally display tables of open internal and external steps for the process(es) select the Process Summary: Step Classifications checkbox. Also enables Classifications for internal and external on the Step page.</li>
+          <li>Configure the remaining fields as necessary.</li>
+        </ul>
+      </li>
+      <li>Add the Process Visual: Gantt button to all applicable process object (Business Process, Case, etc.) page layouts.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

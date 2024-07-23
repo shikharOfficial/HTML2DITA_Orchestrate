@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t8515e3" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Authenticating Orchestrate APIs vSpring-21</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>The purpose of this page is to describe the headless Orchestrate API service that enables rapid experience-first commerce development and applications.</p>
+    <p>Orchestrate API follows a microservice architecture that enables commerce into any part of an application and is built on the JSON API specification, follows predictable REST URLs and supports cross-origin resource sharing.</p>
+  </conbody>
+</concept>

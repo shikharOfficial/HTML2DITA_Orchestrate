@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="te1e2ff" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Record Match Initiators - Daily Check vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh on Aug 20, 2021</p>
+    <p>After you have configured and saved the <xref href="orchestratecreatingadefinitioninitiatorvsummer21.dita#t27ef18" scope="local" format="dita">Definition Initiator</xref> with a Monitored Operation of Record Matches Criteria - Daily Check, a batch job will check daily to find records that match the criteria outlined in the Definition Initiator and will subsequently initiate the process defined in the matching <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Definition</xref>. Watch the video below to see it in action.</p>
+    <p>If you haven't already done so, navigate to the <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Conga Orchestrate Setup</xref> Tab to auto-schedule the batch job.</p>
+    <p><xref href="https://share.vidyard.com/watch/32X2p4Up6mq7SrcBbp6waD" scope="external" format="html">Watch a video here</xref>.</p>
+  </conbody>
+</concept>

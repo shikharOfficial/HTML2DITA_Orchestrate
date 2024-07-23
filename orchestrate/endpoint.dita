@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tbd45ef" xml:lang="en-us">
+  <title class="- topic/title ">Endpoint</title>
+  <conbody>
+    <p>The Orchestrate API is installed with the Orchestrate package and can be exposed to external applications via a Salesforce site or community. </p>
+    <table>
+      <tgroup cols="1">
+        <colspec colname="c1"/>
+        <tbody>
+          <row>
+            <entry>
+              <xref href="https://instanceurl/services/apexrest/fstr" scope="external" format="html">https://instanceUrl/services/apexrest/fstr</xref>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

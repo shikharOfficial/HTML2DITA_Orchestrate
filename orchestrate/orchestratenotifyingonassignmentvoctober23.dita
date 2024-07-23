@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t1a3f84" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Notifying on Assignment vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>When using Salesforce Tasks as Steps within Conga Orchestrate Definitions, you can notify users of Task assignments via the Reminder window. You can control the pop-up reminder window on a per user basis.</p>
+    <p>Any user that you create after installing Conga Orchestrate has this featured enabled by default.</p>
+    <ol>
+      <li>Navigate to the User object in Setup.</li>
+      <li>Select User Page Layouts.</li>
+      <li>Select the Page Layout you desire to add the notification. </li>
+      <li>Drag the Notify on Assignment field to the desired location on your Page Layout. </li>
+      <li>Select the Save button.</li>
+      <li>Repeat to add the field to any other applicable User Page Layout(s).</li>
+      <li>Navigate to specific user records that you would like this enabled or disabled and select or deselect the Notify on Assignment field as desired. </li>
+    </ol>
+  </conbody>
+</concept>

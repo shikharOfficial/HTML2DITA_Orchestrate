@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tbcca57" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Conga Orchestrate Scaling Enhancements</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>The Conga Orchestrate 14.27 package, and all packages following version 14.27, feature scaling enhancements that reduce the overall product footprint in Salesforce orgs.Note: These scaling enhancements do not impact the current execution of processes. Although if users configure new object for use, Conga Orchestrate uses the new Process Instance object to track required fields, instead of putting required fields on the new objects themselves.</p>
+    <p>You must have Conga Orchestrate version 14.27 or higher to leverage these scaling enhancements.</p>
+    <p>Scaling Enhancements</p>
+    <ul>
+      <li>The Business Process and Process Task objects are pre-configured and available immediately upon installation or upgrade.</li>
+      <li>
+        Only two fields are now required to configure an object as a Process Object or Step. Previously Conga Orchestrate previously required up to nine fields on Process and Step Objects.
+        <ul>
+          <li>Status field.</li>
+          <li>Process Instance field (lookup field to the Process Instance object)</li>
+        </ul>
+      </li>
+      <li>
+        The Conga Orchestrate installed package includes the managed Process Instance object.
+        <ul>
+          <li>All fields previously required for Process and Step Objects are now stored on the Process Instance object.</li>
+          <li>A tab is not created for the Process Object as it primarily works in the background and requires no user interaction or edits.</li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        Scaling Enhancements
+        <ul>
+          <li>Orchestrate features scaling enhancements that reduce the overall product footprint in Salesforce orgs.</li>
+        </ul>
+      </li>
+    </ul>
+  </conbody>
+</concept>

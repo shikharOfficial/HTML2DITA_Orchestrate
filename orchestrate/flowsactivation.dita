@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t8aac8e" xml:lang="en-us">
+  <title class="- topic/title ">Flows Activation</title>
+  <conbody>
+    <p>When you have <xref href="orchestrateupgradingtocongaorchestrateversion14voctober23.dita#t6d3b6a" scope="local" format="dita">upgraded to the latest Orchestrate version</xref>, activate the Salesforce Flow replacements: </p>
+    <ol>
+      <li>Go to Setup > Flows.</li>
+      <li>
+        <p>Select:</p>
+        <ul>
+          <li>Email When Assigned to Queue</li>
+          <li>Email When Assigned To Queue Test PCE Step</li>
+        </ul>
+      </li>
+      <li>
+        <p>Click <b>Activate.</b></p>
+      </li>
+    </ol>
+  </conbody>
+</concept>

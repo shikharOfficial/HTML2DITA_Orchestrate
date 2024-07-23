@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t0a9c9d" xml:lang="en-us">
+  <title class="- topic/title ">Upgrading from Conga Orchestrate Version 13</title>
+  <conbody>
+    <p>When upgrading from Version 13 to Version 14, the aforementioned objects (contract, opportunity, lead, case, campaign, and task) retain the fields added to each with the Version 13 installation. You do not need to modify any existing process or step objects. After an upgrade, all processes run normally and all old fields remain populated as they were in version 13.</p>
+    <p>You can also manually add a lookup field to the process instance object, with the API name Process_Instance__c, to the process or step object if you do not want to go through setup.</p>
+    <p>Important</p>
+    <p>You must add the process instance lookup field to an object before deleting the previously required fields from Conga Orchestrate version 13.</p>
+    <p>To upgrade an object and use it in version 14, run it through the setup process again. This adds a process Instance lookup field. You are now free to delete every field Orchestrate added to the object with version 13 (aside from many status fields), or you can keep all fields and the process instance lookup field. During execution, a process instance is made with all process data that Orchestrate needs, but those old fields also are populated as they were in version 13 if they exist or are properly mapped.</p>
+    <p>Assign administrators and users to the new Conga Orchestrate admin and user permission sets. After installation, this is done automatically for users who were assigned to the prior permission sets.</p>
+  </conbody>
+</concept>

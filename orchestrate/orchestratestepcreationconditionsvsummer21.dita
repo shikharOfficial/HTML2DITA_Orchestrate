@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t43ae9d" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Step Creation Conditions vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified by  Rakesh Singh on Aug 20, 2021</p>
+    <p>In general, a new Step starts when the Step before it completes. It often makes sense to create additional conditions to determine when a Step should create. For this, use Step Creation Conditions. These are criteria that must equal ‘True’ in order for the Step to create.</p>
+    <p>In general, a new Step starts when the Step before it completes. It often makes sense to create additional conditions to determine when a Step should create. For this, use Step Creation Conditions. These are criteria that must equal True in order for the Step to create.Note: The following fields are supported in Step Creation Conditions: Boolean, Combobox, Currency, Double, Email, Integer, Percent, Phone, Picklist, String, Textarea, URL, MultiPicklist, and User lookup fields.</p>
+    <p>Refer to Creating a <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Definition</xref> and Steps before creating Step Creation Conditions.</p>
+    <ol>
+      <li>Navigate to the Step in which you want to add the condition.</li>
+      <li>Select the Edit button.</li>
+      <li>Scroll down to the Step Creation Conditions section.</li>
+      <li>Select the + Add Creation Condition link.</li>
+      <li>
+        Configure the fields.
+        <ul>
+          <li>Object Select- Select the specified process object defined on the definition or the immediate parent to this step. This list is dynamically populated based on the process object and parent step.</li>
+          <li>Field Select - Select the field to which this step should be dependent. This list is dynamically populated based on the Object Name chosen.</li>
+          <li>Operator - Select how the Field Name compares to the Field Value field.</li>
+          <li>Field Value - Enter the Field Value or select the Field Value from the drop-down list box depending on the Field Name you select.</li>
+          <li>Data Type - Displays the data type of the selected Field Name. This field auto-populates. Note: Auto number, date, datetime, geolocation, and time fields are not supported.</li>
+        </ul>
+      </li>
+      <li>Select the + Add Row link to add more criteria, if needed.</li>
+      <li>Scroll up and select the Save button.</li>
+    </ol>
+    <p><xref href="https://share.vidyard.com/watch/uLjktUuf2Str4KM6vwChGv" scope="external" format="html">Watch this video for more information</xref>.</p>
+    <p>Note</p>
+    <p>For more information on advanced functionality with Step Creation Conditions, see <xref href="orchestrateadvancedfunctionalitywithstepcreationconditionsvsummer21.dita#t3caa18" scope="local" format="dita">Advanced Functionality with Step Creation Conditions</xref>.</p>
+  </conbody>
+</concept>

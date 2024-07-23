@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf89b4c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .About Process Steps vSummer-21</title>
+  <conbody>
+    <p>Created by  user-0266f, last modified on Jun 04, 2021</p>
+    <p>A Step is an individual step in a process. Collectively, these steps drive the process to completion. At each step, you define what happens (create a record, send an email, or generate a document), who is responsible, and when it is due. Each step is related to one <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Process Definition</xref>.</p>
+    <p>A Step can be one of several types:</p>
+    <ul>
+      <li>
+        <xref href="orchestratecreatingastepthatcreatesarecordvspring21.dita#tf11ad9" scope="local" format="dita">Create Record</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingastepthatsendsanemail.dita#t5adf89" scope="local" format="dita">Send Email</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingastepthatgeneratesadocumentvjune23.dita#ted301c" scope="local" format="dita">Generate Document</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingastepwithaneventplaceholdervoctober23.dita#tb1a275" scope="local" format="dita">Event Placeholder</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingasteptoupdaterecordsvoctober23.dita#t42e68d" scope="local" format="dita">Record Update</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingastepwithanapicallout.dita#tabf1d8" scope="local" format="dita">API Callout</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreateastepthatpoststochatter.dita#t44f2b5" scope="local" format="dita">Post to Chatter</xref>
+      </li>
+    </ul>
+    <p>For more information on Process Steps, refer to:</p>
+    <ul>
+      <li><xref href="orchestratedelayedsteps.dita#t2a10fb" scope="local" format="dita">Delayed Steps</xref> - Delay the creation of the step</li>
+      <li><xref href="orchestrateassigneetypesforprocesssteps.dita#tc805de" scope="local" format="dita">Assignee Types</xref> - Multiple options to dynamically assign steps.</li>
+      <li><xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Creation Conditions</xref> - Conditionally create steps based on conditions you set.</li>
+      <li><xref href="orchestratestepfieldvalidations.dita#t2c574c" scope="local" format="dita">Field Validations</xref> - Prevent a process from continuing until the conditions you specify are met.</li>
+    </ul>
+    <p>As you choose the various Step Types in the picklist, the Step Edit page will update to show the applicable, editable fields for the chosen type.</p>
+    <p>The following additional options can be added to a Create Record step to manage status:</p>
+    <ul>
+      <li>
+        <xref href="orchestratemanagingthestatusofastepwithachecklistvsummer21.dita#t6ad2ca" scope="local" format="dita">Manage Status of a Step with a Checklist</xref>
+      </li>
+      <li>
+        <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Manage Status of a Step with an Approval</xref>
+      </li>
+    </ul>
+  </conbody>
+</concept>

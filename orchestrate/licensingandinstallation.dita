@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t43318e" xml:lang="en-us">
+  <title class="- topic/title ">Licensing and Installation</title>
+  <conbody>
+    <p>
+      <b>How do I install the latest version of Conga Orchestrate?</b>
+    </p>
+    <p>Install Conga Orchestrate <xref href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N300000058f6JEAQ" scope="external" format="html">directly from the Salesforce AppExchange</xref>. </p>
+    <p>
+      <b>How do I know I'm on the latest version of Conga Orchestrate?</b>
+    </p>
+    <p>Conga Orchestrate pushes upgrades to all customers when a new version of the application is available. The latest version is also available on the <xref href="https://appexchange.salesforce.com/appxListingDetail?listingId=a0N300000058f6JEAQ" scope="external" format="html">Salesforce AppExchange</xref>.</p>
+    <p>
+      <b>Do all users in my Salesforce Organization need a Conga Orchestrate license?</b>
+    </p>
+    <p>Not necessarily. Conga Orchestrate allows process steps to be assigned dynamically (such as by team roles and user lookup fields) and is not tied to specific users. It may not be possible to know in advance which user records a process touches and usage may change as the organization changes. Conga Orchestrate is installed with a site-wide license, giving all users in the Salesforce organization access to the application by default.</p>
+    <p>To identify Conga Orchestrate users, we look for application builders. Users are those who define processes and steps, are assigned to steps in a running process, or who access pages or objects included in the Conga Orchestrate managed package. This is identical to what would be required if Orchestrate explicitly assigned user licenses instead of using the site-wide license structure.</p>
+  </conbody>
+</concept>

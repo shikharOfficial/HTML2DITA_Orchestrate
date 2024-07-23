@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="taacea2" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Deleting the PCE - Settings Tab After Upgrading Conga Orchestrate vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Note</p>
+    <p>These instructions only apply when upgrading Conga Orchestrate from Process Composer 12.13 and preceding versions.</p>
+    <p>After upgrading Conga Orchestrate, delete the PCE - Settings tab, which is no longer actively used in Conga Orchestrate. All components of PCE - Settings are now in Conga Orchestrate Setup. Due to current Salesforce functionality, the Conga Orchestrate installed package cannot make this modification automatically.</p>
+  </conbody>
+</concept>

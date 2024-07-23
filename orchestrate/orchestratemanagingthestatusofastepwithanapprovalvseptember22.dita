@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2b8f3e" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Managing the Status of a Step with an Approval vSeptember-22</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Sep 07, 2022</p>
+    <p>When an approval step is used, the completion status of that step is controlled by the approval, rejection, or recall action by an assigned user. If a user approves the step, the step status is set to the status selected in the Approval Status field. If a user rejects the step, the step status is set to the status selected in the Rejection Status field.</p>
+    <p>
+      <image href="../images/193692519.png"/>
+    </p>
+    <p>If a user recalls the step, the step status is set to the status selected in the Recalled Status field. You make additional changes and submit again. A new task is created for the newly submitted approval. </p>
+    <p>
+      <image href="../images/193692520.png"/>
+    </p>
+    <p>Approvals are only available for the Create Record step type. During process execution, the approval appears on the generated step’s (i.e. Task) view screen. You do not edit the record to access the approval item. The record’s Status will automatically change to the appropriate value when the approval item is completed.</p>
+    <p>The record locking behavior described below is present when managing the status of a step with approval.</p>
+    <ul>
+      <li>Process objects: editing of the record is limited to approvers and administrators. If there are multiple approval steps outstanding, any of the approvers will be able to edit.</li>
+      <li>Steps: Editing the status field is blocked since it is managed by the Orchestrate approval.</li>
+    </ul>
+  </conbody>
+</concept>

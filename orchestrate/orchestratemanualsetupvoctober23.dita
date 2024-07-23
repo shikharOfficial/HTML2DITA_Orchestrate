@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t40504b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Manual Setup vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 20, 2023</p>
+    <p>Some setup is required to integrate Conga Orchestrate fully with your Salesforce organization. The instructions that follow take you through editing layouts and adding a picklist value, as well as overriding the task and event pages with the custom pages included with Conga Orchestrate. Once these steps are complete, you will be ready to automate your business processes.</p>
+    <p>For a more automated way to configure these items, see <xref href="orchestratesetupandconfigurationvoctober23.dita#t95b1d8" scope="local" format="dita">Setup and Configuration</xref>.</p>
+    <ol>
+      <li>
+        <xref href="orchestratepagelayoutsvoctober23.dita#tce3402" scope="local" format="dita">Page Layouts</xref>
+      </li>
+      <li>
+        <xref href="orchestrateoverridingthetaskandeventviewpagewiththecongaorchestratevisualforcepagevoctober23.dita#t56001e" scope="local" format="dita">Override the Task &amp; Event View Page</xref>
+      </li>
+      <li>
+        <xref href="orchestratecreatingeventsubtypesvoctober23.dita#t214fb0" scope="local" format="dita">Create Event Sub-Types</xref>
+      </li>
+    </ol>
+  </conbody>
+</concept>

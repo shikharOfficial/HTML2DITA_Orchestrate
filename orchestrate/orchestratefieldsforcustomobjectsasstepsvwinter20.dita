@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tac2f09" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Fields for Custom Objects as Steps vWinter-20</title>
+  <conbody>
+    <p>Created by  user-0266f on Jun 01, 2021</p>
+    <p>Conga Orchestrate requires the following fields and rules.</p>
+    <p>You can customize the Field Labels, but the Field Names must match the object in this table (the "__c" is added automatically by Salesforce).</p>
+    <table>
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <thead>
+          <row>
+            <entry>Object: Field Name</entry>
+            <entry>Data Type</entry>
+            <entry>Related To</entry>
+            <entry>Rules</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Status__c</entry>
+            <entry>Picklist</entry>
+            <entry>N/A</entry>
+            <entry>Requires Completed and Canceled Values. Requires at least one additional value indicating an "Open" status and can include additional Status values.</entry>
+          </row>
+          <row>
+            <entry>Process_Instance__c</entry>
+            <entry>Lookup Relationship</entry>
+            <entry>Process Instance</entry>
+            <entry>N/A</entry>
+          </row>
+          <row>
+            <entry>Parent Object Lookup Field(s)</entry>
+            <entry namest="c2" nameend="c4">You also need to create Lookup fields to all of the Parent Objects that you want to use this object as a step with. For example, if you want to use this object as a step in a process running on the Business Process object; then a Lookup field needs to be created between this object and the Business Process object. The field name must match the object API name, such as Business_Process__c, Case__c, Campaign__c, or Opportunity__c. The field label can be whatever you desire. To use the custom step object as a step in PCE - Definitions, a Lookup field to the object the PCE - Definition is defined against must exist on this object.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept>

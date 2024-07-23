@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t2c574c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Step Field Validations</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>Use Step Field Validations on your steps to prevent the step’s completion when the configured validation rules return true. Rather than setting up object-specific validation rules in an attempt to control needed data for Conga Orchestrate steps, define validations directly on the Step level inside of Conga Orchestrate and make sure all of the data you expect is there and conditions are met before moving on to the next step in the process.</p>
+    <p>Refer to Creating a <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Definition</xref> and <xref href="orchestrateaboutprocessstepsvsummer21.dita#tf89b4c" scope="local" format="dita">Steps</xref> before creating Step Field Validations.</p>
+    <ol>
+      <li>Navigate to the Step in which you want to add the validation.</li>
+      <li>Select the Edit button.</li>
+      <li>Scroll down to the Step Field Validations section.</li>
+      <li>Select the + Add Field Validation link.</li>
+      <li>
+        Configure the fields.
+        <ul>
+          <li>Field Validation Message - Input the message a user should receive when completing a task that doesn't meet the configured validation criteria.</li>
+          <li>Object Name - Select the specified process object defined on the definition or select Task. This list is dynamically populated based on the process object.</li>
+          <li>Field Name - Select the field to which this step should be validated. This list is dynamically populated based on the Object Name chosen.</li>
+          <li>Operator - Select how the Field Name compares to the Field Value field.</li>
+          <li>Field Value - Enter the Field Value or select the Field Value from the drop-down list box depending on the Field Name you select.If the field value in your rule is to be blank, leave this field blank, or type in NULL as shown in the screen shot above.</li>
+          <li>Data Type - Displays the data type of the selected Field Name. This field auto-populates. Note: Auto number, date, datetime, geolocation, and time fields are not supported.</li>
+        </ul>
+      </li>
+      <li>Select the + Add Row link to add more criteria, if needed.</li>
+      <li>Scroll up and select the Save button.</li>
+    </ol>
+    <p/>
+  </conbody>
+</concept>

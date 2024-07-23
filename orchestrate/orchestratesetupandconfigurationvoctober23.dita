@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t95b1d8" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Setup and Configuration vOctober-23</title>
+  <shortdesc>Created by  William Abernathy, last modified on Sep 20, 2023</shortdesc>
+  <taskbody>
+    <context>When you install Conga Orchestrate, you are prompted to use the Guided Setup on the Conga Orchestrate Setup tab.</context>
+    <steps>
+      <step>
+        <cmd>Read the information in the Getting Started screen and use the wizard to configure Orchestrate.</cmd>
+      </step>
+      <step>
+        <cmd>In the User Permissions step, read the information and perform any required tasks.</cmd>
+      </step>
+      <step>
+        <cmd>Follow the onscreen prompts for the remaining steps: Connect with OAuth, Add Related Lists, Add Buttons, Add Sub Type, and Advanced. Scroll down in each step to view all the configurable data. Choose carefully, because you cannot edit the information you provide after completing the wizard. Use the back button to return to a previous step in the wizard. The Guided Setup automatically displays if you have not finished all initial configuration steps. After completion, it is available as a link in the left-side Settings list.</cmd>
+      </step>
+      <step>
+        <cmd>To find settings once you have already finished Guided Setup, click the icon to display the App Launcher window.</cmd>
+      </step>
+      <step>
+        <cmd>In the Search field, enter Conga Orchestrate Setup and click the link when it appears in the All Items list.</cmd>
+      </step>
+      <step>
+        <cmd>In your Settings screen, click the <b>Conga Orchestrate Setup</b> tab for a list of links to other configurable system settings.</cmd>
+      </step>
+      <step>
+        <cmd>Click any settings on the left and configure the items:</cmd>
+        <substeps>
+          <substep>
+            <cmd><b>Guided Setup:</b> Returns you to the Getting Started wizard so you can review your selections. However, you cannot edit any of the information you provided.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>General Settings:</b> Includes Related Lists, Buttons, and Event Sub Type.</cmd>
+          </substep>
+          <substep>
+            <cmd>
+              <b>Setup Information:</b>
+              Customizes Conga Orchestrate by reading the onscreen instructions and selecting from the Select Option lists. Uses the Enable Functionality checkboxes to enable and disable program functions.
+            </cmd>
+          </substep>
+          <substep>
+            <cmd>Click <b>Save</b>.</cmd>
+          </substep>
+        </substeps>
+        <substeps>
+          <substep>
+            <cmd>The Show Advanced Step Settings checkbox located in Setup Information makes the Advanced Settings display on the step page. Once this global option is checked, the advanced settings appear on every step page where applicable.Once the Show Advanced Step Settings checkbox is checked, Orchestrate users can access advanced settings on a step.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Chatter Options:</b> Select your Chatter team, the fields to include in your Chatter posts, and the roles you want available for mention in your Chatter posts.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Permissions and Sharing</b>: Contact Orchestrate Support before populating the custom sharing method.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Document Merge</b>: Configures the Signix integration setup for use with Mix.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Email Alerts:</b> Identifies token to enable <xref href="orchestrateconfiguringthesendgridintegrationvwinter20.dita#tad111c" scope="local" format="dita">SendGrid</xref> transactional email templates.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>SMS Notifications: </b>Configures the <xref href="orchestrateconfiguringthetwiliointegration.dita#t52948a" scope="local" format="dita">Twillo</xref> integration.</cmd>
+          </substep>
+          <substep>
+            <cmd><xref href="orchestrateconfiguringvirtualstepsvoctober23.dita#t44acd0" scope="local" format="dita">Virtual Steps</xref>: Schedules steps to show the relationship between the amount of work completed and the amount of work remaining.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Custom Activity Lookup Field:</b> Uses a custom task lookup field instead of the Related To (WhatId) field for process objects.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Process Summary</b>: Configures classifications for a <xref href="orchestrateaboutprocessstepsvsummer21.dita#tf89b4c" scope="local" format="dita">step</xref>, including internal and external step labels. This configuration also selects the fields used in <xref href="orchestrateconfiguringaganttchartvoctober23.dita#tfc76c5" scope="local" format="dita">Gantt charts</xref>.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Feature Controls</b>: Used to enable/disable several Conga Orchestrate functions, including the editing/deletion of closed steps.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Custom Objects (Advanced option)</b>: Creates and executes a complex process against a Conga Orchestrate object.</cmd>
+          </substep>
+          <substep>
+            <cmd><b>Initiators (Advanced option)</b>.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+    <postreq/>
+  </taskbody>
+</task>

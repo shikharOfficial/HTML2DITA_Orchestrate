@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="td4935a" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Using the New Composer Endpoint URL in Generate Document Steps vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Oct 18, 2023</p>
+    <p>Important</p>
+    <p>Ensure that the Conga_Composer Remote Site is activated in your org. Orgs that upgrade to a new version of Conga Orchestrate must activate the Conga_Composer remote site. Activating the remote site is not required for new Conga Orchestrate installations. For more information on activating the Conga Composer remote site, see</p>
+    <p>
+      <xref href="orchestrateactivatingthecongacomposerremotesitetogeneratedocumentstepsvoctober23.dita#t9265f4" scope="local" format="dita">Activating the Conga Composer Remote Site to Generate Document Steps</xref>
+    </p>
+    <p>.</p>
+    <p>It is highly suggested to use the new Composer Endpoint URL to maximize document generation performance and Composer's suite of parameters within a Generate Document step leveraging Composer.</p>
+    <p>The new Composer Endpoint URL generates documents more quickly when firing a Generate Document step. It also provides administrators with access to more <xref href="https://documentation.conga.com/composer/latest/conga-composer-parameter-guide-143899233.html" scope="external" format="html">Composer parameters</xref>, to further customize the document generation process.</p>
+    <p>To use the new Composer Endpoint URL in a Generate Document step:</p>
+    <ol>
+      <li>Go to Conga Orchestrate Setup.</li>
+      <li>Click <b>Document Merge</b> under the Partner Integrations section.</li>
+      <li>Click the <b>Conga Composer</b> tab.</li>
+      <li>Select <b>Composer Integration 2.0</b>.</li>
+    </ol>
+  </conbody>
+</concept>

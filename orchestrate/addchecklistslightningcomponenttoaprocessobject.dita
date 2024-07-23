@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t213bb1" xml:lang="en-us">
+  <title class="- topic/title ">Add Checklists Lightning Component to a Process Object </title>
+  <conbody>
+    <p>You can display all checklists from the running process on the process object record page. To display the checklist Component, use the ChecklistsComponent available in the Lightning Components menu on the Lightning Page Builder. When you add the checklist component on Salesforce Community page, ensure that you set the recordId parameter as <b>{!recordId}.</b></p>
+    <p>
+      <image href="../images/148114117.png"/>
+    </p>
+  </conbody>
+</concept>

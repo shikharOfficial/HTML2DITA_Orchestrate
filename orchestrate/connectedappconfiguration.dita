@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t335a5c" xml:lang="en-us">
+  <title class="- topic/title ">Connected App Configuration</title>
+  <body>
+    <ol>
+      <li>From Setup, enter Connected Apps in the Quick Find.</li>
+      <li>Click <b>Connected Apps</b>. </li>
+      <li>Click <b>OrchestrateSetup</b>. </li>
+      <li>Click the <b>Edit Policies</b> button.</li>
+      <li>In the Permitted Users dropdown, select admin-approved users are pre-authorized. </li>
+      <li>Click <b>OK </b>to accept the security warning. You will satisfy the requirements in the following steps.</li>
+      <li>Click <b>Save</b>.</li>
+      <li>Scroll down the page and select <b>Manage Profiles </b>or <b>Manage Permission Sets</b> (depending on how you will manage Conga Orchestrate access).</li>
+      <li>Choose the profiles or permission sets that have access to Conga Orchestrate. You can only add custom (non-managed) permission sets.</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </body>
+</topic>

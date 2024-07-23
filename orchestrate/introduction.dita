@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t977e01" xml:lang="en-us">
+  <title class="- topic/title ">Introduction</title>
+  <conbody>
+    <p>Conga Orchestrate version 14 includes new features and enhancements to help improve your current processes. Take advantage of the new features described below.</p>
+    <p>Conga Orchestrate changes revolved around a new object, process instance.</p>
+    <p>Important</p>
+    <ul>
+      <li>If you have steps assigned to queues, also add the process instance to the same queues as the step's object type to create.</li>
+      <li>Upgrading from Conga Orchestrate version 13 to Conga Orchestrate version 14 requires you to first <xref href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04t0g000000KKjz" scope="external" format="html">install Conga Orchestrate version 14.18.2</xref>. This installation is only required if you are currently on version 13 and are manually upgrading your org to version 14.</li>
+      <li>
+        <p>Salesforce has deprecated Workflow Rules in favor of its Flows product. Before any upgrade to version 14, you must deactivate legacy workflow rules and activate replacement flows as described in <xref href="orchestratedisablingworkflowrulesvjune23.dita#t4e7fe9" scope="local" format="dita">Disabling Workflow Rules</xref>.</p>
+      </li>
+    </ul>
+    <p>If your custom code references Orchestrate fields, set the version of Orchestrate code referenced in the Apex class(es) to version 13, not version 14.</p>
+    <p>All fields formerly included in such objects as opportunity, contract, task, case, lead, and campaign are now removed to lighten the Conga Orchestrate installation and for you to set up only the objects you want to use.</p>
+  </conbody>
+</concept>

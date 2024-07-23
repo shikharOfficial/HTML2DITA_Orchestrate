@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ted301c" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Creating a Step that Generates a Document vJune-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Aug 15, 2023</p>
+    <p>As part of a process, a Generate Document step automatically generates a document using a mix template or a Conga Composer template, solution, or button and saves the resulting document to the process object in Salesforce. A Generate Document step can also reference a Conga Sign-integrated Composer solution or button to generate and send a document for e-signature.</p>
+    <p>Note</p>
+    <ul>
+      <li>A valid license to Conga Composer or Collaborate is required to create a Generate Document step. A Conga Sign license is also required to create and send a document for e-signature.</li>
+      <li>
+        <p>A single Composer document can be generated within a single Orchestrate definition at a time. To send documents in bulk, you must purchase Conga Trigger or Conga Batch events.</p>
+      </li>
+      <li>If a document takes more than two minutes to generate in Composer, you cannot use a Generate Document step and must use the Composer UI or Batch/Trigger to generate your document.</li>
+    </ul>
+  </conbody>
+</concept>

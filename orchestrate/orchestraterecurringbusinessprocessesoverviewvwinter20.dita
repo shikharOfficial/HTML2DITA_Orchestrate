@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ta9237b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Recurring Business Processes Overview vWinter-20</title>
+  <conbody>
+    <p>Created by  Rakesh Singh, last modified on Aug 20, 2021</p>
+    <p>This section configures your Salesforce installation to support Recurring Business Processes. Recurring Business Processes allow you to execute any process you define in Conga Orchestrate (Definition) on a recurring basis. They hold information on how often the process scheduled to start or begin, who it should be assigned to, and how its Due Date should be set. In addition, the Recurring Business Process record captures and stores information that will be inserted into the process when it is time for it to run. You configure an Apex Batch Job to execute each night and start any processes that are due to generate.</p>
+    <p>Recurring Business Processes have two different mechanisms for calculating when the process should execute next. These mechanisms are referred to as the Recurrence Type.</p>
+    <p>You can configure the Recurrence Type to either:</p>
+    <ul>
+      <li>Created Date.</li>
+      <li>Completed Date.</li>
+    </ul>
+    <p>When a process starts and the Recurrence Type is set to Created Date, Conga Orchestrate simply adds the specified Interval and Interval Number to the current date to determine the next occurrence. If the Recurrence Type is set to Completed Date, Conga Orchestrate leaves the next occurrence blank. When the process that was started completes, Conga Orchestrate updates the next occurrence of the related Recurring Business Process by adding the specified Interval and Interval Number to the completed date.</p>
+    <p>A Recurrence Type of Completed Date is useful when you have a process that needs to have a consistent interval between occurrences but have a large amount of time to complete the process. For example, common usage of this is a Scheduling process. You may want to schedule meetings with a specific amount of time between meetings, but it may take some time to get the meeting scheduled.</p>
+    <p>A Recurrence Type of Created Date is a more common type of Recurring Business Process. This is very useful for a process that needs to execute on a set schedule regardless of how long it takes to complete the previous occurrence.</p>
+    <p>To create Recurring Business Processes, you must have at least one Definition defined. After you define a definition, navigate to a Contact in the system and select the New button from the Recurring Business Process Related List. Fill out the required and desired information and select Save.</p>
+    <p>If the Begin Date is set to the current date, the first occurrence begins immediately. Otherwise, the process starts on the Next Scheduled Occurrence date.</p>
+    <p>You can configure Recurring Business Processes to have a specific End Date or No End Date. If No End Date is selected, the process executes according to its Interval forever. If an End Date is specified, the process executes according to its Interval until the End Date has passed. There is no limit to how many Recurring Business Processes you can define in the system.</p>
+    <p><xref href="https://share.vidyard.com/watch/7P9fWiDssQSxDFwL6WPunT" scope="external" format="html">Watch this video for more information</xref>.</p>
+  </conbody>
+</concept>

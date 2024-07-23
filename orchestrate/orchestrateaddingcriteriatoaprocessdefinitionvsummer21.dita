@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t00fd6b" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Adding Criteria to a Process Definition vSummer-21</title>
+  <shortdesc>Created by  user-0266f on Jun 10, 2021</shortdesc>
+  <taskbody>
+    <context>When creating a process definition, select Add DefinitionCriteria to add one or more additional criteria to act as condition(s) for when the process should run. (For example, run only if an Account’s Industry is ‘Manufacturing’.) When all rules are met, the process executes. Criteria is used to further refine when a Definition should be used. Along with the Object Name and its Record Type, each condition must be met for a process to kick off using this Definition.</context>
+    <steps>
+      <step>
+        <cmd>See Creating a Process Definition.</cmd>
+      </step>
+      <step>
+        <cmd>Select the + Add Definition Criteria link.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Object Name the process will run on.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Campaign</cmd>
+          </substep>
+          <substep>
+            <cmd>Case</cmd>
+          </substep>
+          <substep>
+            <cmd>Contract</cmd>
+          </substep>
+          <substep>
+            <cmd>Lead</cmd>
+          </substep>
+          <substep>
+            <cmd>Opportunity</cmd>
+          </substep>
+          <substep>
+            <cmd>Business Process
+                  
+                    Note
+                    
+                      Select +Add Row to include additional criteria.</cmd>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Select the Field Name that you desire to qualify. This field changes depending on the type of Object Name you select.</cmd>
+      </step>
+      <step>
+        <cmd>Select the type of Operator to compare the value against.</cmd>
+      </step>
+      <step>
+        <cmd>Enter the Field Value or select the Field Value from the drop-down list box depending on the Field Name you select.</cmd>
+      </step>
+      <step>
+        <cmd>The Data Type displays the type of Field Name you select.
+Note: The Data Type field auto-populates.</cmd>
+      </step>
+      <step>
+        <cmd>If there are multiple criteria for the definition, the Joining Operator field indicates how this value is combined with the other values. Conga Orchestrate combines the OR operators first and then the AND operators for a final AND operation. Logically, this would look like DF1 AND DF2 AND DF3 AND (DF4 OR DF5 OR DF6) if there were 6 definition criteria and 1 through 3 had a joining operator of AND and 4 through 6 had a joining operator of OR.</cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p/>
+    </postreq>
+  </taskbody>
+</task>

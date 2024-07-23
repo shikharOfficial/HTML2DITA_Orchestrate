@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tb882fa" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring UiPath Integration vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy on Sep 29, 2023</p>
+    <p>You must be on the Conga Orchestrate version 14 or higher to use UiPath integration.</p>
+    <p>Integrate your UiPath bots and queues into an Orchestrate process definition. Once the UiPath integration is successfully configured in Conga Orchestrate Setup, the Automation Step Type becomes available to use in Process Definitions.</p>
+    <p>To setup UiPath integration with Conga Orchestrate:</p>
+    <ol>
+      <li>Navigate to Conga Orchestrate Setup.</li>
+      <li>Select the Robotic Process Automation under the Integration Partners dropdown on the left side.</li>
+      <li>
+        Complete the following fields, specific to the UiPath user that you want to use for the integration.Note: This information input in these fields is found in UiPath.
+        <ol>
+          <li>Orchestrator URL</li>
+          <li>Orchestrator Tenant</li>
+          <li>Orchestrator Username</li>
+          <li>Orchestrator Password</li>
+        </ol>
+      </li>
+      <li>Click Save.</li>
+      <li>
+        Add the Orchestrator URL as a new Remote Site in Remote Site Settings.
+        <ol>
+          <li>Navigate to Salesforce Setup.</li>
+          <li>Type in Remote Site Settings in the Quick Find search box and click Remote Site Settings.</li>
+          <li>Click New Remote Site.</li>
+          <li>Enter a name in the Remote Site Name field.</li>
+          <li>Paste in the Orchestrator URL in the Remote Site URL field.</li>
+          <li>Click Save.</li>
+        </ol>
+        <p/>
+        Ensure that the Active checkbox field is checked.
+      </li>
+    </ol>
+    <p>Once the UiPath is configured in Conga Orchestrate Setup and the Remote Site with the Orchestrator URL is created, Orchestrate users can leverage the UiPath integration by creating an Automation Step in a Process Definition.</p>
+    <p>For more information on creating and executing Automation Steps, see <xref href="orchestratecreatingastepwithroboticprocessautomationvoctober23.dita#tc6c753" scope="local" format="dita">Creating a Step with Process Automation</xref> and <xref href="orchestrateexecutinganautomationstepvspring21.dita#tf157f5" scope="local" format="dita">Executing an Automation Step</xref>.</p>
+  </conbody>
+</concept>

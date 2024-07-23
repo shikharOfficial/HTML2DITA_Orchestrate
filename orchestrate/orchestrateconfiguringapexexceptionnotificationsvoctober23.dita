@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tf75321" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Configuring Apex Exception Notifications vOctober-23</title>
+  <conbody>
+    <p>Created by  William Abernathy, last modified on Sep 20, 2023</p>
+    <p>By default, Apex exception emails are sent to Conga so that we can monitor Apex quality issues. </p>
+    <p>You can change a custom setting to deactivate this feature. </p>
+  </conbody>
+</concept>

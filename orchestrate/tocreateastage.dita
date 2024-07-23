@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="tcee3d1" xml:lang="en-us">
+  <title class="- topic/title ">To create a Stage:</title>
+  <body>
+    <ol>
+      <li>Navigate to the Definition where you desire to add the Stage.</li>
+      <li>Select the New Stage button. <image href="../images/143888829.png"/></li>
+      <li>Enter the new Stage Name and select the Save button.</li>
+      <li>To add steps to the stage, select the New Stage Step button and fill out the fields appropriately. Refer to <xref href="orchestrateaboutprocessstepsvsummer21.dita#tf89b4c" scope="local" format="dita">Process Steps</xref>.</li>
+    </ol>
+    <p>You can also edit already existing steps to add them to a stage. Edit the step and populate the Stage field with the stage you created in the steps above.</p>
+    <p>When editing a Step and the Stage field is populated, the Ignore In Stage Completion checkbox appears. Select this checkbox if the Step is part of a Stage and you desire to ignore the Step when determining whether Child Steps of the Parent Stage create. For example, if 2 of 3 Stage Steps complete and the 3rd is set to "Ignore In Stage Completion", the Stage will be considered complete and Child Steps create. The default is unchecked and the Stage will not ignore the Step when the Stage completes. This only applies to steps that are skipped (for example: due to Step Creation Conditions). Any steps that are not skipped will still need to be completed for the stage to be considered complete.</p>
+  </body>
+</topic>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t8af135" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Configuring Out of Office Link in Classic</title>
+  <shortdesc>Created by  user-0266f on Mar 11, 2021</shortdesc>
+  <taskbody>
+    <context>To specify a replacement user while a person is out of the office, follow the steps below. During the time period you specify, Conga Orchestrate assigns all tasks to the replacement user.</context>
+    <steps>
+      <step>
+        <cmd>In Setup, use the Quick Find and type Home Page Layouts.</cmd>
+      </step>
+      <step>
+        <cmd>Select Home Page Layouts. </cmd>
+      </step>
+      <step>
+        <cmd>Select Edit next to the Home Page layout that needs the Out of Office component.</cmd>
+      </step>
+      <step>
+        <cmd>Select the Out of Office checkbox and click Next. </cmd>
+      </step>
+      <step>
+        <cmd>Position the Out of Office component in the location you desire and select Save.</cmd>
+      </step>
+      <step>
+        <cmd>View your Home Page to see the new Out of Office link. </cmd>
+      </step>
+    </steps>
+    <postreq>
+      <p>Using the Out of Office Link in Classic (Optional)</p>
+      <p>Train your users to use the Out of Office Link to set a replacement user for when they are out of the office.</p>
+      <div>
+        <ul>
+          <li>Select the Out of Office link to identify the user who will manage your data while you are out of the office.</li>
+          <li>Select lookup icon to locate the user.</li>
+          <li>Enter the beginning date of your absence in the Out of Office Start field.</li>
+          <li>Enter the ending date of your absence in the Out of Office End field.</li>
+          <li>Select Save.</li>
+        </ul>
+        <ul>
+          <li>Select the Out of Office link to identify the user who will manage your data while you are out of the office.</li>
+          <li>Select lookup icon to locate the user.</li>
+          <li>Enter the beginning date of your absence in the Out of Office Start field.</li>
+          <li>Enter the ending date of your absence in the Out of Office End field.</li>
+          <li>Select Save.</li>
+        </ul>
+        <ul>
+          <li>Select the Out of Office link to identify the user who will manage your data while you are out of the office.</li>
+          <li>Select lookup icon to locate the user.</li>
+          <li>Enter the beginning date of your absence in the Out of Office Start field.</li>
+          <li>Enter the ending date of your absence in the Out of Office End field.</li>
+          <li>Select Save.</li>
+        </ul>
+        <ul>
+          <li>Select the Out of Office link to identify the user who will manage your data while you are out of the office.</li>
+          <li>Select lookup icon to locate the user.</li>
+          <li>Enter the beginning date of your absence in the Out of Office Start field.</li>
+          <li>Enter the ending date of your absence in the Out of Office End field.</li>
+          <li>Select Save.</li>
+        </ul>
+        <ul>
+          <li>Select the Out of Office link to identify the user who will manage your data while you are out of the office.</li>
+          <li>Select lookup icon to locate the user.</li>
+          <li>Enter the beginning date of your absence in the Out of Office Start field.</li>
+          <li>Enter the ending date of your absence in the Out of Office End field.</li>
+          <li>Select Save.</li>
+        </ul>
+      </div>
+    </postreq>
+  </taskbody>
+</task>

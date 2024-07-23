@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t71db5b" xml:lang="en-us">
+  <title class="- topic/title ">To create a Generate Document step</title>
+  <body>
+    <ol>
+      <li>Navigate to the definition where you will place this step.</li>
+      <li>In the Steps section of the screen, click the <b>New Step </b>button.</li>
+      <li>
+        Complete the fields below:
+        <ul>
+          <li>Step Name: Enter a name for the step.</li>
+          <li>Step Type: Select <b>Generate Document</b>.</li>
+          <li>
+            Parent Step: Use Lookup to define the parent step, which must be completed before the Generate Document step can start.
+            <ul>
+              <li>Leave the field blank if the Generate Document step must be initiated as soon as the process starts.</li>
+            </ul>
+          </li>
+          <li>Parent Stage: If a parent step is part of a parent stage, all steps in the stage must complete before the Generate Document step is created.</li>
+          <li>Stage: Use Lookup to select the stage to associate with the Generate Document step, if applicable.</li>
+          <li>
+            Application: Select
+            <b>Composer</b>
+            or
+            <b>Collaborate</b>
+            to identify the source application for the document template:Composer: Select
+            <b>Template</b>
+            ,
+            <b>Solution</b>
+            , or
+            <b>Custom Button </b>
+            and then make a selection from the available options. See details on this option below. Collaborate: In the field, Create New Document is automatically selected as the action.
+            <ul>
+              <li>Define the options for the generated document:Output to PDF (only applicable to Composer): Select this option to generate the document as a PDF file.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Click Save.</li>
+    </ol>
+  </body>
+</topic>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t990b78" xml:lang="en-us">
+  <title class="- topic/title ">To export multiple Definitions:</title>
+  <body>
+    <ol>
+      <li>Navigate to the Definitions tab.</li>
+      <li>Select the List View that shows the definitions you desire to export. Select the "All" List View to see all Definitions.</li>
+      <li>Select the checkboxes next to the Definitions you desire to export.</li>
+      <li>Select Export Selected.</li>
+      <li>The file will download or you will be prompted to save the file to your computer. This will depend on the browser you are working in and your particular browser "file download" settings.</li>
+      <li>Name and Save the file and note the file location.</li>
+    </ol>
+    <p/>
+  </body>
+</topic>

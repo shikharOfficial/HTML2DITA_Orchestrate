@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="te08b94" xml:lang="en-us">
+  <title class="- topic/title ">To create an automation step in a process definition</title>
+  <body>
+    <ol>
+      <li>Navigate to a Definition record.</li>
+      <li>Click the New Step button.</li>
+      <li>Change the Step Type picklist field value to Automation.<image href="../images/143889131.png"/></li>
+      <li>
+        Select your Action.
+        <ul>
+          <li>
+            To start a job:
+            <ol>
+              <li>Change the Action picklist field value to Start Job.</li>
+              <li>Change the Process picklist field value to the process you want to run.</li>
+              <li>Highlight the robots to use for the job and move them from the Available column to the Chosen Column.</li>
+              <li>Click the Edit Input Arguments link to add Input Parameters (name/value pairs to send to UiPath).Note: Use static values, or include merge fields, for the Input Parameters. Example merge field syntax (assuming the process object is an Opportunity) {!Opportunity.Name}. Drilling up also works: {!Opportunity.Account.Name}</li>
+              <li>Enter field values for the Key and Value fields.<image href="../images/143889132.png"/></li>
+            </ol>
+          </li>
+          <li>
+            To Queue Data (add data to a Queue in UiPath):
+            <ol>
+              <li>Change the Action picklist field value to Queue Data.</li>
+              <li>Change the Queue picklist field value to the queue you want to add an item to.</li>
+              <li>Change the Queue Priority picklist field value to reflect the processing priority of your item.</li>
+              <li>Click the Edit Queue Datalink to add Input Parameters (name/value pairs to send to UiPath).</li>
+            </ol>
+          </li>
+        </ul>
+      </li>
+      <li>Enter a value in the Step Name field.</li>
+      <li>Click Save.</li>
+    </ol>
+    <p>For information on Executing an Automation Step, see <xref href="orchestrateexecutinganautomationstepvspring21.dita#tf157f5" scope="local" format="dita">Executing an Automation Step</xref>.</p>
+  </body>
+</topic>

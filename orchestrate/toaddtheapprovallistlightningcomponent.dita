@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="t647ec3" xml:lang="en-us">
+  <title class="- topic/title ">To add the ApprovalList Lightning component</title>
+  <body>
+    <ol>
+      <li>Go to a record of the process object you will add the ApprovalList Lightning component to.</li>
+      <li>Click the Setup icon and choose <b>Edit Page</b>.</li>
+      <li>Open the <b>Custom - Managed</b> section from the Lightning components menu on the left.</li>
+      <li>Drag the ApprovalList custom Lightning component to your Lightning page layout.</li>
+      <li>Click <b>Save</b>.</li>
+    </ol>
+  </body>
+</topic>

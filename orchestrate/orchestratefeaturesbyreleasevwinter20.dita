@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t4423e9" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : .Features by Release vWinter-20</title>
+  <conbody>
+    <p>Created by  Sandip Patel on Nov 22, 2021</p>
+    <p>This document contains an overview of features introduced in each major release of Conga Composer. For more information, see <xref href="https://documentation.conga.com/features-by-release/orchestrate-features-by-release-165937762.html" scope="external" format="html">Conga Orchestrate Features by Release</xref>.</p>
+  </conbody>
+</concept>

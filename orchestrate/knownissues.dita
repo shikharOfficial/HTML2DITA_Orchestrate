@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t57f57f" xml:lang="en-us">
+  <title class="- topic/title ">Known Issues</title>
+  <conbody>
+    <p>
+      <b>Flow or Process Builder and Orchestrate Update Limitations</b>
+    </p>
+    <p>Conga Orchestrate steps may not execute when an update comes from a flow or process builder. This happens when step creation conditions are used and the "Reevaluate When" option is set to Process Object Update. </p>
+    <p>
+      <b>Definition Import</b>
+    </p>
+    <p>When importing a definition using Orchestrate's export tool, there is a known error with two identically named steps, one of which uses looping (either Go Back to Step or Go Back to Stage is specified). To avoid this error, give each step a unique name before exporting the definition, then reimport the definition.</p>
+    <p>
+      <b>Issue with Top-Level Record Update Steps</b>
+    </p>
+    <p>When generating Composer documents as a child step to a stage that contains clauses or clause bundles, record update steps may behave unpredictably. For example, a Composer document may not attach to a record. This is because three applications may be making updates to the same record at once. The workaround is to avoid using top-level record update steps when using these clauses in-stage with docgen setup.</p>
+    <p>
+      <b>Document Not Getting Attached with Record</b>
+    </p>
+    <p>Enabling the High Assurance flag in a profile and firing an Orchestrate Generate Document step triggers the step but does not attach the document to the record. To work around this limitation, disable the High Assurance flag.</p>
+  </conbody>
+</concept>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="td61331" xml:lang="en-us">
+  <title class="- topic/title ">Orchestrate : Process Configuration</title>
+  <conbody>
+    <p>Created by  user-0266f on Mar 11, 2021</p>
+    <p>The container holding process Steps is called a Definition. A Definition is a template for a process, and the Definition includes one or more Steps. At each Step, a Record is created, email sent, field updated, The document generated, or API callout sent.</p>
+    <p>The container holding process Steps is called a Definition. A Definition is a template for a process, and the Definition includes one or more Steps. At each Step, a Record is created, email sent, field updated, The document generated, or webservice callout sent. An Event Placeholder Step waits for an Event associated with the process (and with a matching Sub-Type value) to create before any of the Steps following it (Child Steps) can begin. Thus, it holds the place of an Event that will occur as part of the process.</p>
+    <p>A Definition is a template for an individual process, the conditions under which it is created (Object, Record Type, Criteria) and which Steps kick-off as a result.</p>
+    <p>A Definition tells the system:</p>
+    <ul>
+      <li>When a process should execute (object type, record type, or any additional criteria).</li>
+      <li>The order in which the steps occur</li>
+      <li>Conditions under which to create steps</li>
+      <li>What steps are grouped together (staging)</li>
+    </ul>
+    <p>A process executes when a record is created or updated in Salesforce. The record must match the Object Name field on the Definition and the Record Type must match the Object Record Type field on the definition. In addition, if you wish to further qualify the process, add additional process criteria that the record must match. (See the decision tree to help determine when Record Types and criteria apply.) You base the criteria on the following list of field types. The criteria can look at fields on the object you specify in the Object Name field for the Definition. You can also base criteria on fields from the related account and contact.</p>
+    <ul>
+      <li>Text fields</li>
+      <li>Picklist fields</li>
+      <li>Checkbox fields</li>
+      <li>Currency fields</li>
+      <li>Number fields</li>
+      <li>Percent fields</li>
+    </ul>
+    <p>This chapter contains the following topics:</p>
+    <p>
+    </p>
+    <ul>
+      <li>
+        <xref href="orchestrateprocessdefinitions.dita#t8b9904" scope="local" format="dita">Process Definitions</xref>
+        <ul>
+          <li>
+            <xref href="orchestrateaddingcriteriatoaprocessdefinitionvsummer21.dita#t00fd6b" scope="local" format="dita">Adding Criteria to a Process Definition</xref>
+          </li>
+          <li>
+            <xref href="orchestrateautomaticallycreateadocumentafteraddingclausebundleswithcongaorchestrate.dita#tc5c357" scope="local" format="dita">Automatically Create a Document after Adding Clause Bundles with Conga Orchestrate</xref>
+          </li>
+          <li>
+            <xref href="orchestrateautomaticallycreateadocumentafteraddingmanagedclauseswithcongaorchestratevwinter20.dita#t4e095e" scope="local" format="dita">Automatically Create a Document after Adding Managed Clauses with Conga Orchestrate</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingaprocessdefinitionvdecember21.dita#t8e25e6" scope="local" format="dita">Creating a Process Definition</xref>
+          </li>
+          <li>
+            <xref href="orchestrateexportingasingledefinition.dita#tfb94ce" scope="local" format="dita">Exporting a Single Definition</xref>
+          </li>
+          <li>
+            <xref href="orchestrateexportingmultipledefinitions.dita#t4b48a1" scope="local" format="dita">Exporting Multiple Definitions</xref>
+          </li>
+          <li>
+            <xref href="orchestrateimportingandexportingdefinitions.dita#t86890e" scope="local" format="dita">Importing and Exporting Definitions</xref>
+          </li>
+          <li>
+            <xref href="orchestrateimportingdefinitions.dita#t265952" scope="local" format="dita">Importing Definitions</xref>
+          </li>
+          <li>
+            <xref href="orchestrateprocessobjects.dita#t1bb950" scope="local" format="dita">Process Objects</xref>
+          </li>
+          <li>
+            <xref href="orchestrateprocessstages.dita#tabf5c2" scope="local" format="dita">Process Stages</xref>
+          </li>
+          <li>
+            <xref href="orchestrateviewyourcongaorchestrateusage.dita#t1f4275" scope="local" format="dita">View Your Conga Orchestrate Usage</xref>
+          </li>
+          <li>
+            <xref href="orchestrateinitiatingdefinitionsvsummer21.dita#te43ac0" scope="local" format="dita">Initiating Definitions</xref>
+          </li>
+          <li>
+            <xref href="orchestratecustomizingthecolorcodesontheprocessvisualvdecember21.dita#te01659" scope="local" format="dita">Customizing the Color Codes on the Process Visual</xref>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <xref href="orchestrateprocesssteps.dita#t50d6fa" scope="local" format="dita">Process Steps</xref>
+        <ul>
+          <li>
+            <xref href="orchestrateadvancedfunctionalitywithstepcreationconditionsvsummer21.dita#t3caa18" scope="local" format="dita">Advanced Functionality with Step Creation Conditions</xref>
+          </li>
+          <li>
+            <xref href="orchestrateassigneetypesforprocesssteps.dita#tc805de" scope="local" format="dita">Assignee Types for Process Steps</xref>
+          </li>
+          <li>
+            <xref href="orchestrateconfiguringclosedstatusvalues.dita#t7e4ff0" scope="local" format="dita">Configuring Closed Status Values</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthataddsmanagedclausebundles.dita#t3dce97" scope="local" format="dita">Creating a Step that Adds Managed Clause Bundles</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthataddsamanagedclausevoctober23.dita#ta8de67" scope="local" format="dita">Creating a Step that Adds a Managed Clause</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthatcreatesarecordvspring21.dita#tf11ad9" scope="local" format="dita">Creating a Step that Creates a Record</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthatgeneratesadocumentvjune23.dita#ted301c" scope="local" format="dita">Creating a Step that Generates a Document</xref>
+            <ul>
+              <li>
+                <xref href="orchestrateusingthenewcomposerendpointurlingeneratedocumentstepsvoctober23.dita#td4935a" scope="local" format="dita">Using the New Composer Endpoint URL in Generate Document Steps</xref>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <xref href="orchestratecreateastepthatpoststochatter.dita#t44f2b5" scope="local" format="dita">Create a Step that Posts to Chatter</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthatsendsanemail.dita#t5adf89" scope="local" format="dita">Creating a Step that Sends an Email</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingasteptoupdaterecordsvoctober23.dita#t42e68d" scope="local" format="dita">Creating a Step to Update Records</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepwithaneventplaceholdervoctober23.dita#tb1a275" scope="local" format="dita">Creating a Step with an Event Placeholder</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepwithanapicallout.dita#tabf1d8" scope="local" format="dita">Creating a Step with an API Callout</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepwithroboticprocessautomationvoctober23.dita#tc6c753" scope="local" format="dita">Creating a Step with Robotic Process Automation</xref>
+            <ul>
+              <li>
+                <xref href="orchestrateexecutinganautomationstepvspring21.dita#tf157f5" scope="local" format="dita">Executing an Automation Step</xref>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <xref href="orchestratedelayedsteps.dita#t2a10fb" scope="local" format="dita">Delayed Steps</xref>
+          </li>
+          <li>
+            <xref href="orchestratemanagingthestatusofastepwithanapprovalvseptember22.dita#t2b8f3e" scope="local" format="dita">Managing the Status of a Step with an Approval</xref>
+          </li>
+          <li>
+            <xref href="orchestratemanagingthestatusofastepwithachecklistvsummer21.dita#t6ad2ca" scope="local" format="dita">Managing the Status of a Step with a Checklist</xref>
+          </li>
+          <li>
+            <xref href="orchestratestepcreationconditionsvsummer21.dita#t43ae9d" scope="local" format="dita">Step Creation Conditions</xref>
+          </li>
+          <li>
+            <xref href="orchestratestepfieldvalidations.dita#t2c574c" scope="local" format="dita">Step Field Validations</xref>
+          </li>
+          <li>
+            <xref href="orchestrateaboutprocessstepsvsummer21.dita#tf89b4c" scope="local" format="dita">About Process Steps</xref>
+          </li>
+          <li>
+            <xref href="orchestrateprocesstasksvstaskssalesforceactivityvoctober23.dita#t4019d9" scope="local" format="dita">Process Tasks vs. Tasks (Salesforce Activity)</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepthatcallsanapprovalprocessvfebruary23.dita#t33d506" scope="local" format="dita">Creating a Step that Calls an Approval Process</xref>
+          </li>
+          <li>
+            <xref href="orchestratecreatingastepwithplatformeventvdecember21.dita#t6bada7" scope="local" format="dita">Creating a Step With Platform Event</xref>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </conbody>
+</concept>
